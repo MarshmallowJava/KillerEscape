@@ -1,0 +1,1 @@
+give @s warped_fungus_on_a_stick{CustomTag:"area_heal", display:{Name:'{"text":"エリアヒール","color": "green"}'}}

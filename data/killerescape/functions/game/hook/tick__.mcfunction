@@ -1,0 +1,23 @@
+
+##使用中のフックの処理を行います
+
+#検索
+scoreboard players operation current entity_id = @s target_id
+function killerescape:util/get_current
+
+#捉える
+effect give @a[tag=current] minecraft:glowing 1 0 true
+effect give @a[tag=current] minecraft:levitation 1 255 true
+execute as @a[tag=current] positioned ^ ^1 ^0.5 rotated as @s run tp @s ~ ~ ~ ~ ~
+tag @a[tag=current] add hooked
+
+#処刑時間
+scoreboard players remove @a[tag=current] execute_time 1
+
+#時間表示
+execute as @a[tag=current] at @s run function killerescape:game/hook/progress__
+
+#処刑
+execute if score @a[tag=current,limit=1] execute_time matches ..0 run scoreboard players reset @s target_id
+execute if score @a[tag=current,limit=1] execute_time matches ..0 run tag @s remove used
+execute as @a[tag=current,scores={execute_time=..0}] at @s run function killerescape:game/hook/execute

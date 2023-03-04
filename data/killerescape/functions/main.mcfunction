@@ -24,7 +24,6 @@ execute if score game_status time matches 1 run function killerescape:game/main
 #ゲーム処理
 execute if score game_status time matches 2 run function killerescape:result/main
 
-
 #マップ制作処理
 function killerescape:map/main
 

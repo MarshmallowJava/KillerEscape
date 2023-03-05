@@ -4,6 +4,7 @@
 
 #マーカー生成
 summon minecraft:marker ~ ~ ~ {Tags:["map_unique_entity","hook","init"]}
+execute as @e[tag=hook,tag=init] run tp @s ~ ~ ~ ~ ~
 
 #紐づけ
 scoreboard players operation @e[tag=hook,tag=init] entity_id = @s entity_id

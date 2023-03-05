@@ -6,7 +6,8 @@
 data modify storage minecraft:killerescape arguments set value {length:20}
 execute store result storage minecraft:killerescape arguments.value int 1 run scoreboard players get @s time
 execute store result storage minecraft:killerescape arguments.max int 1 run scoreboard players get repairtime const
-data modify storage minecraft:killerescape arguments.format set from storage minecraft:killerescape formats.survivor
+execute if score @s sabotage_time matches 0 run data modify storage minecraft:killerescape arguments.format set from storage minecraft:killerescape formats.survivor
+execute if score @s sabotage_time matches 1.. run data modify storage minecraft:killerescape arguments.format set from storage minecraft:killerescape formats.killer
 function killerescape:util/get_gauge/
 
 #反映

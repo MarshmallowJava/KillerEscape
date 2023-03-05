@@ -19,6 +19,9 @@ scoreboard players reset @e[tag=hook] target_id
 tag @e[tag=hook] remove used
 tag @a remove hooked
 
+#サボタージュ進捗をリセット
+scoreboard players set @e sabotage_time 0
+
 #ゲームモードをアドベンチャーに
 gamemode adventure @a[tag=escaped]
 gamemode adventure @a[tag=eliminated]

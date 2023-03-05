@@ -7,6 +7,7 @@ function killerescape:util/get_mapentities
 #修復進捗度をリセット
 scoreboard players set @e[tag=communicator] time 0
 tag @e[tag=communicator] remove repairable
+tag @e[tag=communicator] remove can_sabotage
 
 #修復進捗バーを削除
 kill @e[type=minecraft:area_effect_cloud,tag=repair_progress]

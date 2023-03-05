@@ -42,6 +42,11 @@ scoreboard objectives add rescue_time dummy
 #吊られた生存者が死亡するまでの時間を管理します
 scoreboard objectives add execute_time dummy
 
+#妨害時間
+#通信機の修理進捗を阻害するまでの時間を管理します
+#所持者が通信機の場合、減少幅を管理します
+scoreboard objectives add sabotage_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -83,6 +88,7 @@ scoreboard players set carryontime const 60
 scoreboard players set hooktime const 40
 scoreboard players set rescuetime const 60
 scoreboard players set executetime const 1200
+scoreboard players set sabotagetime const 30
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

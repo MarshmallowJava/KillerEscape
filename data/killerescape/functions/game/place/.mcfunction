@@ -25,3 +25,9 @@ tag @e[tag=chest] remove placed
 execute store result score count var if entity @e[tag=current_map,tag=chest]
 scoreboard players operation count var /= #2 const
 function killerescape:game/place/_
+
+#ゲート再設置
+execute at @e[tag=gate] run fill ^-1 ^ ^ ^1 ^2 ^ minecraft:sand replace
+execute at @e[tag=gate] run setblock ^3 ^ ^1 minecraft:beacon replace
+execute at @e[tag=gate] run setblock ^-3 ^ ^1 minecraft:beacon replace
+tag @e[tag=gate] remove opened

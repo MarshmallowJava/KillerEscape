@@ -12,3 +12,4 @@ execute as @e[type=minecraft:armor_stand,tag=spawn_survivor] at @s run function 
 execute as @e[type=minecraft:armor_stand,tag=spawn_killer] at @s run function killerescape:map/place/spawn_killer
 execute as @e[type=minecraft:armor_stand,tag=chest] at @s run function killerescape:map/place/chest
 execute as @e[type=minecraft:armor_stand,tag=hook] at @s run function killerescape:map/place/hook
+execute as @e[type=minecraft:armor_stand,tag=gate] at @s run function killerescape:map/place/gate

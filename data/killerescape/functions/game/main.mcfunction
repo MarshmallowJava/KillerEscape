@@ -33,3 +33,13 @@ execute if entity @a[tag=survivor] unless entity @a[tag=survivor,tag=!eliminated
 
 #生存者は攻撃することができない
 effect give @a[tag=survivor] minecraft:weakness 1 255 true
+
+#ジャンプ禁止
+effect give @a[tag=killer] minecraft:jump_boost 2 129 true
+
+#満腹度調整
+execute as @a[tag=killer] store result score @s var run data get entity @s foodLevel
+effect give @a[tag=survivor] minecraft:saturation 2 10 true
+effect give @a[tag=killer,scores={var=4..}] minecraft:hunger 1 255 true
+effect give @a[tag=killer,scores={var=1}] minecraft:saturation 2 0 true
+effect clear @a[tag=killer,scores={var=2..}] minecraft:saturation

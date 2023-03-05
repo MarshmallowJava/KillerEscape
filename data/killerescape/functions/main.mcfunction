@@ -31,7 +31,6 @@ function killerescape:map/main
 execute if score debugmode const matches 1 run function killerescape:debug/main
 
 #常時バフ
-effect give @a minecraft:saturation 2 10 true
 effect give @a minecraft:resistance 2 10 true
 
 #所持しているアイテムの説明文の一行目を表示

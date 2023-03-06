@@ -31,3 +31,9 @@ execute at @e[tag=gate] run fill ^-1 ^ ^ ^1 ^2 ^ minecraft:sand replace
 execute at @e[tag=gate] run setblock ^3 ^ ^1 minecraft:beacon replace
 execute at @e[tag=gate] run setblock ^-3 ^ ^1 minecraft:beacon replace
 tag @e[tag=gate] remove opened
+
+#板をリセット
+execute at @e[tag=board] run fill ^ ^ ^ ^ ^ ^1 minecraft:air replace minecraft:barrier
+execute as @e[tag=board] run data modify entity @s ArmorItems[3] set value {id:"minecraft:end_portal_frame",tag:{CustomModelData:2},Count:1b}
+tag @e[tag=board] remove downed
+tag @e[tag=board] remove broken

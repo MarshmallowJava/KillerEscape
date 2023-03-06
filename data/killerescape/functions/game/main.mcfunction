@@ -28,6 +28,9 @@ function killerescape:game/carryon/main
 #ゲート処理
 function killerescape:game/gate/main
 
+#板の処理
+function killerescape:game/board/main
+
 #ストラクチャーボイドが設置されたエリアは脱出判定とする
 execute as @a[tag=survivor,tag=!eliminated,tag=!escaped] at @s if block ~ ~ ~ minecraft:structure_void run function killerescape:game/escape
 

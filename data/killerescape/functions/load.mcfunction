@@ -47,6 +47,10 @@ scoreboard objectives add execute_time dummy
 #所持者が通信機の場合、減少幅を管理します
 scoreboard objectives add sabotage_time dummy
 
+#板破壊時間
+#キラーが板を破壊するまでの時間を管理します
+scoreboard objectives add boardbreak_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -89,6 +93,7 @@ scoreboard players set hooktime const 40
 scoreboard players set rescuetime const 60
 scoreboard players set executetime const 1200
 scoreboard players set sabotagetime const 30
+scoreboard players set boardbreaktime const 30
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

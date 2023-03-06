@@ -14,7 +14,11 @@ execute if score @s var matches 1 if score @s sabotage_time matches 0 run title 
 execute if score @s var matches 2 if score @s boardbreak_time matches 0 run title @s actionbar "右クリック長押しで板を破壊する"
 tag @e[scores={var=1..}] remove display_ui
 
+#アニメーション
+execute if score @s sabotage_time matches 1 run function killerescape:game/item/killer_weapon/animation
+execute if score @s sabotage_time matches 1.. unless entity @s[scores={var=1,useItem=1..}] run function item_anime:stop_animation/mainhand
 execute if score @s boardbreak_time matches 1 run function killerescape:game/item/killer_weapon/animation
+execute if score @s boardbreak_time matches 1.. unless entity @s[scores={var=2,useItem=1..}] run function item_anime:stop_animation/mainhand
 
 #進捗表示
 execute if score @s sabotage_time matches 1.. run function killerescape:game/item/killer_weapon/progress

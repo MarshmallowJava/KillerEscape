@@ -13,4 +13,4 @@ data modify entity @s ArmorItems[3] set value {}
 #演出
 particle minecraft:block minecraft:oak_planks ^ ^0.5 ^ 0.2 0.2 0.2 1 30 force @a
 particle minecraft:block minecraft:oak_planks ^ ^0.5 ^1 0.2 0.2 0.2 1 30 force @a
-playsound minecraft:block.wood.break master @a 1 1 0
+playsound minecraft:item.shield.block master @a ~ ~ ~ 1 0.5 0

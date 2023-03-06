@@ -34,6 +34,6 @@ tag @e[tag=gate] remove opened
 
 #板をリセット
 execute at @e[tag=board] run fill ^ ^ ^ ^ ^ ^1 minecraft:air replace minecraft:barrier
-execute as @e[tag=board] run data modify entity @s ArmorItems[3] set value {id:"minecraft:end_portal_frame",tag:{CustomModelData:2},Count:1b}
+execute as @e[tag=board] run data modify entity @s ArmorItems[3] set value {id:"minecraft:end_portal_frame",tag:{CustomModelData:2,CustomTag:Board},Count:1b}
 tag @e[tag=board] remove downed
 tag @e[tag=board] remove broken

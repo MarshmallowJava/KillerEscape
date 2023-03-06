@@ -11,8 +11,10 @@ execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 if entity
 
 #表示
 execute if score @s var matches 1 if score @s sabotage_time matches 0 run title @s actionbar "右クリック長押しでサボタージュ"
-execute if score @s var matches 2 if score @s sabotage_time matches 0 run title @s actionbar "右クリック長押しで板を破壊する"
+execute if score @s var matches 2 if score @s boardbreak_time matches 0 run title @s actionbar "右クリック長押しで板を破壊する"
 tag @e[scores={var=1..}] remove display_ui
+
+execute if score @s boardbreak_time matches 1 run function killerescape:game/item/killer_weapon/animation
 
 #進捗表示
 execute if score @s sabotage_time matches 1.. run function killerescape:game/item/killer_weapon/progress

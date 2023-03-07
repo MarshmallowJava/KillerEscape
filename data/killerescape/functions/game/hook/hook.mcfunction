@@ -19,8 +19,8 @@ scoreboard players add @a[tag=current] hook_count 1
 
 #処刑時間設定
 scoreboard players operation @a[tag=current] execute_time = executetime const
-scoreboard players operation @a[tag=current,scores={hook_count=1}] execute_time /= #2 const
-scoreboard players set @a[tag=current,scores={hook_count=2}] execute_time 0
+scoreboard players operation @a[tag=current,scores={hook_count=2}] execute_time /= #2 const
+scoreboard players set @a[tag=current,scores={hook_count=3}] execute_time 0
 
 #使用済みタグを付与
 tag @s add used

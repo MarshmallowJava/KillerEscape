@@ -14,3 +14,6 @@ execute if entity @s[tag=target,tag=lying] if score @s rescuekit_time = rescueki
 #治療完了
 execute if score @a[tag=target,limit=1] rescuekit_time > rescuekittime const run function killerescape:game/item/rescue_kit/rescue
 execute if score @a[tag=target,limit=1] rescuekit_time > rescuekittime const run scoreboard players set @a[tag=target] rescuekit_time 0
+
+#イベントトリガー
+function killerescape:event/on_using_rescuekit

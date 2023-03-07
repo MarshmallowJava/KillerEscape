@@ -24,3 +24,6 @@ scoreboard players set @a[tag=current,scores={hook_count=2}] execute_time 0
 
 #使用済みタグを付与
 tag @s add used
+
+#イベントトリガー
+function killerescape:event/on_hang

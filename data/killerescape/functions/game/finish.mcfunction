@@ -11,3 +11,6 @@ execute if score count var > half var run scoreboard players set result var 1
 
 #リザルト開始
 function killerescape:result/start
+
+#イベントトリガー
+function killerescape:event/on_finish_game

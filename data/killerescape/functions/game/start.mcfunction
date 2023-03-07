@@ -22,3 +22,6 @@ execute as @a[tag=survivor] at @s run function killerescape:game/ability/role/
 #テレポート
 execute as @a[tag=survivor] at @s positioned as @e[tag=spawn_survivor,limit=1,sort=random] run tp @s ~ ~ ~ ~ ~
 execute as @a[tag=killer] at @s positioned as @e[tag=spawn_killer,limit=1,sort=random] run tp @s ~ ~ ~ ~ ~
+
+#イベントトリガー
+function killerescape:event/on_start_game

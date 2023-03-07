@@ -23,6 +23,9 @@ tag @a remove hooked
 scoreboard players set @e sabotage_time 0
 scoreboard players set @a boardbreak_time 0
 
+#治療進捗をリセット
+scoreboard players set @a rescuekit_time 0
+
 #ゲームモードをアドベンチャーに
 gamemode adventure @a[tag=escaped]
 gamemode adventure @a[tag=eliminated]

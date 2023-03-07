@@ -51,6 +51,10 @@ scoreboard objectives add sabotage_time dummy
 #キラーが板を破壊するまでの時間を管理します
 scoreboard objectives add boardbreak_time dummy
 
+#治療時間
+#救急キットの治療が完了するまでの時間を管理します
+scoreboard objectives add rescuekit_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -94,6 +98,7 @@ scoreboard players set rescuetime const 60
 scoreboard players set executetime const 1200
 scoreboard players set sabotagetime const 30
 scoreboard players set boardbreaktime const 30
+scoreboard players set rescuekittime const 600
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

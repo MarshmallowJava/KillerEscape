@@ -18,7 +18,8 @@ tag @s remove repairing
 
 #サボタージュ
 execute if score @s sabotage_time matches 1.. run tag @s add update_ui
-execute if score @s sabotage_time matches 1.. run scoreboard players remove @s time 1
+execute if score @s sabotage_time matches 1.. run scoreboard players remove @s time 2
+execute if score @s sabotage_time matches 1.. run scoreboard players operation @s time > #0 const
 execute if score @s sabotage_time matches 1.. run scoreboard players remove @s sabotage_time 1
 
 #修理が完了した

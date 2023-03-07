@@ -1,0 +1,1 @@
+effect give @a[tag=incubation,scores={sneak=60..}] invisibility 1 0 true

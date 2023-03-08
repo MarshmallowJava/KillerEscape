@@ -50,3 +50,6 @@ function killerescape:game/ability/init
 
 #マップオブジェクトを設置
 function killerescape:game/place/
+
+#イベントトリガー
+function killerescape:event/on_init

@@ -13,3 +13,6 @@ execute as @e[type=minecraft:armor_stand,tag=spawn_killer] at @s run function ki
 execute as @e[type=minecraft:armor_stand,tag=chest] at @s run function killerescape:map/place/chest
 execute as @e[type=minecraft:armor_stand,tag=hook] at @s run function killerescape:map/place/hook
 execute as @e[type=minecraft:armor_stand,tag=gate] at @s run function killerescape:map/place/gate
+
+#削除
+execute as @e[type=minecraft:armor_stand,tag=remove] at @s run function killerescape:map/remove

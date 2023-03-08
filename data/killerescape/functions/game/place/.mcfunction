@@ -28,8 +28,8 @@ function killerescape:game/place/_
 
 #ゲート再設置
 execute at @e[tag=gate] run fill ^-1 ^ ^ ^1 ^2 ^ minecraft:sand replace
-execute at @e[tag=gate] run setblock ^3 ^ ^1 minecraft:beacon replace
-execute at @e[tag=gate] run setblock ^-3 ^ ^1 minecraft:beacon replace
+execute at @e[tag=gate] run setblock ^3 ^ ^1 minecraft:beacon{Lock:"killerescape"} replace
+execute at @e[tag=gate] run setblock ^-3 ^ ^1 minecraft:beacon{Lock:"killerescape"} replace
 tag @e[tag=gate] remove opened
 
 #板をリセット

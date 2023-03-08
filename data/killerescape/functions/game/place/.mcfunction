@@ -17,6 +17,10 @@ kill @e[type=minecraft:area_effect_cloud,tag=repair_progress]
 tag @e[tag=current_map,tag=communicator,limit=5,sort=random] add repairable
 function killerescape:game/communicator/create_progressbar/
 
+#当たり判定を追加
+execute at @e[tag=communicator] run setblock ~ ~ ~ minecraft:air replace
+execute at @e[tag=communicator,tag=repairable] run setblock ~ ~ ~ minecraft:barrier replace
+
 #チェスト削除
 execute at @e[tag=chest] run data modify block ~ ~ ~ LootTable set value "minecraft:empty"
 execute at @e[tag=chest] run setblock ~ ~ ~ minecraft:air replace

@@ -26,6 +26,10 @@ scoreboard players set @a boardbreak_time 0
 #治療進捗をリセット
 scoreboard players set @a rescuekit_time 0
 
+#ボスバー削除
+bossbar set minecraft:remain players
+bossbar set minecraft:remain2 players
+
 #ゲームモードをアドベンチャーに
 gamemode adventure @a[tag=escaped]
 gamemode adventure @a[tag=eliminated]

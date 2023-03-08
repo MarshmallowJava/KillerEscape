@@ -110,6 +110,23 @@ scoreboard players set rescuekittime const 600
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage
 
-#修理進捗バーフォーマット
+#進捗バーフォーマット
 data modify storage minecraft:killerescape formats.survivor set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"green"}','{"text":"|","italic":false,"color":"gray"}']
 data modify storage minecraft:killerescape formats.killer set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"dark_red"}','{"text":"|","italic":false,"color":"gray"}']
+
+#通信機修理進捗
+bossbar add minecraft:remain {"text":"title"}
+bossbar set minecraft:remain color yellow
+bossbar set minecraft:remain max 5
+bossbar set minecraft:remain players
+bossbar set minecraft:remain style notched_10
+bossbar set minecraft:remain value 0
+bossbar set minecraft:remain visible true
+
+bossbar add minecraft:remain2 {"text":"title"}
+bossbar set minecraft:remain2 color red
+bossbar set minecraft:remain2 max 1
+bossbar set minecraft:remain2 players
+bossbar set minecraft:remain2 style progress
+bossbar set minecraft:remain2 value 1
+bossbar set minecraft:remain2 visible true

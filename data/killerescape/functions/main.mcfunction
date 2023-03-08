@@ -36,3 +36,6 @@ effect give @a minecraft:resistance 2 10 true
 #所持しているアイテムの説明文の一行目を表示
 execute as @a[tag=display_ui] run title @s actionbar {"entity":"@s","nbt":"SelectedItem.tag.display.Lore[0]","interpret": true}
 tag @a add display_ui
+
+#特殊タグ付きのアイテムはアイテムを落とせない
+execute as @e[type=minecraft:item,nbt={Item:{tag:{OwnItem:1b}}}] run data modify entity @s PickupDelay set value 0

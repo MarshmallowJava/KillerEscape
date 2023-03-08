@@ -23,7 +23,7 @@ execute if score @s sabotage_time matches 1.. run scoreboard players operation @
 execute if score @s sabotage_time matches 1.. run scoreboard players remove @s sabotage_time 1
 
 #修理が完了した
-execute if score @s time = repairtime const run function killerescape:game/communicator/repaired
+execute if score @s time > repairtime const run function killerescape:game/communicator/repaired
 
 #パーティクル
 particle minecraft:campfire_signal_smoke ~ ~2 ~ 0 1 0 0.1 0 force @a

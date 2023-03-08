@@ -15,4 +15,5 @@ execute as @e[type=minecraft:armor_stand,tag=hook] at @s run function killeresca
 execute as @e[type=minecraft:armor_stand,tag=gate] at @s run function killerescape:map/place/gate
 
 #削除
-execute as @e[type=minecraft:armor_stand,tag=remove] at @s run function killerescape:map/remove
+execute as @e[type=minecraft:armor_stand,tag=remove] at @s as @e[tag=map_unique_entity,distance=..2,limit=1,sort=nearest] at @s run function killerescape:map/remove
+kill @e[type=minecraft:armor_stand,tag=remove]

@@ -1,6 +1,9 @@
 
 ##ゲーム中の処理を行います
 
+#ボスバー処理
+function killerescape:game/bossbar
+
 #マップ固有エンティティにタグ付け
 function killerescape:util/get_mapentities
 
@@ -33,6 +36,10 @@ function killerescape:game/board/main
 
 #ストラクチャーボイドが設置されたエリアは脱出判定とする
 execute as @a[tag=survivor,tag=!eliminated,tag=!escaped] at @s if block ~ ~ ~ minecraft:structure_void run function killerescape:game/escape
+
+#強制終了までの時間をカウントダウン
+execute if score endgame time matches 1.. run scoreboard players remove endgame time 1
+execute if score endgame time matches 1 as @a[tag=survivor] run function killerescape:game/hook/execute
 
 #ゲーム終了判定
 execute if entity @a[tag=survivor] unless entity @a[tag=survivor,tag=!eliminated,tag=!escaped] run function killerescape:game/finish

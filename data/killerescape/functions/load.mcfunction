@@ -99,6 +99,7 @@ scoreboard players set executetime const 1200
 scoreboard players set sabotagetime const 30
 scoreboard players set boardbreaktime const 30
 scoreboard players set rescuekittime const 600
+scoreboard players set endgametime const 2400
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト
@@ -106,6 +107,7 @@ scoreboard players set rescuekittime const 600
 #result[time]: リザルトの表示時間管理
 #editing[mapid]: 現在編集中のマップのID
 #selected[mapid]: 現在設定中のマップのID
+#endgame[time]: 試合強制終了までの時間管理
 
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage
@@ -127,6 +129,6 @@ bossbar add minecraft:remain2 {"text":"title"}
 bossbar set minecraft:remain2 color red
 bossbar set minecraft:remain2 max 1
 bossbar set minecraft:remain2 players
-bossbar set minecraft:remain2 style progress
+bossbar set minecraft:remain2 style notched_10
 bossbar set minecraft:remain2 value 1
 bossbar set minecraft:remain2 visible true

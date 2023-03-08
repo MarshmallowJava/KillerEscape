@@ -11,3 +11,6 @@ fill ^-1 ^ ^ ^1 ^2 ^ minecraft:air destroy
 
 #現在のマップの他のゲートが開かないように
 tag @e[tag=gate,tag=current_map] add opened
+
+#強制終了までの時間を設定
+scoreboard players operation endgame time = endgametime const

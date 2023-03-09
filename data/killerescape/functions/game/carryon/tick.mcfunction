@@ -5,7 +5,7 @@
 function killerescape:util/get_current
 
 #背負う
-execute if entity @s[tag=display_ui] unless entity @e[tag=carryon,tag=current] if entity @e[tag=survivor,tag=lying,distance=..2] run function killerescape:game/carryon/tick_
+execute if entity @s[tag=display_ui] unless entity @e[tag=carryon,tag=current] if entity @a[tag=survivor,tag=lying,distance=..2] run function killerescape:game/carryon/tick_
 
 #解放
 execute if entity @s[tag=display_ui] if entity @e[tag=carryon,tag=current] run function killerescape:game/carryon/tick__

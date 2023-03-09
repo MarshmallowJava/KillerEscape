@@ -1,0 +1,19 @@
+{
+    "criteria":{
+        "requirement":{
+            "trigger": "minecraft:player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "minecraft:player",
+                    "nbt": "{Tags:[survivor]}"
+                },
+                "player": {
+                    "nbt": "{Tags:[killer]}"                    
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function": "killerescape:game/damage/set_cooldown"
+    }
+}

@@ -29,6 +29,9 @@ scoreboard players set @a rescuekit_time 0
 #強制終了までの時間をリセット
 scoreboard players set endgame time 0
 
+#クールダウンリセット
+scoreboard players set @s cool_attack 0
+
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players

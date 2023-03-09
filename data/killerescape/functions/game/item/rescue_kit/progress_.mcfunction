@@ -10,3 +10,6 @@ function killerescape:util/get_gauge/
 
 #反映
 title @s actionbar [{"text":"治療を受けています...","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]
+
+#通常UIは表示しない
+tag @s remove display_ui

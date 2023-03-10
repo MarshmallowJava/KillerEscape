@@ -10,6 +10,7 @@ execute if score @s useItem matches 0 if entity @s[tag=!target] if entity @a[tag
 execute if score @s useItem matches 0 if entity @s[tag=!target] unless entity @a[tag=target] run title @s actionbar ["右クリック長押しで治療する 対象:",{"text":"なし","italic":false,"color":"red"}]
 
 #治療
+execute if score @s useItem matches 1.. unless entity @a[tag=target] run title @s actionbar {"text":"治療対象がいません","italic": false,"color": "red"}
 execute if score @s useItem matches 1.. if entity @a[tag=target] run function killerescape:game/item/rescue_kit/tick_
 
 #通常UIを表示しない

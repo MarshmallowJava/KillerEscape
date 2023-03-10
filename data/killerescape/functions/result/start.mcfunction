@@ -8,6 +8,7 @@ scoreboard players set game_status time 2
 scoreboard players set result time 0
 
 #結果を表示
+title @a reset
 execute if score result var matches -1 run title @a subtitle {"text":"キラーの勝利","italic": false, "color":"dark_red"}
 execute if score result var matches 0 run title @a subtitle {"text":"引き分け","italic": false, "color":"green"}
 execute if score result var matches 1 run title @a subtitle {"text":"プレイヤーの勝利","italic": false, "color":"blue"}

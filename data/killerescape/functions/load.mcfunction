@@ -113,6 +113,7 @@ scoreboard players set attacktime const 40
 #editing[mapid]: 現在編集中のマップのID
 #selected[mapid]: 現在設定中のマップのID
 #endgame[time]: 試合強制終了までの時間管理
+#heartbeat[time]: 心音の発動間隔
 
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage

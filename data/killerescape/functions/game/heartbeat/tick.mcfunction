@@ -3,10 +3,10 @@
 
 #距離に応じた発動間隔を取得
 scoreboard players set @s var 20
-execute if entity @a[tag=player,distance=..24] run scoreboard players remove @s var 2
-execute if entity @a[tag=player,distance=..20] run scoreboard players remove @s var 2
-execute if entity @a[tag=player,distance=..16] run scoreboard players remove @s var 3
-execute if entity @a[tag=player,distance=..8] run scoreboard players remove @s var 3
+execute if entity @a[tag=killer,distance=..24] run scoreboard players remove @s var 2
+execute if entity @a[tag=killer,distance=..20] run scoreboard players remove @s var 2
+execute if entity @a[tag=killer,distance=..16] run scoreboard players remove @s var 3
+execute if entity @a[tag=killer,distance=..8] run scoreboard players remove @s var 3
 
 #発動判定
 scoreboard players operation heartbeat var = heartbeat time

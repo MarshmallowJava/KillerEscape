@@ -14,7 +14,7 @@ scoreboard players remove @a[scores={cool_attack=1..}] cool_attack 1
 
 #表示
 title @a[tag=killer,scores={cool_attack=1..}] times 0 2 0
-title @a[tag=killer,scores={cool_attack=1..}] subtitle {"text":"✕","italic": false,"color": "red","bold": true}
+title @a[tag=killer,scores={cool_attack=1..}] subtitle {"text":"攻撃  ✕  不可","italic": false,"color": "red","bold": true}
 title @a[tag=killer,scores={cool_attack=1..}] title ""
 
 #攻撃許可

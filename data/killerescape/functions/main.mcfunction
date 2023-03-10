@@ -15,6 +15,9 @@ function killerescape:scores
 #ゲーム状態を初期化
 execute unless score game_status time matches -2147483648..2147483647 run scoreboard players set game_status time 0
 
+#デモ処理
+execute if score game_status time matches -1 run function killerescape:demo/main
+
 #ロビー処理
 execute if score game_status time matches 0 run function killerescape:lobby/main
 

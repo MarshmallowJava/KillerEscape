@@ -33,6 +33,9 @@ function killerescape:map/main
 #デバッグ用処理
 execute if score debugmode const matches 1 run function killerescape:debug/main
 
+#設定処理
+function killerescape:config/main
+
 #常時バフ
 effect give @a minecraft:resistance 2 10 true
 

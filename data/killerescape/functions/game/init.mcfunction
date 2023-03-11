@@ -51,6 +51,9 @@ tag @a remove escaped
 tag @a remove killer
 tag @a remove survivor
 
+#チーム脱退
+team leave @a
+
 #アビリティをリセット
 function killerescape:game/ability/init
 

@@ -12,6 +12,10 @@ tag @a[tag=!selected] add survivor
 tag @a[tag=selected] add killer
 tag @a remove selected
 
+#チーム加入
+team join survivor @a[tag=survivor]
+team join killer @a[tag=killer]
+
 #アイテム付与
 clear @a
 execute as @a[tag=survivor] run function killerescape:game/give_items_survivor

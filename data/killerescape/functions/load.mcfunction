@@ -145,6 +145,16 @@ bossbar set minecraft:remain2 style notched_10
 bossbar set minecraft:remain2 value 1
 bossbar set minecraft:remain2 visible true
 
+#チーム生成
+team add survivor
+team modify survivor collisionRule pushOtherTeams
+team modify survivor color green
+team modify survivor nametagVisibility hideForOtherTeams
+team add killer
+team modify killer collisionRule pushOtherTeams
+team modify killer color red
+team modify killer nametagVisibility hideForOtherTeams
+
 #個人設定項目
 
 #ゴア表現無効

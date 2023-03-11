@@ -150,9 +150,7 @@ bossbar set minecraft:remain2 visible true
 #ゴア表現無効
 scoreboard objectives add enableBlood dummy
 scoreboard objectives add enableBlood_trg trigger
-execute as @a unless score @s enableBlood matches -2147483648..2147483647 run scoreboard players set @s enableBlood 1
 
 #暗視
 scoreboard objectives add nightVision dummy
 scoreboard objectives add nightVision_trg trigger
-execute as @a unless score @s nightVision matches -2147483648..2147483647 run scoreboard players set @s nightVision 0

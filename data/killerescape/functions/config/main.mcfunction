@@ -1,6 +1,10 @@
 
 ##コンフィグに関する処理を行います
 
+#初期値
+execute as @a unless score @s enableBlood matches -2147483648..2147483647 run scoreboard players set @s enableBlood 1
+execute as @a unless score @s nightVision matches -2147483648..2147483647 run scoreboard players set @s nightVision 0
+
 #変更検知
 scoreboard players set @a var 0
 

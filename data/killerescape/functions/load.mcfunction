@@ -59,6 +59,10 @@ scoreboard objectives add rescuekit_time dummy
 #キラーの攻撃間隔を管理します
 scoreboard objectives add cool_attack dummy
 
+#出血間隔
+#血痕が発生する間隔を管理します
+scoreboard objectives add blood_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -72,7 +76,8 @@ scoreboard objectives add useItem_trigger minecraft.used:minecraft.warped_fungus
 
 #被ダメージ検知
 #生存者がキラーに攻撃されたことを検知します
-scoreboard objectives add attacked minecraft.custom:minecraft.damage_resisted
+#UNUSED
+#scoreboard objectives add attacked minecraft.custom:minecraft.damage_resisted
 
 #能力用スコア
 scoreboard objectives add cool_dash dummy
@@ -105,6 +110,7 @@ scoreboard players set boardbreaktime const 30
 scoreboard players set rescuekittime const 600
 scoreboard players set endgametime const 2400
 scoreboard players set attacktime const 40
+scoreboard players set bloodtime const 30
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト
@@ -138,3 +144,15 @@ bossbar set minecraft:remain2 players
 bossbar set minecraft:remain2 style notched_10
 bossbar set minecraft:remain2 value 1
 bossbar set minecraft:remain2 visible true
+
+#個人設定項目
+
+#ゴア表現無効
+scoreboard objectives add enableBlood dummy
+scoreboard objectives add enableBlood_trg trigger
+execute as @a unless score @s enableBlood matches -2147483648..2147483647 run scoreboard players set @s enableBlood 0
+
+#暗視
+scoreboard objectives add nightVision dummy
+scoreboard objectives add nightVision_trg trigger
+execute as @a unless score @s nightVision matches -2147483648..2147483647 run scoreboard players set @s nightVision 0

@@ -3,7 +3,6 @@
 
 #ダメージ状態をリセット
 scoreboard players set @a damage_stage 0
-scoreboard players reset @a attacked
 tag @a remove lying
 
 #這いずり用のエンティティ削除
@@ -31,6 +30,10 @@ scoreboard players set endgame time 0
 
 #クールダウンリセット
 scoreboard players set @a cool_attack 0
+
+#血痕をリセット
+scoreboard players reset @a blood_time
+kill @e[type=minecraft:marker,tag=blood]
 
 #ボスバー削除
 bossbar set minecraft:remain players

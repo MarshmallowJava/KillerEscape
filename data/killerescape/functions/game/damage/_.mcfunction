@@ -13,4 +13,7 @@ execute if score @s damage_stage matches 2 run tag @s add lying
 #体力更新
 tag @s add update_health
 
+#演出
+particle minecraft:block minecraft:redstone_block ~ ~1 ~ 0 0 0 0 100 force @a[scores={enableBlood=0}]
+
 advancement revoke @s only killerescape:hurt_survivor

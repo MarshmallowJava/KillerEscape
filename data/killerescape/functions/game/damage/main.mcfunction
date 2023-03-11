@@ -19,3 +19,9 @@ title @a[tag=killer,scores={cool_attack=1..}] title ""
 
 #攻撃許可
 execute as @a[tag=killer] unless entity @s[nbt={SelectedItem:{tag:{CustomTag:KillerWeapon}}},scores={cool_attack=0}] run effect give @s minecraft:weakness 1 255 true
+
+#血痕
+scoreboard players add @a[tag=survivor,scores={damage_stage=1..}] blood_time 1
+scoreboard players operation @a[tag=survivor,scores={damage_stage=1..}] blood_time %= bloodtime const
+execute at @a[tag=survivor,scores={damage_stage=1..,blood_time=0}] unless entity @e[tag=blood,distance=..1] run summon minecraft:marker ~ ~ ~ {Tags:["blood"]}
+execute as @e[tag=blood] at @s run function killerescape:game/damage/____

@@ -1,7 +1,7 @@
 
 ##アイテムに関する処理を行います
 
-#救急キット
+#医療キット
 function killerescape:game/item/rescue_kit/main
 
 #修理キット

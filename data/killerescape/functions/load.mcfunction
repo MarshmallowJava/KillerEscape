@@ -52,7 +52,7 @@ scoreboard objectives add sabotage_time dummy
 scoreboard objectives add boardbreak_time dummy
 
 #治療時間
-#救急キットの治療が完了するまでの時間を管理します
+#医療キットの治療が完了するまでの時間を管理します
 scoreboard objectives add rescuekit_time dummy
 
 #攻撃クールダウン

@@ -7,6 +7,9 @@ function killerescape:game/bossbar
 #マップ固有エンティティにタグ付け
 function killerescape:util/get_mapentities
 
+#這いずり処理
+function killerescape:game/lying/main
+
 #アビリティ処理
 function killerescape:game/ability/main
 
@@ -18,9 +21,6 @@ function killerescape:game/communicator/main
 
 #ダメージ処理
 function killerescape:game/damage/main
-
-#這いずり処理
-function killerescape:game/lying/main
 
 #フック処理
 function killerescape:game/hook/main

@@ -14,3 +14,10 @@ execute at @s run tp @e[tag=current,tag=pressure] ~ ~1.0 ~
 #削除しないように
 tag @e[tag=current,tag=pressure] add still_alive
 tag @e[tag=current,tag=pressure_shulker] add still_alive
+
+#医療キットのみは使用を許可する
+execute if entity @s[nbt={SelectedItem:{tag:{CustomTag:RescueKit}}}] at @s run function killerescape:game/item/rescue_kit/tick
+execute unless entity @s[nbt={SelectedItem:{tag:{CustomTag:RescueKit}}}] run title @s actionbar {"text":"医療キットで自己治療してください","italic": false,"color": "red"}
+
+#通常UIは表示しない
+tag @s remove display_ui

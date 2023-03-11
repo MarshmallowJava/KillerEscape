@@ -7,6 +7,7 @@ function killerescape:util/get_current
 
 #ダメージ値を設定
 scoreboard players set @a[tag=current] damage_stage 1
+tag @a[tag=current] add update_health
 
 #リセット
 scoreboard players reset @s target_id

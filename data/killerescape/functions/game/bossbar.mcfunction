@@ -18,5 +18,5 @@ execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] store r
 execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] store result bossbar minecraft:remain2 max run scoreboard players get endgametime const
 execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] store result bossbar minecraft:remain value run scoreboard players get endgame time
 execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] store result bossbar minecraft:remain2 value run scoreboard players get endgame time
-execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] run bossbar set minecraft:remain name [{"text":"制限時間以内にゲートから脱出してください 残り時間 ","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]
-execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] run bossbar set minecraft:remain2 name [{"text":"制限時間まで生存者の脱出を阻止してください 残り時間 ","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]
+execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] run bossbar set minecraft:remain name [{"text":"強制終了まで ","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]
+execute if score count var matches 5.. if entity @e[tag=gate,tag=opened] run bossbar set minecraft:remain2 name [{"text":"強制終了まで ","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]

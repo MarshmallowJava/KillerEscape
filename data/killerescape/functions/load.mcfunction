@@ -63,6 +63,14 @@ scoreboard objectives add cool_attack dummy
 #血痕が発生する間隔を管理します
 scoreboard objectives add blood_time dummy
 
+#スキルチェック
+#スキルチェックの時間を管理します
+scoreboard objectives add skillcheck_time dummy
+
+#スキルチェック結果
+#スキルチェックの解答を保存します
+scoreboard objectives add skillcheck_ans dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time

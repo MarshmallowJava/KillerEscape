@@ -35,6 +35,9 @@ scoreboard players set @a cool_attack 0
 scoreboard players reset @a blood_time
 kill @e[type=minecraft:marker,tag=blood]
 
+#スキルチェックリセット
+scoreboard players reset @a skillcheck_time
+
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players

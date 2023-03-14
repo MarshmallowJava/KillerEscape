@@ -24,3 +24,6 @@ execute store result storage minecraft:temp result.tag.EntityID int 1 run scoreb
 data modify storage minecraft:killerescape arguments set value []
 data modify storage minecraft:killerescape arguments append from storage minecraft:temp result
 function killerescape:util/give_item/
+
+#表示
+tellraw @s [{"translate":"[システム] 能力「%s」が付与されました","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"result.tag.display.Name","interpret": true}]}]

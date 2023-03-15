@@ -1,0 +1,15 @@
+{
+    "criteria":{
+        "requirement":{
+            "trigger": "minecraft:inventory_changed",
+            "conditions": {
+                "player": {
+                    "nbt": "{Inventory:[{Slot:-106b}]}"
+                }
+            }
+        }
+    },
+    "rewards":{
+        "function": "killerescape:util/offhand"
+    }
+}

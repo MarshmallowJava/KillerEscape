@@ -14,3 +14,8 @@ scoreboard players add @a[scores={sneak_trigger=1}] sneak 1
 #スコアリセット
 scoreboard players set @a sneak_trigger 0
 scoreboard players set @a useItem_trigger 0
+
+#タグ削除
+tag @a remove offhand_action
+tag @a[tag=offhand_trg] add offhand_action
+tag @a remove offhand_trg

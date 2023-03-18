@@ -15,3 +15,8 @@ execute if score @s time > repairtime const run function killerescape:game/commu
 
 #パーティクル
 particle minecraft:campfire_signal_smoke ~ ~2 ~ 0 1 0 0.1 0 force @a
+
+#スキルチェックペナルティ
+scoreboard players remove @s[scores={skillcheck_time=1..}] skillcheck_time 1
+execute if score @s skillcheck_time matches 0 if entity @s[nbt={Glowing:1b}] run data modify entity @s Glowing set value 0b
+execute if score @s skillcheck_time matches 1.. if entity @s[nbt={Glowing:0b}] run data modify entity @s Glowing set value 1b

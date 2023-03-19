@@ -1,0 +1,1 @@
+scoreboard players add #repaired var_hope 1

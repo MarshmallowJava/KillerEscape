@@ -143,6 +143,9 @@ scoreboard players set bloodtime const 30
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage
 
+#キラー用ストレージを設定
+function killerescape:game/killer/storage
+
 #進捗バーフォーマット
 data modify storage minecraft:killerescape formats.survivor set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"green"}','{"text":"|","italic":false,"color":"gray"}']
 data modify storage minecraft:killerescape formats.killer set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"dark_red"}','{"text":"|","italic":false,"color":"gray"}']

@@ -1,0 +1,8 @@
+{
+    "values":[
+        "#minecraft:buttons",
+        "#minecraft:fences",
+        "minecraft:air",
+        "minecraft:barrier"
+    ]
+}

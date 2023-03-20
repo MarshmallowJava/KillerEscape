@@ -133,6 +133,7 @@ scoreboard players set bloodtime const 30
 
 #アビリティ定数
 scoreboard players set engineer_cooltime const 1200
+scoreboard players set engineer_bonus const 10
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

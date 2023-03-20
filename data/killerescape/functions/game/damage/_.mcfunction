@@ -17,3 +17,6 @@ tag @s add update_health
 particle minecraft:block minecraft:redstone_block ~ ~1 ~ 0 0 0 0 100 force @a[scores={enableBlood=1}]
 
 advancement revoke @s only killerescape:hurt_survivor
+
+#イベントトリガー
+function killerescape:event/on_damage

@@ -38,6 +38,9 @@ kill @e[type=minecraft:marker,tag=blood]
 #スキルチェックリセット
 scoreboard players reset @e skillcheck_time
 
+#キラーリセット
+function killerescape:game/killer/init
+
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players
@@ -56,6 +59,9 @@ tag @a remove survivor
 
 #チーム脱退
 team leave @a
+
+#エフェクト解除
+effect clear @a
 
 #アビリティをリセット
 function killerescape:game/ability/init

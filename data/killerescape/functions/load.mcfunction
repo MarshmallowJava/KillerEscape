@@ -71,6 +71,14 @@ scoreboard objectives add skillcheck_time dummy
 #スキルチェックの解答を保存します
 scoreboard objectives add skillcheck_ans dummy
 
+#シャドウ展開時間
+#シャドウの展開時間を管理します
+scoreboard objectives add shadow_time dummy
+
+#凍結時間
+#氷鬼による凍結の進捗を管理します
+scoreboard objectives add ice_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -106,6 +114,9 @@ scoreboard players set #9 const 9
 scoreboard players set #10 const 10
 scoreboard players set #20 const 20
 scoreboard players set #60 const 60
+scoreboard players set #70 const 70
+scoreboard players set #100 const 100
+scoreboard players set #360 const 360
 
 #ゲーム定数を設定
 scoreboard players set repairtime const 600

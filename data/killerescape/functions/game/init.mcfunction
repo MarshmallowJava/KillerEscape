@@ -60,6 +60,9 @@ tag @a remove survivor
 #チーム脱退
 team leave @a
 
+#エフェクト解除
+effect clear @a
+
 #アビリティをリセット
 function killerescape:game/ability/init
 

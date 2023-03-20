@@ -54,7 +54,7 @@ execute if score endgame time matches 1 as @a[tag=survivor] run function killere
 execute if entity @a[tag=survivor] unless entity @a[tag=survivor,tag=!eliminated,tag=!escaped] run function killerescape:game/finish
 
 #生存者は攻撃することができない
-effect give @a[tag=survivor] minecraft:weakness 1 255 true
+effect give @a[tag=survivor] minecraft:weakness infinite 255 true
 
 #ジャンプ禁止
 effect give @a[tag=killer] minecraft:jump_boost 2 129 true

@@ -18,7 +18,7 @@ scoreboard players set @a[scores={nightVision_trg=1}] var 1
 scoreboard players add @a[scores={nightVision_trg=1}] nightVision 1
 scoreboard players operation @a[scores={nightVision_trg=1}] nightVision %= #2 const
 effect clear @a[scores={nightVision=0}] minecraft:night_vision
-effect give @a[scores={nightVision=1}] minecraft:night_vision 1000000 255 true
+effect give @a[scores={nightVision=1}] minecraft:night_vision infinite 255 true
 
 
 #再表示

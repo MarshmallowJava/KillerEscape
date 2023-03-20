@@ -8,4 +8,5 @@ data modify storage minecraft:killerescape pool set from storage minecraft:kille
 function killerescape:game/ability/dash/init
 function killerescape:game/ability/incubation/init
 function killerescape:game/ability/hope/init
+function killerescape:game/ability/engineer/init
 function killerescape:game/ability/area_heal/init

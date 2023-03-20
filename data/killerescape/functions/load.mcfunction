@@ -4,7 +4,11 @@
 #汎用スコア
 scoreboard objectives add var dummy
 scoreboard objectives add time dummy
+#定数
 scoreboard objectives add const dummy
+#一時キャッシュ
+#tickをまたぐスコアの保持は非推奨
+scoreboard objectives add temporary dummy
 
 #エンティティID
 #特に指定のない全てのエンティティに固有のIDを自動で割り振る
@@ -96,7 +100,8 @@ scoreboard objectives add cool_dash dummy
 scoreboard objectives add cool_area_heal dummy
 scoreboard objectives add cool_area_heal2 dummy
 scoreboard objectives add var_hope dummy
-
+scoreboard objectives add engineer_time dummy
+scoreboard objectives add cool_engineer dummy
 
 #定数を定義
 scoreboard players set #-1 const -1
@@ -125,6 +130,9 @@ scoreboard players set rescuekittime const 600
 scoreboard players set endgametime const 2400
 scoreboard players set attacktime const 40
 scoreboard players set bloodtime const 30
+
+#アビリティ定数
+scoreboard players set engineer_cooltime const 1200
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

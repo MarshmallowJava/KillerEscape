@@ -1,1 +1,1 @@
-execute as @a if score @s sneak matches 60.. if data entity @s {Inventory:[{tag:{CustomTag:"incubation"}}]} run effect give @s invisibility 1 0 true
+effect give @a[tag=incubation,scores={sneak=60..}] invisibility 1 0 true

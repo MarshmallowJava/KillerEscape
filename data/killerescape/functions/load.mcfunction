@@ -91,6 +91,8 @@ scoreboard objectives add useItem_trigger minecraft.used:minecraft.warped_fungus
 scoreboard objectives add cool_dash dummy
 scoreboard objectives add cool_area_heal dummy
 scoreboard objectives add cool_area_heal2 dummy
+scoreboard objectives add var_hope dummy
+
 
 #定数を定義
 scoreboard players set #-1 const -1

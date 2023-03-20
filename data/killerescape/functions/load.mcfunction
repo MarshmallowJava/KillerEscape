@@ -47,6 +47,10 @@ scoreboard objectives add execute_time dummy
 #所持者が通信機の場合、減少幅を管理します
 scoreboard objectives add sabotage_time dummy
 
+#通信機ボーナス
+#サバイバーが通信機を修理する際に追加で進捗を進める量(ボーナス値)を管理します
+scoreboard objectives add repair_bonus dummy
+
 #板破壊時間
 #キラーが板を破壊するまでの時間を管理します
 scoreboard objectives add boardbreak_time dummy

@@ -12,7 +12,7 @@ scoreboard players operation current entity_id = @s target_id
 function killerescape:util/get_current
 
 #捉える
-ride @e[tag=current,limit=1] mount @s
+ride @a[tag=current,limit=1] mount @s
 
 #再検索
 function killerescape:util/get_current

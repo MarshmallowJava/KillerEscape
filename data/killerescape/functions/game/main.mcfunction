@@ -59,6 +59,9 @@ effect give @a[tag=survivor] minecraft:weakness infinite 255 true
 #ジャンプ禁止
 effect give @a[tag=killer] minecraft:jump_boost 2 129 true
 
+#キラーの移動速度補正
+effect give @a[tag=killer] minecraft:speed infinite 1 true
+
 #満腹度調整
 execute as @a[tag=killer] store result score @s var run data get entity @s foodLevel
 effect give @a[tag=survivor] minecraft:saturation 2 10 true

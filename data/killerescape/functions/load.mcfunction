@@ -102,6 +102,8 @@ scoreboard objectives add cool_area_heal2 dummy
 scoreboard objectives add var_hope dummy
 scoreboard objectives add engineer_time dummy
 scoreboard objectives add cool_engineer dummy
+scoreboard objectives add repair_flag dummy
+scoreboard objectives add repair_time dummy
 
 #定数を定義
 scoreboard players set #-1 const -1
@@ -134,6 +136,8 @@ scoreboard players set bloodtime const 30
 #アビリティ定数
 scoreboard players set engineer_cooltime const 1200
 scoreboard players set engineer_bonus const 10
+scoreboard players set coop_repair_cooltime const 20
+scoreboard players set coop_repair_bonus const 10
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

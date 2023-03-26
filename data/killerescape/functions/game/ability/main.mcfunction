@@ -8,4 +8,5 @@ function killerescape:game/ability/dash/main
 function killerescape:game/ability/incubation/main
 function killerescape:game/ability/hope/main
 function killerescape:game/ability/engineer/main
+function killerescape:game/ability/coop_repair/main
 function killerescape:game/ability/area_heal/main

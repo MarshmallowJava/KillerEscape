@@ -19,6 +19,7 @@ title @a[tag=killer,scores={cool_attack=1..}] title ""
 
 #攻撃許可
 execute as @a[tag=killer] unless entity @s[nbt={SelectedItem:{tag:{CustomTag:KillerWeapon}}},scores={cool_attack=0}] run effect give @s minecraft:weakness 1 255 true
+execute as @a[tag=killer] if entity @s[nbt={SelectedItem:{tag:{CustomTag:KillerWeapon}}},scores={cool_attack=0}] run effect clear @s minecraft:weakness
 
 #血痕
 scoreboard players add @a[tag=survivor,scores={damage_stage=1..}] blood_time 1

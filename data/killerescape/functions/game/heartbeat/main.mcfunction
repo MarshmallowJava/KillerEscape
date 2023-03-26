@@ -4,4 +4,4 @@
 scoreboard players add heartbeat time 1
 
 #生存者毎に処理
-execute as @a[tag=survivor] at @s run function killerescape:game/heartbeat/tick
+execute as @a[tag=survivor,gamemode=!spectator] at @s run function killerescape:game/heartbeat/tick

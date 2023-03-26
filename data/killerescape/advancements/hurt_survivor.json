@@ -8,6 +8,9 @@
                         "type": "minecraft:player",
                         "nbt": "{Tags:[killer]}"
                     }
+                },
+                "player": {
+                    "nbt": "{Tags:[can_hurted]}"
                 }
             }
         }

@@ -11,4 +11,5 @@ execute if entity @s[tag=display_ui] unless entity @e[tag=carryon,tag=current] i
 execute if entity @s[tag=display_ui] if entity @e[tag=carryon,tag=current] run function killerescape:game/carryon/tick__
 
 #毎tick処理
+tag @a remove carryed
 execute if entity @e[tag=carryon,tag=current] run function killerescape:game/carryon/tick___

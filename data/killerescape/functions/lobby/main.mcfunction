@@ -6,3 +6,4 @@ execute if score countdown time matches 0.. run function killerescape:lobby/coun
 
 #死なない努力
 effect give @a minecraft:saturation infinite 10 true
+effect give @a minecraft:instant_health infinite 10 true

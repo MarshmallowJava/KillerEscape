@@ -52,6 +52,8 @@ gamemode adventure @a[tag=eliminated]
 #プレイヤー状態をリセット
 tag @a remove eliminated
 tag @a remove escaped
+tag @a remove carryed
+tag @a remove can_hurted
 
 #役職タグを外す
 tag @a remove killer

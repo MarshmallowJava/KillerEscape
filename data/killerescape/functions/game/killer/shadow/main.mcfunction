@@ -12,3 +12,7 @@ execute as @e[tag=shadow] at @s run function killerescape:game/killer/shadow/tic
 
 #生存者毎の処理
 execute as @a[scores={shadow_time=1..}] at @s run function killerescape:game/killer/shadow/tick/_
+
+#削除
+kill @e[type=minecraft:armor_stand,tag=chain,tag=!still_alive]
+tag @e[tag=chain] remove still_alive

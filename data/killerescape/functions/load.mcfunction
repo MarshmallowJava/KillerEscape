@@ -71,8 +71,8 @@ scoreboard objectives add skillcheck_time dummy
 #スキルチェックの解答を保存します
 scoreboard objectives add skillcheck_ans dummy
 
-#シャドウ展開時間
-#シャドウの展開時間を管理します
+#シャドウ効果時間
+#シャドウの拘束の効果時間を管理します
 scoreboard objectives add shadow_time dummy
 
 #凍結時間
@@ -100,6 +100,7 @@ scoreboard objectives add cool_dash dummy
 scoreboard objectives add cool_area_heal dummy
 scoreboard objectives add cool_area_heal2 dummy
 scoreboard objectives add cool_fishing dummy
+scoreboard objectives add cool_shadow dummy
 
 #定数を定義
 scoreboard players set #-1 const -1

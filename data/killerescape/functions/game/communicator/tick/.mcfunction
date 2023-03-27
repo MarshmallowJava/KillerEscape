@@ -10,3 +10,6 @@ tag @s remove update_ui
 
 #発光削除
 execute if entity @s[tag=repaired,nbt={Glowing:1b}] run data modify entity @s Glowing set value 0b
+
+#演出
+execute if entity @s[tag=repaired] run particle minecraft:happy_villager ~ ~0.5 ~ 0.4 0.4 0.4 0 1 force @a

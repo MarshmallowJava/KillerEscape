@@ -6,7 +6,7 @@ scoreboard players operation current entity_id = @s target_id
 function killerescape:util/get_current
 
 #位置を固定
-tp @a[tag=current] ^ ^ ^-0.3 ~ ~
+tp @a[tag=current] ^ ^ ^ ~ ~
 effect give @a[tag=current] minecraft:slowness infinite 255 true
 effect give @a[tag=current] minecraft:jump_boost infinite 129 true
 

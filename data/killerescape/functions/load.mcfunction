@@ -79,6 +79,14 @@ scoreboard objectives add shadow_time dummy
 #氷鬼による凍結の進捗を管理します
 scoreboard objectives add ice_time dummy
 
+#ロッカー展開時間
+#各役職がロッカー操作を行う時間を管理します
+scoreboard objectives add box_time dummy
+
+#ロッカーID
+#各役職が操作するロッカーのIDを保持します
+scoreboard objectives add box_id dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time

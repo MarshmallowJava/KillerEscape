@@ -45,3 +45,13 @@ execute at @e[tag=board] run fill ^ ^ ^ ^ ^ ^1 minecraft:air replace minecraft:b
 execute as @e[tag=board] run data modify entity @s ArmorItems[3] set value {id:"minecraft:end_portal_frame",tag:{CustomModelData:2,CustomTag:Board},Count:1b}
 tag @e[tag=board] remove downed
 tag @e[tag=board] remove broken
+
+#ロッカーを再設置
+execute as @e[tag=box] run data modify entity @s ArmorItems set value [{},{},{},{}]
+execute at @e[tag=box] run fill ~ ~ ~ ~ ~1 ~ minecraft:air
+kill @e[type=minecraft:interaction,tag=box_collision]
+scoreboard players reset @e[tag=box] target_id
+scoreboard players set @e[tag=box] time 0
+tag @e[tag=box] remove useable
+tag @e[tag=box,tag=current_map] add useable
+execute as @e[tag=box,tag=useable] at @s run function killerescape:game/place/___

@@ -41,6 +41,10 @@ scoreboard players reset @e skillcheck_time
 #キラーリセット
 function killerescape:game/killer/init
 
+#ロッカーリセット
+scoreboard players reset @a box_time
+scoreboard players reset @a box_id
+
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players
@@ -54,6 +58,7 @@ tag @a remove eliminated
 tag @a remove escaped
 tag @a remove carryed
 tag @a remove can_hurted
+tag @a remove hiding
 
 #役職タグを外す
 tag @a remove killer

@@ -7,6 +7,9 @@ function killerescape:game/bossbar
 #マップ固有エンティティにタグ付け
 function killerescape:util/get_mapentities
 
+#ロッカー処理
+function killerescape:game/box/main
+
 #スキルチェック処理
 function killerescape:game/skillcheck/main
 

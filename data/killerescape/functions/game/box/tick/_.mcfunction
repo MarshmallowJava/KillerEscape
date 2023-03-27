@@ -7,6 +7,8 @@ function killerescape:util/get_current
 
 #位置を固定
 tp @a[tag=current] ^ ^ ^-0.3 ~ ~
+effect give @a[tag=current] minecraft:slowness infinite 255 true
+effect give @a[tag=current] minecraft:jump_boost infinite 129 true
 
 #表示
 title @a[tag=current] actionbar "右クリックでロッカーから出る"

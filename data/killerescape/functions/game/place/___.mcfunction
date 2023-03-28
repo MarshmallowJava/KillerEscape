@@ -6,7 +6,7 @@ summon minecraft:interaction ~ ~ ~ {Tags:["box_collision","init"],response:1b,wi
 summon minecraft:item_display ~ ~0.65 ~ {Tags:["box_display","init"],item:{id:"minecraft:end_portal_frame",tag:{CustomModelData:40},Count:1b}}
 
 #回転
-execute as @e[tag=box_display,tag=init] at @s run tp @s ~ ~ ~ ~90 ~
+execute as @e[tag=box_display,tag=init] positioned as @s run tp @s ~ ~ ~ ~180 ~
 
 #紐づけ
 scoreboard players operation @e[tag=init] entity_id = @s entity_id

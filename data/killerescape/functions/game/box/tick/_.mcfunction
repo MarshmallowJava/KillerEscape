@@ -16,3 +16,7 @@ tag @a[tag=current] remove display_ui
 
 #タグ付け
 tag @a[tag=current] add hiding
+
+#非表示
+execute unless score @a[tag=killer,limit=1] box_id = @s entity_id run effect give @s minecraft:invisibility 1 0 true
+execute if score @a[tag=killer,limit=1] box_id = @s entity_id run effect clear @s minecraft:invisibility

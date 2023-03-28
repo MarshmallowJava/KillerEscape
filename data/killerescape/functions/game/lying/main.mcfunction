@@ -9,3 +9,5 @@ execute as @a[tag=lying,gamemode=!spectator] at @s run function killerescape:gam
 
 tp @e[type=minecraft:shulker,tag=pressure_shulker,tag=!still_alive] ~ ~-1000 ~ 
 tp @e[type=minecraft:armor_stand,tag=pressure,tag=!still_alive] ~ ~-1000 ~
+
+effect give @a[tag=lying] minecraft:glowing 1 0 true

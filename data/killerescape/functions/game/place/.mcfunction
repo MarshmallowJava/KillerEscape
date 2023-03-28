@@ -50,6 +50,7 @@ tag @e[tag=board] remove broken
 execute as @e[tag=box] run data modify entity @s ArmorItems set value [{},{},{},{}]
 execute at @e[tag=box] run fill ~ ~ ~ ~ ~1 ~ minecraft:air
 kill @e[type=minecraft:interaction,tag=box_collision]
+kill @e[type=minecraft:item_display,tag=box_display]
 scoreboard players reset @e[tag=box] target_id
 scoreboard players set @e[tag=box] time 0
 tag @e[tag=box] remove useable

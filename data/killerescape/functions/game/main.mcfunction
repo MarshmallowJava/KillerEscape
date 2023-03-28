@@ -71,3 +71,7 @@ effect give @a[tag=survivor] minecraft:saturation 2 10 true
 effect give @a[tag=killer,scores={var=4..}] minecraft:hunger 1 255 true
 effect give @a[tag=killer,scores={var=1}] minecraft:saturation 2 0 true
 effect clear @a[tag=killer,scores={var=2..}] minecraft:saturation
+
+#移動制限解除
+effect clear @a[gamemode=spectator] minecraft:slowness
+effect clear @a[gamemode=spectator] minecraft:jump_boost

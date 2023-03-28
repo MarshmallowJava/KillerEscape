@@ -24,3 +24,7 @@ execute if score @s box_time matches 1 run scoreboard players operation @e[tag=b
 
 #進行
 scoreboard players remove @s box_time 1
+
+#表示
+title @s actionbar "ロッカーに入っています..."
+tag @s remove display_ui

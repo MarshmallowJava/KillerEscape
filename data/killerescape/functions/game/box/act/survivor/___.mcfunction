@@ -5,6 +5,7 @@
 execute positioned ^ ^ ^1 run tp @a[tag=target] ~ ~ ~ ~ ~
 effect clear @a[tag=target] minecraft:slowness
 effect clear @a[tag=target] minecraft:jump_boost
+effect clear @a[tag=target] minecraft:invisibility
 
 #紐づけ解除
 scoreboard players reset @s target_id

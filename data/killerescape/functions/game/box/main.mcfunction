@@ -10,3 +10,7 @@ execute as @a[tag=survivor,scores={box_time=1..}] at @s run function killerescap
 
 #各キラー毎の処理
 execute as @a[tag=killer,scores={box_time=1..}] at @s run function killerescape:game/box/tick/__
+
+#フラグリセット
+scoreboard players reset @a[scores={box_time=0}] box_id
+scoreboard players reset @a[scores={box_time=0}] box_time

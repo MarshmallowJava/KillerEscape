@@ -10,7 +10,7 @@
                     }
                 },
                 "player": {
-                    "nbt": "{Tags:[can_hurted]}"
+                    "nbt": "{Tags:[survivor,can_hurted]}"
                 }
             }
         }

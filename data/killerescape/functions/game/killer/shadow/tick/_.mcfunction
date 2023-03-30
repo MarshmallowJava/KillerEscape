@@ -1,22 +1,15 @@
 
-##拘束された生存者ごとの処理を行います
+##能力が発動する前の処理を行います
 
 #検索
 function killerescape:util/get_current
 
-#位置固定
-execute positioned as @e[tag=chain,tag=current] run tp @s ~ ~ ~ ~ ~
+#発動
+execute unless entity @a[scores={useItem=1..},tag=current] run tag @s remove pre
 
-#効果
-effect give @s minecraft:slowness 1 255 false
-effect give @s minecraft:jump_boost 1 129 false
-effect give @s minecraft:levitation 1 255 true
+#移動
+execute if entity @s[tag=pre] run tp @s ^ ^ ^1 ~ 0
+execute unless entity @s[tag=pre] run function killerescape:game/killer/shadow/place/_
 
-#エフェクト
-particle minecraft:dust_color_transition 0.5 0 0.5 1.5 0 0 0 ~ ~ ~ 0.3 0 0.3 1 10 force @a
-
-#残り時間減少
-scoreboard players remove @s shadow_time 1
-
-#鎖の継続
-execute if score @s shadow_time matches 1.. run tag @e[tag=chain,tag=current] add still_alive
+#サウンド
+execute unless entity @s[tag=pre] run playsound minecraft:entity.blaze.ambient master @a ~ ~ ~ 1 1.25 0

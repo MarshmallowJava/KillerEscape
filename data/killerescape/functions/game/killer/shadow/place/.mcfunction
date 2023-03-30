@@ -1,8 +1,14 @@
 
-##ループ部分の処理を行います
+##実際の発動位置で呼び出されます
 
-#発動場所決定
-execute if block ~ ~ ~ #killerescape:see_through run function killerescape:game/killer/shadow/place/_
+#生成
+summon minecraft:marker ~ ~ ~ {Tags:["shadow","pre","init"]}
 
-#再起
-execute unless block ~ ~ ~ #killerescape:see_through positioned ^ ^ ^1 run function killerescape:game/killer/shadow/place/
+#向き調整
+execute as @e[tag=shadow,tag=init] positioned as @s run tp @s ~ ~ ~ ~ 0
+
+#紐づけ
+scoreboard players operation @e[tag=shadow,tag=init] entity_id = @s entity_id
+
+#初期化完了
+tag @e[tag=shadow,tag=init] remove init

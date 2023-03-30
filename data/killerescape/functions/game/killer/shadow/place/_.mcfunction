@@ -1,8 +1,8 @@
 
-##実際の発動位置で呼び出されます
+##ループ部分の処理を行います
 
-#生成
-summon minecraft:marker ~ ~ ~ {Tags:["shadow"]}
+#発動場所決定
+execute if block ~ ~ ~ #killerescape:see_through run tp @s ~ ~ ~
 
-#サウンド
-playsound minecraft:entity.blaze.ambient master @a ~ ~ ~ 1 1.25 0
+#再起
+execute unless block ~ ~ ~ #killerescape:see_through positioned ^ ^ ^1 run function killerescape:game/killer/shadow/place/_

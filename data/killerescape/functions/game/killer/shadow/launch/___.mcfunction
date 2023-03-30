@@ -14,4 +14,5 @@ tag @e[tag=chain,tag=init] remove init
 scoreboard players set @s shadow_time 100
 
 #サウンド
-playsound minecraft:block.chain.place master @a ~ ~ ~ 2 0.5 0
+playsound minecraft:block.chain.place master @a[tag=!killer] ~ ~ ~ 2 0.5 0
+playsound minecraft:block.chain.place master @a[tag=killer] ~ ~ ~ 100 0.5 1

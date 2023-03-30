@@ -13,6 +13,6 @@
         }
     },
     "rewards":{
-        "function": "killerescape:game/damage/_"
+        "function": "killerescape:game/damage/check_invincible"
     }
 }

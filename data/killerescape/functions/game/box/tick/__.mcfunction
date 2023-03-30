@@ -5,6 +5,9 @@
 scoreboard players operation current entity_id = @s box_id
 function killerescape:util/get_current
 
+#移動禁止
+effect give @s minecraft:slowness 1 255 true
+
 #場所固定
 execute at @e[tag=box,tag=current] run tp @s ^ ^ ^1.5 ~180 0
 

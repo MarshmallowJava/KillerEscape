@@ -1,5 +1,5 @@
 
-##実行者であるキラーがロッカーを開いている間の処理を行います
+##実行者である生存者がロッカーに入る間の処理を行います
 
 #ロッカーを検索
 scoreboard players operation current entity_id = @s box_id

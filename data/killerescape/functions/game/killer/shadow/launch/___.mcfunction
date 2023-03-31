@@ -7,6 +7,9 @@ summon minecraft:armor_stand ~ ~ ~ {Marker:1b,Invisible:1b,Tags:["chain","init"]
 #紐づけ
 scoreboard players operation @e[tag=chain,tag=init] entity_id = @s entity_id
 
+#空中判定
+execute if data entity @s {OnGround:0b} run tag @e[tag=chain,tag=init] add inair
+
 #初期化完了
 tag @e[tag=chain,tag=init] remove init
 

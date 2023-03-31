@@ -4,7 +4,6 @@ scoreboard players set @s cool_limit 800
 
 #バフ適用
 attribute @s generic.movement_speed modifier add 278b5df2-95c7-436b-8a12-9983e62cda03 "limit_buff" 2.0 multiply
-tag @s add invincible
 
 #演出
 playsound minecraft:item.firecharge.use master @s ~ ~ ~ 1 1.8 0

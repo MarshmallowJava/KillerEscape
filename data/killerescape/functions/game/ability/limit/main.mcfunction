@@ -9,8 +9,7 @@ execute as @a[scores={useItem=1..,cool_limit=0,damage_stage=1},nbt={SelectedItem
 execute as @a[scores={useItem=1..,cool_limit=0,damage_stage=0},nbt={SelectedItem:{tag:{CustomTag:ability_limit}}}] at @s run function killerescape:game/ability/limit/refuse
 
 #バフ制御
-tag @a[scores={cool_limit=700..800}] add invincible
-tag @a[scores={cool_limit=..700}] remove invincible
+tag @a[scores={cool_limit=700..800}] remove can_hurted
 execute as @a[scores={cool_limit=..700}] run attribute @s generic.movement_speed modifier remove 278b5df2-95c7-436b-8a12-9983e62cda03
 
 #音

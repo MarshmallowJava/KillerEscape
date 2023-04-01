@@ -3,6 +3,7 @@
 
 #ダメージ状態をリセット
 scoreboard players set @a damage_stage 0
+tag @a add update_health
 tag @a remove lying
 
 #這いずり用のエンティティ削除

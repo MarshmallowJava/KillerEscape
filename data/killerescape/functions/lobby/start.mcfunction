@@ -7,6 +7,10 @@ scoreboard players set game_status time 0
 #ゲームを初期化
 function killerescape:game/init
 
+#体力を全快
+execute as @a run attribute @s minecraft:generic.max_health base set 20
+effect give @a minecraft:instant_health 1 10 true
+
 #アイテム削除
 clear @a
 

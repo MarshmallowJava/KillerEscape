@@ -1,0 +1,1 @@
+scoreboard players add @s repair_flag 1

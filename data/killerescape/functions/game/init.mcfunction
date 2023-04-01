@@ -35,6 +35,9 @@ scoreboard players set @a cool_attack 0
 scoreboard players reset @a blood_time
 kill @e[type=minecraft:marker,tag=blood]
 
+#修理ボーナスをリセット
+scoreboard players set @a repair_bonus 0
+
 #スキルチェックリセット
 scoreboard players reset @e skillcheck_time
 

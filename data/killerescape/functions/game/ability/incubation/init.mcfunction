@@ -1,1 +1,2 @@
-tag @a remove incubation
+##潜伏初期化処理
+#特になし

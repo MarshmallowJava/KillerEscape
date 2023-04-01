@@ -1,4 +1,6 @@
 {
     "values":[
+        "killerescape:game/ability/close_call/on_rescue",
+        "killerescape:game/ability/alert/on_rescue"
     ]
 }

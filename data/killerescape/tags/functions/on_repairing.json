@@ -1,4 +1,6 @@
 {
     "values":[
+        "killerescape:game/ability/engineer/on_repairing",
+        "killerescape:game/ability/coop_repair/on_repairing"
     ]
 }

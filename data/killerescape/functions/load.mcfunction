@@ -4,7 +4,11 @@
 #汎用スコア
 scoreboard objectives add var dummy
 scoreboard objectives add time dummy
+#定数
 scoreboard objectives add const dummy
+#一時キャッシュ
+#tickをまたぐスコアの保持は非推奨
+scoreboard objectives add temporary dummy
 
 #エンティティID
 #特に指定のない全てのエンティティに固有のIDを自動で割り振る
@@ -46,6 +50,10 @@ scoreboard objectives add execute_time dummy
 #通信機の修理進捗を阻害するまでの時間を管理します
 #所持者が通信機の場合、減少幅を管理します
 scoreboard objectives add sabotage_time dummy
+
+#通信機ボーナス
+#サバイバーが通信機を修理する際に追加で進捗を進める量(ボーナス値)を管理します
+scoreboard objectives add repair_bonus dummy
 
 #板破壊時間
 #キラーが板を破壊するまでの時間を管理します
@@ -109,6 +117,13 @@ scoreboard objectives add cool_area_heal dummy
 scoreboard objectives add cool_area_heal2 dummy
 scoreboard objectives add cool_fishing dummy
 scoreboard objectives add cool_shadow dummy
+scoreboard objectives add var_hope dummy
+scoreboard objectives add engineer_time dummy
+scoreboard objectives add cool_engineer dummy
+scoreboard objectives add repair_flag dummy
+scoreboard objectives add repair_time dummy
+scoreboard objectives add close_call_time dummy
+scoreboard objectives add cool_limit dummy
 
 #定数を定義
 scoreboard players set #-1 const -1
@@ -140,6 +155,12 @@ scoreboard players set rescuekittime const 600
 scoreboard players set endgametime const 2400
 scoreboard players set attacktime const 40
 scoreboard players set bloodtime const 30
+
+#アビリティ定数
+scoreboard players set engineer_cooltime const 1200
+scoreboard players set engineer_bonus const 10
+scoreboard players set coop_repair_cooltime const 20
+scoreboard players set coop_repair_bonus const 10
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

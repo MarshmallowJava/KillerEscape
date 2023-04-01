@@ -19,5 +19,5 @@ execute if score @s box_time matches 10 if entity @e[tag=box,tag=current,scores=
 scoreboard players remove @s box_time 1
 
 #表示
-title @s actionbar "ロッカーを調べています..."
+title @s[tag=display_ui] actionbar "ロッカーを調べています..."
 tag @s remove display_ui

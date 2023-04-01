@@ -25,7 +25,7 @@ scoreboard players remove @s shadow_time 1
 scoreboard players operation sec var = @s shadow_time
 scoreboard players operation sec var /= #20 const
 scoreboard players add sec var 1
-title @s actionbar {"translate":"高速解除まで %s秒","italic": false,"color": "white","with":[{"score":{"name":"sec","objective": "var"}}]}
+title @s actionbar {"translate":"拘束解除まで %s秒","italic": false,"color": "white","with":[{"score":{"name":"sec","objective": "var"}}]}
 tag @s remove display_ui
 
 #鎖の継続

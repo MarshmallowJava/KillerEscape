@@ -8,7 +8,7 @@ function killerescape:game/init
 scoreboard players set game_status time 1
 
 #役職確定
-tag @a[tag=!selected] add survivor
+tag @a[tag=!selected,gamemode=!spectator] add survivor
 tag @a[tag=selected] add killer
 tag @a remove selected
 

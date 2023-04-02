@@ -26,7 +26,3 @@ scoreboard players add @a[tag=survivor,scores={damage_stage=1..}] blood_time 1
 scoreboard players operation @a[tag=survivor,scores={damage_stage=1..}] blood_time %= bloodtime const
 execute at @a[tag=survivor,gamemode=!spectator,tag=!hiding,scores={damage_stage=1..,blood_time=0}] unless entity @e[tag=blood,distance=..1] run summon minecraft:marker ~ ~ ~ {Tags:["blood"]}
 execute as @e[tag=blood] at @s run function killerescape:game/damage/____
-
-#殴れる人をフラグ立て
-tag @a remove can_hurted
-tag @a[tag=survivor,tag=!hooked,tag=!lying] add can_hurted

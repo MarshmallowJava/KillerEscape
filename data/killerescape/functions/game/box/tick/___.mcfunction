@@ -28,3 +28,6 @@ scoreboard players remove @s box_time 1
 #表示
 title @s[tag=display_ui] actionbar "ロッカーに入っています..."
 tag @s remove display_ui
+
+#殴れません
+tag @s remove can_hurted

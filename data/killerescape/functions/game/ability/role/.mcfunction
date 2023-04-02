@@ -2,7 +2,7 @@
 ##実行者に能力を１つランダムに付与します
 
 #万が一空となってしまった場合は補充する
-execute unless data storage minecraft:killerescape pool[0] run data modify storage minecraft:killerescape pool set from storage minecraft:killerescape storage
+execute unless data storage minecraft:killerescape pool[0] run function killerescape:game/ability/role/supply/
 
 #乱数を振る
 execute store result score bound value run data get storage minecraft:killerescape pool

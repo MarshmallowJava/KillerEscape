@@ -4,6 +4,9 @@
 #カウントダウン処理
 execute if score countdown time matches 0.. run function killerescape:lobby/countdown
 
+#ランダムプール設定
+function killerescape:config/ban/main
+
 #死なない努力
 effect give @a minecraft:saturation infinite 10 true
 effect give @a minecraft:instant_health 1 10 true

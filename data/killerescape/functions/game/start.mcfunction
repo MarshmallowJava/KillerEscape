@@ -16,6 +16,9 @@ tag @a remove selected
 team join survivor @a[tag=survivor]
 team join killer @a[tag=killer]
 
+#プールリセット
+function killerescape:game/ability/role/supply/
+
 #アイテム付与
 clear @a
 execute as @a[tag=survivor] run function killerescape:game/give_items_survivor

@@ -2,7 +2,7 @@
 ##実行者にキラー用能力を１つランダムに付与します
 
 #プールを生成
-data modify storage minecraft:temp temp set from storage minecraft:killerescape killers
+function killerescape:game/killer/role/supply/
 
 #乱数を振る
 execute store result score bound value run data get storage minecraft:temp temp

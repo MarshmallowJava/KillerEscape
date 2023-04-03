@@ -22,3 +22,6 @@ execute if score @s[tag=!watched_by_ice] ice_time matches 1..49 run title @s[tag
 execute if score @s[tag=watched_by_ice] ice_time matches 50.. run title @s[tag=display_ui] actionbar {"translate":"%s: 移動速度低下 ジャンプ不可","italic": false,"color": "red","with":[{"text":"体温低下中","italic": false,"color": "aqua"}]}
 execute if score @s[tag=!watched_by_ice] ice_time matches 50.. run title @s[tag=display_ui] actionbar {"translate":"%s: 移動速度低下 ジャンプ不可","italic": false,"color": "red","with":[{"text":"体温上昇中","italic": false,"color": "gold"}]}
 tag @s[scores={ice_time=1..}] remove display_ui
+
+#タグ削除
+tag @s remove watched_by_ice

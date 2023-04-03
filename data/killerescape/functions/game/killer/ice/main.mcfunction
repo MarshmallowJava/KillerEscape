@@ -2,7 +2,11 @@
 ##氷鬼の能力について処理します
 
 #能力者ごとに処理
-execute as @a[nbt={Inventory:[{tag:{CustomTag:Ice}}]}] at @s run function killerescape:game/killer/ice/tick
+execute as @a[nbt={Inventory:[{tag:{CustomTag:Ice}}]},scores={cool_ice=0,useItem=1}] at @s run function killerescape:game/killer/ice/launch
+execute as @a[tag=killer,scores={ice_time=1..}] at @s run function killerescape:game/killer/ice/tick/
+
+#クールダウン
+execute as @a[scores={cool_ice=1..}] at @s run function killerescape:game/killer/ice/cool
 
 #生存者毎に処理
-execute as @a[tag=survivor,gamemode=!spectator] at @s run function killerescape:game/killer/ice/tick_
+execute as @a[tag=survivor,gamemode=!spectator] at @s run function killerescape:game/killer/ice/tick/_

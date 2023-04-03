@@ -84,7 +84,8 @@ scoreboard objectives add skillcheck_ans dummy
 scoreboard objectives add shadow_time dummy
 
 #凍結時間
-#氷鬼による凍結の進捗を管理します
+#氷鬼の場合は能力の有効時間を管理します
+#生存者の場合は凍結の進捗を管理します
 scoreboard objectives add ice_time dummy
 
 #ロッカー展開時間
@@ -117,6 +118,7 @@ scoreboard objectives add cool_area_heal dummy
 scoreboard objectives add cool_area_heal2 dummy
 scoreboard objectives add cool_fishing dummy
 scoreboard objectives add cool_shadow dummy
+scoreboard objectives add cool_ice dummy
 scoreboard objectives add var_hope dummy
 scoreboard objectives add engineer_time dummy
 scoreboard objectives add cool_engineer dummy

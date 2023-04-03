@@ -1,8 +1,8 @@
 
 ##キラーの能力に関する処理を行います
 
-function killerescape:game/killer/shadow/main
+execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Shadow}}]}] run function killerescape:game/killer/shadow/main
 
-function killerescape:game/killer/ice/main
+execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Ice}}]}] run function killerescape:game/killer/ice/main
 
-function killerescape:game/killer/fishing/main
+execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Fishing}}]}] run function killerescape:game/killer/fishing/main

@@ -144,7 +144,7 @@ scoreboard players set #100 const 100
 scoreboard players set #360 const 360
 
 #ゲーム定数を設定
-scoreboard players set repairtime const 600
+scoreboard players set repairtime const 900
 scoreboard players set carryontime const 60
 scoreboard players set hooktime const 40
 scoreboard players set rescuetime const 60

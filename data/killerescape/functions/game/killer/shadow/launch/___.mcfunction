@@ -14,7 +14,7 @@ execute if data entity @s {OnGround:0b} run tag @e[tag=chain,tag=init] add inair
 tag @e[tag=chain,tag=init] remove init
 
 #拘束時間設定
-scoreboard players set @s shadow_time 100
+scoreboard players set @s shadow_time 60
 
 #サウンド
 playsound minecraft:block.chain.place master @a[tag=!killer] ~ ~ ~ 2 0.5 0

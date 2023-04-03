@@ -18,5 +18,5 @@ data modify entity @e[tag=box_display,tag=init,limit=1] transformation.scale set
 tag @e[tag=init] remove init
 
 #当たり判定追加
-setblock ~ ~ ~ minecraft:waxed_oxidized_cut_copper_slab keep
-setblock ~ ~1 ~ minecraft:purple_bed[part=foot] keep
+setblock ~ ~ ~ minecraft:waxed_oxidized_cut_copper_slab[type=bottom] keep
+setblock ~ ~1 ~ minecraft:waxed_oxidized_cut_copper_slab[type=top] keep

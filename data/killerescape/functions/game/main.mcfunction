@@ -67,7 +67,8 @@ effect give @a[tag=survivor] minecraft:weakness infinite 255 true
 effect give @a[tag=killer] minecraft:jump_boost 2 129 true
 
 #キラーの移動速度補正
-effect give @a[tag=killer] minecraft:speed infinite 1 true
+execute unless entity @e[tag=gate,tag=current_map,tag=opened] run effect give @a[tag=killer] minecraft:speed infinite 1 true
+execute if entity @e[tag=gate,tag=current_map,tag=opened] run effect give @a[tag=killer] minecraft:speed infinite 2 true
 
 #満腹度調整
 execute as @a[tag=killer] store result score @s var run data get entity @s foodLevel

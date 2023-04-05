@@ -173,6 +173,9 @@ scoreboard players set coop_repair_bonus const 10
 #endgame[time]: 試合強制終了までの時間管理
 #heartbeat[time]: 心音の発動間隔
 
+#プレリリース
+execute unless score prerelease const matches -2147483648..2147483647 run scoreboard players set prerelease const 0
+
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage
 
@@ -222,3 +225,6 @@ scoreboard objectives add enableBlood_trg trigger
 #暗視
 scoreboard objectives add nightVision dummy
 scoreboard objectives add nightVision_trg trigger
+
+#プレリリース
+scoreboard objectives add prerelease_trg dummy

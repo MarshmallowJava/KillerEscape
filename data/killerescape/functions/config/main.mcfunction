@@ -20,6 +20,11 @@ scoreboard players operation @a[scores={nightVision_trg=1}] nightVision %= #2 co
 effect clear @a[scores={nightVision=0}] minecraft:night_vision
 effect give @a[scores={nightVision=1}] minecraft:night_vision infinite 255 true
 
+#プレリリース
+scoreboard players set @a[scores={prerelease_trg=1}] var 1
+execute if entity @a[scores={prerelease_trg=1}] run scoreboard players add prerelease const 1
+execute if entity @a[scores={prerelease_trg=1}] run scoreboard players operation prerelease const %= #2 const
+execute if entity @a[scores={prerelease_trg=1}] run schedule function killerescape:config/reload 1t append
 
 #再表示
 execute as @a[scores={var=1}] run function killerescape:config/show
@@ -29,3 +34,4 @@ scoreboard players reset @a enableBlood_trg
 scoreboard players enable @a enableBlood_trg
 scoreboard players reset @a nightVision_trg
 scoreboard players enable @a nightVision_trg
+scoreboard players reset @a prerelease_trg

@@ -6,3 +6,5 @@ execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Shadow}}]}] run function ki
 execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Ice}}]}] run function killerescape:game/killer/ice/main
 
 execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Fishing}}]}] run function killerescape:game/killer/fishing/main
+
+execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Vampire}}]}] run function killerescape:game/killer/vampire/main

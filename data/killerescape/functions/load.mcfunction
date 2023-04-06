@@ -96,6 +96,10 @@ scoreboard objectives add box_time dummy
 #各役職が操作するロッカーのIDを保持します
 scoreboard objectives add box_id dummy
 
+#ポイントストック
+#吸血鬼のストック数を管理します
+scoreboard objectives add vampire_count dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -126,6 +130,7 @@ scoreboard objectives add repair_flag dummy
 scoreboard objectives add repair_time dummy
 scoreboard objectives add close_call_time dummy
 scoreboard objectives add cool_limit dummy
+scoreboard objectives add cool_vampire dummy
 
 #定数を定義
 scoreboard players set #-1 const -1
@@ -228,3 +233,7 @@ scoreboard objectives add nightVision_trg trigger
 
 #プレリリース
 scoreboard objectives add prerelease_trg dummy
+
+#再描画
+function killerescape:config/ban/init/
+execute as @e[tag=ban_operator] at @s run function killerescape:config/ban/paint/

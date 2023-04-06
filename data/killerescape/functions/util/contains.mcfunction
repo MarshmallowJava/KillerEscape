@@ -4,12 +4,12 @@
 
 scoreboard players operation a var = from var
 scoreboard players operation b var = degree var
-function killerescape:game/killer/ice/displacement
+function killerescape:util/displacement
 scoreboard players operation min var = result var
 
 scoreboard players operation a var = to var
 scoreboard players operation b var = degree var
-function killerescape:game/killer/ice/displacement
+function killerescape:util/displacement
 scoreboard players operation max var = result var
 
 #fromから見てdegreeが右側で、toから見てdegreeが左側にいるなら含まれていると言える

@@ -12,7 +12,8 @@ function random:next
 execute if score result value matches 1.. run function killerescape:game/killer/role/_
 
 #表示
-tellraw @a [{"translate":"[システム] 今回のキラーは「%s」です","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"temp[-1].Name","interpret": true}]}]
+tellraw @a {"translate":"[システム] 能力の詳細はチャット画面からカーソルを合わせると表示されます","italic": false,"color": "yellow"}
+tellraw @a [{"translate":"[システム] 今回のキラーは「%s」です","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"temp[-1].Name","interpret": true,"hoverEvent": {"action": "show_text","value": {"storage":"minecraft:temp","nbt":"temp[-1].Lore","interpret":true}}}]}]
 
 #アイテムを付与
 data modify storage minecraft:killerescape arguments set from storage minecraft:temp temp[-1].Items

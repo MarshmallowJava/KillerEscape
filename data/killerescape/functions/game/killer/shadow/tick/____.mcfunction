@@ -12,4 +12,3 @@ execute if entity @s[tag=pre] run effect give @a[tag=survivor,distance=..3] mine
 
 #切り替え
 execute unless entity @s[tag=pre] run function killerescape:game/killer/shadow/place/_
-execute unless entity @s[tag=pre] run playsound minecraft:entity.blaze.ambient master @a ~ ~ ~ 1 1.25 0

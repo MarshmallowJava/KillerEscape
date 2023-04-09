@@ -3,6 +3,3 @@
 
 #拘束
 execute as @a[tag=survivor,gamemode=!spectator,tag=!hiding,distance=..3] at @s run function killerescape:game/killer/shadow/launch/___
-
-#サウンド
-playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 1 0

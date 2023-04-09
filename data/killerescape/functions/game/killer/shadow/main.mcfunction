@@ -10,6 +10,11 @@ execute as @a[scores={cool_shadow=1..}] at @s run function killerescape:game/kil
 #能力ごとの処理
 execute as @e[tag=shadow] at @s run function killerescape:game/killer/shadow/tick/
 
+#サウンド
+execute as @a at @s at @e[tag=shadow,tag=!pre,scores={time=1},limit=1,sort=nearest] run playsound minecraft:entity.blaze.ambient master @s ~ ~ ~ 1 1.25 0
+execute as @a at @s at @e[tag=shadow,tag=!pre,scores={time=19},limit=1,sort=nearest] run playsound minecraft:entity.blaze.shoot master @a ~ ~ ~ 1 1 0
+
+
 #生存者毎の処理
 execute as @a[scores={shadow_time=1..}] at @s run function killerescape:game/killer/shadow/tick/___
 

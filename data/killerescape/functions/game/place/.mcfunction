@@ -14,7 +14,7 @@ tag @e[tag=communicator] remove can_sabotage
 kill @e[type=minecraft:area_effect_cloud,tag=repair_progress]
 
 #通信機の修復進捗バーを作成
-tag @e[tag=current_map,tag=communicator,limit=5,sort=random] add repairable
+tag @e[tag=current_map,tag=communicator,limit=6,sort=random] add repairable
 function killerescape:game/communicator/create_progressbar/
 
 #当たり判定を追加

@@ -9,7 +9,7 @@ tag @a remove hooked
 execute as @e[tag=hook,tag=used] at @s run function killerescape:game/hook/tick__
 
 #救助処理
-execute as @a[tag=survivor,tag=!hooked,tag=!escaped,tag=!eliminated,tag=display_ui] at @s if entity @e[tag=hook,tag=used,distance=..3] run function killerescape:game/hook/tick___
+execute as @a[tag=survivor,gamemode=!spectator,tag=!hooked,tag=!escaped,tag=!eliminated,tag=display_ui] at @s if entity @e[tag=hook,tag=used,distance=..3] run function killerescape:game/hook/tick___
 
 #強制終了処理
 execute unless entity @a[tag=survivor,tag=!hooked,tag=!escaped,tag=!eliminated] as @a[tag=survivor,tag=hooked] at @s run function killerescape:game/hook/execute

@@ -1,6 +1,8 @@
 
 ##実行者の座標から実行位置までの経路中にブロックがあるかどうか判定します
 
+execute as @a[limit=1,sort=nearest] run function killerescape:util/owner
+
 summon minecraft:marker ~ ~ ~ {Tags:["destination"]}
 
 scoreboard players set result var 0

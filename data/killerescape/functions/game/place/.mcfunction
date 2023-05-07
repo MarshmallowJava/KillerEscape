@@ -31,7 +31,8 @@ tag @e[tag=chest] remove placed
 
 #チェストを設置
 execute store result score count var if entity @e[tag=current_map,tag=chest]
-scoreboard players operation count var /= #2 const
+scoreboard players operation count var *= #2 const
+scoreboard players operation count var /= #3 const
 function killerescape:game/place/_
 
 #ゲート再設置

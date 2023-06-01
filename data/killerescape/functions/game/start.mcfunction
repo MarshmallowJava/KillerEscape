@@ -24,7 +24,13 @@ clear @a
 execute as @a[tag=survivor] run function killerescape:game/give_items_survivor
 execute as @a[tag=killer] run function killerescape:game/give_items_killer
 
+#能力付与
 execute as @a[tag=survivor] at @s run function killerescape:game/ability/role/
+execute as @a[tag=killer] at @s run function killerescape:game/killer/role/
+
+#タイトル処理
+title @a subtitle [{"translate":"[システム] 今回の鬼は %s です","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"temp[-1].Name","interpret": true}]}]
+title @a title "ゲームスタート"
 
 #テレポート
 execute as @a[tag=survivor] at @s positioned as @e[tag=spawn_survivor,limit=1,sort=random] run tp @s ~ ~ ~ ~ ~

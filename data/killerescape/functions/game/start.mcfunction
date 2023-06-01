@@ -32,6 +32,9 @@ execute as @a[tag=killer] at @s run function killerescape:game/killer/role/
 title @a subtitle [{"translate":"[システム] 今回の鬼は %s です","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"temp[-1].Name","interpret": true}]}]
 title @a title "ゲームスタート"
 
+#ボスバー処理
+bossbar set minecraft:remain players @a
+
 #テレポート
 execute as @a[tag=survivor] at @s positioned as @e[tag=spawn_survivor,limit=1,sort=random] run tp @s ~ ~ ~ ~ ~
 execute as @a[tag=killer] at @s positioned as @e[tag=spawn_killer,limit=1,sort=random] run tp @s ~ ~ ~ ~ ~

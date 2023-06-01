@@ -2,7 +2,7 @@
 ##影鬼の処理を行います
 
 #発動
-execute as @a[nbt={Inventory:[{tag:{CustomTag:Shadow}}]},scores={cool_shadow=0}] at @s rotated ~ 0 run function killerescape:game/killer/shadow/launch/
+execute as @a[nbt={SelectedItem:{tag:{CustomTag:Shadow}}},scores={cool_shadow=0}] at @s rotated ~ 0 run function killerescape:game/killer/shadow/launch/
 
 #クールダウン
 execute as @a[scores={cool_shadow=1..}] at @s run function killerescape:game/killer/shadow/cool

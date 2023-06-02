@@ -29,7 +29,7 @@ execute as @a[tag=survivor] at @s run function killerescape:game/ability/role/
 execute as @a[tag=killer] at @s run function killerescape:game/killer/role/
 
 #タイトル処理
-title @a subtitle [{"translate":"[システム] 今回の鬼は %s です","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"temp[-1].Name","interpret": true}]}]
+title @a subtitle [{"translate":"今回の鬼は %s です","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"temp[-1].Name","interpret": true}]}]
 title @a title "ゲームスタート"
 
 #ボスバー処理

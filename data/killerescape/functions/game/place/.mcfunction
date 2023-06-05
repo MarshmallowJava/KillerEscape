@@ -36,8 +36,8 @@ scoreboard players operation count var /= #3 const
 function killerescape:game/place/_
 
 #ゲート再設置
-execute at @e[tag=gate] run fill ^-1 ^ ^ ^1 ^2 ^ minecraft:sand replace
-execute at @e[tag=gate] run setblock ^3 ^ ^1 minecraft:beacon{Lock:"killerescape"} replace
+execute at @e[tag=gate] run fill ^-2 ^ ^ ^3 ^4 ^ minecraft:sand replace
+execute at @e[tag=gate] run setblock ^4 ^ ^1 minecraft:beacon{Lock:"killerescape"} replace
 execute at @e[tag=gate] run setblock ^-3 ^ ^1 minecraft:beacon{Lock:"killerescape"} replace
 tag @e[tag=gate] remove opened
 

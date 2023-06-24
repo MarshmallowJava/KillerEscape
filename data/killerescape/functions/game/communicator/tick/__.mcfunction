@@ -2,6 +2,9 @@
 ##進捗バーの更新を行います
 ##紐づけされた進捗バーをすでに検索されたものとして実行します
 
+#紐づけされている進捗バーを検索
+function killerescape:util/get_current
+
 #ゲージ作成
 data modify storage minecraft:killerescape arguments set value {length:20}
 execute store result storage minecraft:killerescape arguments.value int 1 run scoreboard players get @s time

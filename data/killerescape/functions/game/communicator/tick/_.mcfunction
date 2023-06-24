@@ -18,5 +18,7 @@ particle minecraft:campfire_signal_smoke ~ ~2 ~ 0 1 0 0.1 0 force @a
 
 #スキルチェックペナルティ
 scoreboard players remove @s[scores={skillcheck_time=1..}] skillcheck_time 1
-execute if score @s skillcheck_time matches 0 if entity @s[nbt={Glowing:1b}] run data modify entity @s Glowing set value 0b
-execute if score @s skillcheck_time matches 1.. unless entity @s[nbt={Glowing:1b}] run data modify entity @s Glowing set value 1b
+
+#色設定
+execute unless score @s skillcheck_time matches 1.. run team leave @s
+execute if score @s skillcheck_time matches 1.. run team join alart @s

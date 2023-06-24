@@ -220,6 +220,8 @@ team add killer
 team modify killer collisionRule pushOtherTeams
 team modify killer color red
 team modify killer nametagVisibility hideForOtherTeams
+team add alart
+team modify alart color red
 
 #個人設定項目
 

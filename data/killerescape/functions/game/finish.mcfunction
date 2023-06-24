@@ -4,7 +4,8 @@
 #勝敗判定
 scoreboard players set result var 0
 execute store result score count var if entity @a[tag=survivor,tag=escaped]
-execute store result score half var if entity @a[tag=survivor]
+execute store result score all var if entity @a[tag=survivor]
+scoreboard players operation half var = all var
 scoreboard players operation half var /= #2 const
 execute if score count var < half var run scoreboard players set result var -1
 execute if score count var > half var run scoreboard players set result var 1

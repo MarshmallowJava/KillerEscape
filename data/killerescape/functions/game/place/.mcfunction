@@ -5,6 +5,7 @@
 function killerescape:util/get_mapentities
 
 #修復進捗度をリセット
+scoreboard players set @e[tag=communicator] skillcheck_time 0
 scoreboard players set @e[tag=communicator] time 0
 tag @e[tag=communicator] remove repairable
 tag @e[tag=communicator] remove repaired

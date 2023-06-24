@@ -2,7 +2,7 @@
 #プレイヤー毎の処理を行います
 
 #修理
-execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 as @e[tag=communicator,tag=current_map,tag=repairable,tag=!repaired,distance=..1] at @s run function killerescape:game/communicator/repairing
+execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 as @e[tag=communicator,tag=current_map,tag=repairable,tag=!repaired,scores={skillcheck_time=0},distance=..1] at @s run function killerescape:game/communicator/repairing
 
 #表示
 function killerescape:util/owner

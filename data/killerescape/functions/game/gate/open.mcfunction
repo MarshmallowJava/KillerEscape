@@ -4,7 +4,9 @@
 #通知
 execute as @a at @s run playsound minecraft:ui.toast.challenge_complete master @s ~ ~ ~ 1 1 0
 tellraw @a[tag=!killer] {"text":"[システム] ゲートが開放されました","italic": false,"color": "yellow"}
+tellraw @a[tag=!killer] {"text":"[システム] 鬼の攻撃力が増加した！","italic": false,"color": "red"}
 tellraw @a[tag=killer] {"text":"[システム] ゲートが開放されてしまいました","italic": false,"color": "red"}
+tellraw @a[tag=killer] {"text":"[システム] 攻撃力が増加した！","italic": false,"color": "yellow"}
 
 #ゲート解放
 fill ^-2 ^ ^ ^3 ^4 ^ minecraft:air destroy

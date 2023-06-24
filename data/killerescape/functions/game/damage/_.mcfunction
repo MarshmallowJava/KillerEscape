@@ -1,7 +1,9 @@
 
 ##実行者にダメージを与えます
 
+#ダメージ付与(ゲート開通後は2ダメージ)
 scoreboard players add @s damage_stage 1
+execute if entity @e[tag=gate,tag=opened] run scoreboard players add @s damage_stage 1
 scoreboard players operation @s damage_stage < #2 const
 
 #1回目は加速する

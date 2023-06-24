@@ -7,7 +7,7 @@ tellraw @a[tag=!killer] {"text":"[システム] ゲートが開放されまし�
 tellraw @a[tag=killer] {"text":"[システム] ゲートが開放されてしまいました","italic": false,"color": "red"}
 
 #ゲート解放
-fill ^-1 ^ ^ ^1 ^2 ^ minecraft:air destroy
+fill ^-2 ^ ^ ^3 ^4 ^ minecraft:air destroy
 
 #現在のマップの他のゲートが開かないように
 tag @e[tag=gate,tag=current_map] add opened

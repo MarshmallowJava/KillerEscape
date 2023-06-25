@@ -2,10 +2,7 @@
 ##デバッグに関する処理を行います
 
 #ゲーム状態を表示
-execute if score game_status time matches -1 run title @a actionbar "ゲーム状態: デモ"
-execute if score game_status time matches 0 run title @a actionbar "ゲーム状態: ロビー"
-execute if score game_status time matches 1 run title @a actionbar "ゲーム状態: ゲーム"
-execute if score game_status time matches 2 run title @a actionbar "ゲーム状態: リザルト"
+function killerescape:debug/display
 
 #現在編集中のマップの固有エンティティを取得
 scoreboard players operation current mapid = editing mapid

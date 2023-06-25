@@ -15,6 +15,7 @@ execute if score @s rescue_time matches 1.. run function killerescape:game/hook/
 execute if score @s rescue_time > rescuetime const run function killerescape:event/on_rescue
 execute if score @s rescue_time > rescuetime const as @e[tag=hook,tag=used,limit=1,sort=nearest] at @s run function killerescape:game/hook/release
 execute if score @s rescue_time > rescuetime const run scoreboard players set @s rescue_time 0
+execute if score @s rescue_time > rescuetime const run scoreboard players add @s data_rescue 300
 
 #通常UIを表示しない
 tag @s remove display_ui

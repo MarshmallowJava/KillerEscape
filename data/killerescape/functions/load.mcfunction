@@ -111,6 +111,19 @@ scoreboard objectives add sneak dummy
 scoreboard objectives add useItem dummy
 scoreboard objectives add useItem_trigger minecraft.used:minecraft.warped_fungus_on_a_stick
 
+#統計データ: 修理時間
+#プレイヤーが修理した時間を保持します
+scoreboard objectives add data_repair dummy
+
+#統計データ: 治療時間
+#プレイヤーが治療した時間を保持します
+#フックから救助したときも一定数加算されます
+scoreboard objectives add data_rescue dummy
+
+#統計データ: チェイス時間
+#プレイヤーがチェイスした時間を保持します
+scoreboard objectives add data_chase dummy
+
 #被ダメージ検知
 #生存者がキラーに攻撃されたことを検知します
 #UNUSED

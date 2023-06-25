@@ -15,11 +15,27 @@ title @a reset
 title @a subtitle {"translate":"%s / %s 人脱出","color":"blue","with":[{"score":{"name":"count","objective":"var"},"color":"blue"},{"score":{"name":"all","objective":"var"},"color":"blue"}]}
 title @a title {"text":"ゲーム終了","italic": false,"color": "yellow"}
 
+
+#統計データから引き出し
+function killerescape:result/check
+
+#表示
 tellraw @a ""
-tellraw @a ""
+tellraw @a {"text":"■■■   ゲームリザルト   ■■■","color":"gold"}
 tellraw @a ""
 tellraw @a {"text":"☆ 脱出成功者 ☆","color":"yellow"}
 execute as @a[tag=survivor,tag=escaped] run tellraw @a {"translate":"・%s","color":"yellow","with":[{"selector":"@s","color":"yellow"}]}
+tellraw @a ""
+tellraw @a {"text":"☆ 最も修理を頑張った人 ☆","color":"yellow"}
+tellraw @a {"translate":"・%s","color":"yellow","with":[{"selector":"@a[tag=most_repair]","color":"yellow"}]}
+tellraw @a ""
+tellraw @a {"text":"☆ 最も治療を頑張った聖人 ☆","color":"yellow"}
+tellraw @a {"translate":"・%s","color":"yellow","with":[{"selector":"@a[tag=most_rescue]","color":"yellow"}]}
+tellraw @a ""
+tellraw @a {"text":"☆ 最もチェイスを頑張った人 ☆","color":"yellow"}
+tellraw @a {"translate":"・%s","color":"yellow","with":[{"selector":"@a[tag=most_chase]","color":"yellow"}]}
+tellraw @a ""
+
 
 #サウンド
 # execute if score result var matches -1 as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 0.5 0

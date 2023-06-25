@@ -48,6 +48,11 @@ function killerescape:game/killer/init
 scoreboard players reset @a box_time
 scoreboard players reset @a box_id
 
+#統計データをリセット
+scoreboard players reset * data_repair
+scoreboard players reset * data_rescue
+scoreboard players reset * data_chase
+
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players

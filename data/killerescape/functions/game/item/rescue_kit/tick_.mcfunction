@@ -20,6 +20,9 @@ execute if entity @s[tag=!target] run tag @a[tag=target] add cared
 execute if score @a[tag=target,limit=1] rescuekit_time > rescuekittime const run function killerescape:game/item/rescue_kit/rescue
 execute if score @a[tag=target,limit=1] rescuekit_time > rescuekittime const run scoreboard players set @a[tag=target] rescuekit_time 0
 
+#統計
+scoreboard players add @s data_rescue 1
+
 #変更点
 # 自己治療かつ自身がダウン状態の場合、治療は完了しない
 #  -自己治療が常に完了するように

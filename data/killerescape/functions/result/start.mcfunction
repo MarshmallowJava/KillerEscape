@@ -15,6 +15,9 @@ title @a reset
 title @a subtitle {"translate":"%s / %s 人脱出","color":"blue","with":[{"score":{"name":"count","objective":"var"},"color":"blue"},{"score":{"name":"all","objective":"var"},"color":"blue"}]}
 title @a title {"text":"ゲーム終了","italic": false,"color": "yellow"}
 
+tellraw @a {"text":"☆ 脱出成功者 ☆","color":"yellow"}
+execute as @a[tag=survivor,tag=escaped] run tellraw @a {"selector":"@s","color":"yellow"}
+
 #サウンド
 # execute if score result var matches -1 as @a at @s run playsound minecraft:item.trident.thunder master @s ~ ~ ~ 1 0.5 0
 # execute if score result var matches 0 as @a at @s run playsound minecraft:entity.player.levelup master @s ~ ~ ~ 1 0.5 0

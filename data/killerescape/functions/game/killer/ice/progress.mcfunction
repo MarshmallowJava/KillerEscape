@@ -1,5 +1,5 @@
 
-##こおり鬼のストックの表示用データを作成する
+##氷鬼の冷気の表示用データを作成する
 
 #ゲージ作成
 data modify storage minecraft:killerescape arguments set value {length:10}

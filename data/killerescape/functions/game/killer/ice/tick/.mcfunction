@@ -25,5 +25,5 @@ particle minecraft:snowflake ~ ~1 ~ 0.3 0.3 0.3 0 3 force @a
 
 #表示
 function killerescape:game/killer/ice/progress
-title @s[tag=display_ui] actionbar {"translate":"能力アイテム右クリックで中断する 残り効果時間 %s","with":[{"storage":"minecraft:killerescape","nbt":"result","interpret":true}]}
+title @s[tag=display_ui] actionbar {"translate":"能力アイテム右クリックで中断する (残り冷気 %s)","with":[{"storage":"minecraft:killerescape","nbt":"result","interpret":true}]}
 tag @s remove display_ui

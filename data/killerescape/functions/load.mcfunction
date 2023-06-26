@@ -247,6 +247,10 @@ scoreboard objectives add enableBlood_trg trigger
 scoreboard objectives add nightVision dummy
 scoreboard objectives add nightVision_trg trigger
 
+#ゲージ表示
+scoreboard objectives add gaugeType dummy
+scoreboard objectives add gaugeType_trg trigger
+
 #プレリリース
 scoreboard objectives add prerelease_trg dummy
 

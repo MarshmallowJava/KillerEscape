@@ -17,13 +17,11 @@ execute at @a[tag=watched_by_ice] positioned ~ ~1.5 ~ run function killerescape:
 scoreboard players remove @s ice_time 1
 
 #クールダウン設定
-execute if score @s ice_time matches ..0 run function killerescape:game/killer/ice/stop
-execute if entity @s[nbt={SelectedItem:{tag:{CustomTag:Ice}}},scores={useItem=1}] run function killerescape:game/killer/ice/stop
+execute if score @s ice_time matches 0 run scoreboard players set @s cool_ice 800
 
 #演出
 particle minecraft:snowflake ~ ~1 ~ 0.3 0.3 0.3 0 3 force @a
 
 #表示
-function killerescape:game/killer/ice/progress
-title @s[tag=display_ui] actionbar {"translate":"能力アイテム右クリックで中断する 残り効果時間 %s","with":[{"storage":"minecraft:killerescape","nbt":"result","interpret":true}]}
+title @s[tag=display_ui] actionbar "効果発動中: 視界内の生存者の移動能力を徐々に低下させる"
 tag @s remove display_ui

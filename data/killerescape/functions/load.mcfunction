@@ -206,6 +206,7 @@ function killerescape:lobby/storage
 #進捗バーフォーマット
 data modify storage minecraft:killerescape formats.survivor set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"green"}','{"text":"|","italic":false,"color":"gray"}']
 data modify storage minecraft:killerescape formats.killer set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"dark_red"}','{"text":"|","italic":false,"color":"gray"}']
+data modify storage minecraft:killerescape formats.ice set value ['{"text":"[","italic":false,"color":"white"}','{"text":"]","italic":false,"color":"white"}','{"text":"|","italic":false,"color":"aqua"}','{"text":"|","italic":false,"color":"gray"}']
 
 #通信機修理進捗
 bossbar add minecraft:remain {"text":"title"}

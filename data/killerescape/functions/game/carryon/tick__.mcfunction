@@ -9,6 +9,7 @@ execute if score @s sneak matches 0 run title @s actionbar "スニーク長押�
 
 #解放
 execute if score @s sneak matches 30 as @e[tag=carryon,tag=current] at @s run function killerescape:game/carryon/release
+execute if score @s sneak matches 30 run function killerescape:util/get_current
 
 #通常UIを表示しない
 tag @s remove display_ui

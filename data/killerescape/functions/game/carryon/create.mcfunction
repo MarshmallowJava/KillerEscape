@@ -5,6 +5,9 @@
 scoreboard players operation current entity_id = target entity_id
 function killerescape:util/get_current
 
+#伏せ状態を解除
+tag @a[tag=survivor,tag=current] remove lying
+
 #生成
 summon armor_stand ~ ~ ~ {Tags:["carryon","init"],ArmorItems:[{id:"minecraft:leather_boots",Count:1b},{id:"minecraft:leather_leggings",Count:1b},{id:"minecraft:leather_chestplate",Count:1b},{}],NoBasePlate:1b,ShowArms:1b,Marker:1b,Pose:{Body:[348f,0f,0f],Head:[299f,180f,30f],LeftLeg:[33f,360f,352f],RightLeg:[33f,326f,0f],LeftArm:[75f,345f,0f],RightArm:[66f,8f,0f]}}
 
@@ -17,6 +20,9 @@ scoreboard players operation @e[tag=carryon,tag=init] target_id = target entity_
 
 #初期化完了
 tag @e[tag=carryon,tag=init] remove init
+
+#検索状態を元に戻す
+function killerescape:util/get_current
 
 #サウンド
 playsound minecraft:item.armor.equip_leather master @a ~ ~ ~ 1 1 0

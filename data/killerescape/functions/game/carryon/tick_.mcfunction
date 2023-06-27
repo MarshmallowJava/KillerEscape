@@ -14,7 +14,6 @@ execute if score @s carryon matches 1.. run function killerescape:game/carryon/p
 
 #担ぐ
 execute if score @s carryon > carryontime const run scoreboard players operation target entity_id = @a[tag=survivor,tag=lying,limit=1,sort=nearest] entity_id
-execute if score @s carryon > carryontime const run tag @a[tag=survivor,tag=lying,limit=1,sort=nearest] remove lying
 execute if score @s carryon > carryontime const run function killerescape:game/carryon/create
 
 #通常UIを表示しない

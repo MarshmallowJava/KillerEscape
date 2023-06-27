@@ -181,6 +181,9 @@ scoreboard players set engineer_cooltime const 1200
 scoreboard players set engineer_bonus const 10
 scoreboard players set coop_repair_cooltime const 20
 scoreboard players set coop_repair_bonus const 10
+scoreboard players set ice_regentime const 3
+scoreboard players set ice_cooltime const 200
+scoreboard players set ice_maxtoken const 200
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

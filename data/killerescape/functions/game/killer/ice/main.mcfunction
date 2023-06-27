@@ -10,8 +10,8 @@ execute as @a[scores={cool_ice=1..}] at @s run function killerescape:game/killer
 
 #冷気回復
 scoreboard players add ice time 1
-scoreboard players operation ice time %= #3 const
-execute if score ice time matches 0 run scoreboard players add @a[scores={cool_ice=0,ice_time=..199},nbt={Inventory:[{tag:{CustomTag:Ice}}]}] ice_time 1
+scoreboard players operation ice time %= ice_regentime const
+execute if score ice time matches 0 as @a[scores={cool_ice=0},nbt={Inventory:[{tag:{CustomTag:Ice}}]}] run function killerescape:game/killer/ice/regen
 
 #生存者毎に処理
 execute as @a[tag=survivor,gamemode=!spectator] at @s run function killerescape:game/killer/ice/tick/_

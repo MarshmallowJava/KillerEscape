@@ -4,9 +4,6 @@
 #ボスバー処理
 function killerescape:game/bossbar
 
-#マップ固有エンティティにタグ付け
-function killerescape:util/get_mapentities
-
 #殴れる人をフラグ立て
 tag @a remove can_hurted
 tag @a[tag=survivor,tag=!hooked,tag=!lying] add can_hurted

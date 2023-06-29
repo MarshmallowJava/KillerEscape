@@ -22,8 +22,9 @@ function killerescape:game/communicator/create_progressbar/
 execute at @e[tag=communicator] run setblock ~ ~ ~ minecraft:air replace
 execute at @e[tag=communicator,tag=repairable] run setblock ~ ~ ~ minecraft:barrier replace
 
-#発光を削除
+#発光状態を更新
 execute as @e[tag=communicator] run data modify entity @s Glowing set value 0b
+execute as @e[tag=communicator,tag=repairable] run data modify entity @s Glowing set value 1b
 
 #チェスト削除
 execute at @e[tag=chest] run data modify block ~ ~ ~ LootTable set value "minecraft:empty"

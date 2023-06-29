@@ -7,7 +7,7 @@ execute unless score current mapid matches -2147483648..2147483647 run scoreboar
 
 #検索
 tag @e remove current_map
-execute as @e if score @s mapid = current mapid run tag @s add current_map
+execute as @e[tag=map_unique_entity] if score @s mapid = current mapid run tag @s add current_map
 
 #スコアリセット
 scoreboard players reset current mapid

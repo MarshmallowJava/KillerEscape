@@ -6,9 +6,6 @@ execute in minecraft:overworld run forceload add 0 0
 execute in minecraft:overworld run setblock 0 0 0 shulker_box replace
 execute in minecraft:overworld run setblock 1 0 0 oak_sign replace
 
-#エンティティIDを割り振り
-execute as @e unless score @s entity_id matches -2147483648..2147483647 run function killerescape:util/allocate_id
-
 #スコアボード処理
 function killerescape:scores
 

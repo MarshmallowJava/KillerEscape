@@ -1,6 +1,9 @@
 
 ##デフォルトのスコアボードで検知しきれない要素を処理します
 
+#エンティティIDを割り振り
+execute as @e[tag=!allocated_unique_id] unless score @s entity_id matches -2147483648..2147483647 run function killerescape:util/allocate_id
+
 #右クリック処理
 scoreboard players set @a[tag=!rightclick] useItem 0
 scoreboard players add @a[tag=rightclick] useItem 1

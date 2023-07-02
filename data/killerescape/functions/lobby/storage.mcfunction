@@ -4,7 +4,7 @@
 data modify storage minecraft:killerescape tips set value []
 
 #キラーに関する情報
-data modify storage minecraft:killerescape tips append value '{"text":"影鬼の影は壁に埋まると、その壁の向こう側で能力が発現します","italic":false,"color":"white"}'
+data modify storage minecraft:killerescape tips append value '{"text":"影鬼の展開中の影に近づくと移動速度が低下します","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"釣鬼の釣り竿は倒れた生存者も釣り上げることができます","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"氷鬼から逃れるには視線をうまく切る必要があります","italic":false,"color":"white"}'
 
@@ -19,6 +19,7 @@ data modify storage minecraft:killerescape tips append value '{"text":"スキル
 data modify storage minecraft:killerescape tips append value '{"text":"画面が暗すぎる場合は、ロビーの個人設定から暗視を有効にしてください","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"流血表現に問題がある場合は、ロビーの個人設定から流血表現を無効にしてください","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"「設定>ビデオ設定>視野の変化」の値を小さくすることをおすすめします","italic":false,"color":"white"}'
+data modify storage minecraft:killerescape tips append value '{"text":"「設定>ビデオ設定>グラフィックス」を「最高設定！」に設定していない方はシェーダーエフェクトを無効にしてください","italic":false,"color":"white"}'
 
 #???
 data modify storage minecraft:killerescape tips append value '{"text":"ジャンプ不可などというエフェクトは存在しません","italic":false,"color":"white"}'

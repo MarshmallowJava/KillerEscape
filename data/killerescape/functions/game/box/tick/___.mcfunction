@@ -8,6 +8,7 @@ function killerescape:util/get_current
 #移動禁止
 effect give @s minecraft:slowness infinite 255 true
 effect give @s minecraft:jump_boost infinite 129 true
+effect clear @s minecraft:glowing
 
 #アニメーション
 execute if score @s box_time matches 14.. at @e[tag=box,tag=current] run tp @s ^ ^ ^1.5 ~180 0

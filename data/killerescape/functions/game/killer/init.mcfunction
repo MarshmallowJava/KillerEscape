@@ -16,3 +16,5 @@ scoreboard players set @a vampire_count 0
 scoreboard players set @a cool_vampire 0
 tag @a remove mode_choose
 kill @e[type=minecraft:bat]
+
+kill @e[type=minecraft:marker,tag=line_point]

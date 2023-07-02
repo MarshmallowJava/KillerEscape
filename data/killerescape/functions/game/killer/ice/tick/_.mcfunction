@@ -25,3 +25,6 @@ tag @s[scores={ice_time=1..}] remove display_ui
 
 #タグ削除
 tag @s remove watched_by_ice
+
+#シェーダーエフェクト
+execute if score @s ice_time matches 1.. run particle minecraft:dust 0 100000000 0 10 ~ ~ ~ 0 0 0 0 0 force @s

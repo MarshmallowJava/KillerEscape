@@ -254,6 +254,10 @@ scoreboard objectives add nightVision_trg trigger
 scoreboard objectives add gaugeType dummy
 scoreboard objectives add gaugeType_trg trigger
 
+#シェーダーエフェクト
+scoreboard objectives add shaderEffects dummy
+scoreboard objectives add shaderEffects_trg trigger
+
 #プレリリース
 scoreboard objectives add prerelease_trg dummy
 

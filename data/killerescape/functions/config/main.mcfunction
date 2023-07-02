@@ -5,6 +5,7 @@
 execute as @a unless score @s enableBlood matches -2147483648..2147483647 run scoreboard players set @s enableBlood 1
 execute as @a unless score @s nightVision matches -2147483648..2147483647 run scoreboard players set @s nightVision 0
 execute as @a unless score @s gaugeType matches -2147483648..2147483647 run scoreboard players set @s gaugeType 0
+execute as @a unless score @s shaderEffects matches -2147483648..2147483647 run scoreboard players set @s shaderEffects 1
 
 #変更検知
 scoreboard players set @a var 0
@@ -26,6 +27,11 @@ scoreboard players set @a[scores={gaugeType_trg=1}] var 1
 scoreboard players add @a[scores={gaugeType_trg=1}] gaugeType 1
 scoreboard players operation @a[scores={gaugeType_trg=1}] gaugeType %= #3 const
 
+#シェーダーエフェクト
+scoreboard players set @a[scores={shaderEffects_trg=1}] var 1
+scoreboard players add @a[scores={shaderEffects_trg=1}] shaderEffects 1
+scoreboard players operation @a[scores={shaderEffects_trg=1}] shaderEffects %= #2 const
+
 #プレリリース
 scoreboard players set @a[scores={prerelease_trg=1}] var 1
 execute if entity @a[scores={prerelease_trg=1}] run scoreboard players add prerelease const 1
@@ -43,3 +49,5 @@ scoreboard players enable @a nightVision_trg
 scoreboard players reset @a prerelease_trg
 scoreboard players reset @a gaugeType_trg
 scoreboard players enable @a gaugeType_trg
+scoreboard players reset @a shaderEffects_trg
+scoreboard players enable @a shaderEffects_trg

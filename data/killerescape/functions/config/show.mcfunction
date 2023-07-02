@@ -17,9 +17,13 @@ tellraw @s[scores={gaugeType=0}] {"translate":"・ゲージタイプ - %s","with
 tellraw @s[scores={gaugeType=1}] {"translate":"・ゲージタイプ - %s","with":[{"text":"[百分率]","italic": false,"color": "green","clickEvent": {"action":"run_command","value":"/trigger gaugeType_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"ゲージの表現形式を設定します\n現在の設定では次のように表示されます\n例) 50%の場合 [50%]"}}}
 tellraw @s[scores={gaugeType=2}] {"translate":"・ゲージタイプ - %s","with":[{"text":"[内部値]","italic": false,"color": "yellow","clickEvent": {"action":"run_command","value":"/trigger gaugeType_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"ゲージの表現形式を設定します\n現在の設定では次のように表示されます\n例) 50%の場合 [100/200]"}}}
 
+#シェーダーエフェクト
+tellraw @s[scores={shaderEffects=0}] {"translate":"・シェーダーエフェクト - %s","with":[{"text":"[無効]","italic": false,"color": "red"  ,"clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します"}}}
+tellraw @s[scores={shaderEffects=1}] {"translate":"・シェーダーエフェクト - %s","with":[{"text":"[有効]","italic": false,"color": "green","clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します"}}}
+
 #空白
-tellraw @s[tag=!developer] {"text":"\n\n\n\n"}
-tellraw @s[tag=developer] {"text":"\n\n"}
+tellraw @s[tag=!developer] {"text":"\n\n\n"}
+tellraw @s[tag=developer] {"text":"\n"}
 
 #プレリリース
 execute if score prerelease const matches 0 run tellraw @s[tag=developer] {"translate":"・プレリリース - %s","with":[{"text":"[無効]","italic": false,"color": "red"  ,"clickEvent": {"action":"run_command","value":"/scoreboard players add @s prerelease_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"開発中の要素の有無を設定します"}}}

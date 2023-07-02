@@ -30,3 +30,6 @@ tag @s remove display_ui
 
 #鎖の継続
 execute if score @s shadow_time matches 1.. run tag @e[tag=chain,tag=current] add still_alive
+
+#シェーダーエフェクト
+execute if entity @s[scores={shaderEffects=1,shadow_time=1..}] at @s run particle minecraft:dust 0 100000000 100000000 0 ~ ~ ~ 0 0 0 0 0 force @a

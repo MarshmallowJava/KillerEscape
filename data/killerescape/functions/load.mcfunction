@@ -197,6 +197,9 @@ scoreboard players set ice_maxtoken const 200
 #プレリリース
 execute unless score prerelease const matches -2147483648..2147483647 run scoreboard players set prerelease const 0
 
+#氷鬼旧仕様
+execute unless score oldice const matches -2147483648..2147483647 run scoreboard players set oldice const 0
+
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage
 
@@ -260,6 +263,9 @@ scoreboard objectives add shaderEffects_trg trigger
 
 #プレリリース
 scoreboard objectives add prerelease_trg dummy
+
+#氷鬼旧仕様
+scoreboard objectives add oldice_trg dummy
 
 #再描画
 function killerescape:config/ban/init/

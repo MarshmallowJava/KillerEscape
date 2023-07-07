@@ -6,7 +6,7 @@ execute as @a[limit=1,sort=nearest] run function killerescape:util/owner
 summon minecraft:marker ~ ~ ~ {Tags:["destination"]}
 
 scoreboard players set result var 0
-execute at @s anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=destination] feet as @e[tag=destination] run function killerescape:game/killer/ice/trace/_
+execute at @s anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=destination] feet as @e[tag=destination] run function killerescape:game/killer/_ice/trace/_
 
 kill @e[type=minecraft:marker,tag=destination]
 

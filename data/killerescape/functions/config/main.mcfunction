@@ -38,6 +38,11 @@ execute if entity @a[scores={prerelease_trg=1}] run scoreboard players add prere
 execute if entity @a[scores={prerelease_trg=1}] run scoreboard players operation prerelease const %= #2 const
 execute if entity @a[scores={prerelease_trg=1}] run schedule function killerescape:config/reload 1t append
 
+#氷鬼旧仕様
+scoreboard players set @a[scores={oldice_trg=1}] var 1
+execute if entity @a[scores={oldice_trg=1}] run scoreboard players add oldice const 1
+execute if entity @a[scores={oldice_trg=1}] run scoreboard players operation oldice const %= #2 const
+
 #再表示
 execute as @a[scores={var=1}] run function killerescape:config/show
 
@@ -51,3 +56,4 @@ scoreboard players reset @a gaugeType_trg
 scoreboard players enable @a gaugeType_trg
 scoreboard players reset @a shaderEffects_trg
 scoreboard players enable @a shaderEffects_trg
+scoreboard players reset @a oldice_trg

@@ -8,10 +8,10 @@ scoreboard players operation to var += #70 const
 
 #検索対象を特定
 tag @a[tag=survivor,gamemode=!spectator,distance=..20] add watched_by_ice
-execute as @a[tag=watched_by_ice] run function killerescape:game/killer/ice/check
+execute as @a[tag=watched_by_ice] run function killerescape:game/killer/_ice/check
 
 #直線上にブロックが無いか検証
-execute at @a[tag=watched_by_ice] positioned ~ ~1.5 ~ run function killerescape:game/killer/ice/trace/
+execute at @a[tag=watched_by_ice] positioned ~ ~1.5 ~ run function killerescape:game/killer/_ice/trace/
 
 #残り時間減少
 scoreboard players remove @s ice_time 1

@@ -22,16 +22,18 @@ tellraw @s[scores={shaderEffects=0}] {"translate":"・シェーダーエフェ�
 tellraw @s[scores={shaderEffects=1}] {"translate":"・シェーダーエフェクト - %s","with":[{"text":"[有効]","italic": false,"color": "green","clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します\n「設定>ビデオ設定>グラフィックス」の項目を\n「最高設定！」以外に設定している方は\nこの項目を無効にしてください"}}}
 
 #空白
-tellraw @s[tag=!developer] {"text":"\n\n\n"}
-tellraw @s[tag=developer] {"text":"\n"}
+tellraw @s[tag=!developer] {"text":"\n\n"}
 
 #プレリリース
 execute if score prerelease const matches 0 run tellraw @s[tag=developer] {"translate":"・プレリリース - %s","with":[{"text":"[無効]","italic": false,"color": "red"  ,"clickEvent": {"action":"run_command","value":"/scoreboard players add @s prerelease_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"開発中の要素の有無を設定します"}}}
 execute if score prerelease const matches 1 run tellraw @s[tag=developer] {"translate":"・プレリリース - %s","with":[{"text":"[有効]","italic": false,"color": "green","clickEvent": {"action":"run_command","value":"/scoreboard players add @s prerelease_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"開発中の要素の有無を設定します"}}}
 
 #氷鬼旧仕様
-execute if score oldice const matches 0 run tellraw @s[tag=developer] {"translate":"・氷鬼仕様 - %s","with":[{"text":"[旧]","italic": false,"color": "yellow","clickEvent": {"action":"run_command","value":"/scoreboard players add @s oldice_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"氷鬼の仕様を新旧で切り替えます"}}}
-execute if score oldice const matches 1 run tellraw @s[tag=developer] {"translate":"・氷鬼仕様 - %s","with":[{"text":"[新]","italic": false,"color": "green" ,"clickEvent": {"action":"run_command","value":"/scoreboard players add @s oldice_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"氷鬼の仕様を新旧で切り替えます"}}}
+execute if score oldice const matches 0 run tellraw @s[tag=developer] {"translate":"・氷鬼仕様 - %s","with":[{"text":"[新]","italic": false,"color": "green" ,"clickEvent": {"action":"run_command","value":"/scoreboard players add @s oldice_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"氷鬼の仕様を新旧で切り替えます"}}}
+execute if score oldice const matches 1 run tellraw @s[tag=developer] {"translate":"・氷鬼仕様 - %s","with":[{"text":"[旧]","italic": false,"color": "yellow","clickEvent": {"action":"run_command","value":"/scoreboard players add @s oldice_trg 1"}}],"hoverEvent": {"action": "show_text","value": {"text":"氷鬼の仕様を新旧で切り替えます"}}}
+
+#空白
+tellraw @s {"text":"\n"}
 
 #サウンド
 execute at @s run playsound minecraft:ui.button.click master @s ~ ~ ~ 1 1 0

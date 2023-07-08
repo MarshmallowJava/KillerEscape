@@ -10,6 +10,7 @@ scoreboard players set game_status time 1
 #役職確定
 tag @a[tag=!selected,gamemode=!spectator] add survivor
 tag @a[tag=selected] add killer
+tag @a[tag=killer] add threat
 tag @a remove selected
 
 #チーム加入

@@ -2,7 +2,7 @@
 ##チャージ
 
 #生成
-summon minecraft:marker ~ ~ ~ {Tags:["decoy"]}
+summon minecraft:marker ~ ~ ~ {Tags:["decoy", "threat"]}
 
 #チャージリセット
 scoreboard players set @s decoy_time 0

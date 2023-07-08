@@ -18,3 +18,8 @@ tag @a remove mode_choose
 kill @e[type=minecraft:bat]
 
 kill @e[type=minecraft:marker,tag=line_point]
+
+kill @e[type=minecraft:marker,tag=decoy]
+kill @e[type=minecraft:marker,tag=decoy_trail]
+scoreboard players set @a decoy_time 0
+scoreboard players set @a cool_decoy 0

@@ -100,6 +100,10 @@ scoreboard objectives add box_id dummy
 #吸血鬼のストック数を管理します
 scoreboard objectives add vampire_count dummy
 
+#デコイ作成時間
+#デコイを作成するまでの時間を管理します
+scoreboard objectives add decoy_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time
@@ -144,6 +148,7 @@ scoreboard objectives add repair_time dummy
 scoreboard objectives add close_call_time dummy
 scoreboard objectives add cool_limit dummy
 scoreboard objectives add cool_vampire dummy
+scoreboard objectives add cool_decoy dummy
 
 #定数を定義
 scoreboard players set #-1 const -1
@@ -184,6 +189,7 @@ scoreboard players set coop_repair_bonus const 10
 scoreboard players set ice_regentime const 3
 scoreboard players set ice_cooltime const 200
 scoreboard players set ice_maxtoken const 200
+scoreboard players set decoy_time const 30
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

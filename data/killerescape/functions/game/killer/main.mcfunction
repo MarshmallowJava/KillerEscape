@@ -12,5 +12,7 @@ execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Vampire}}]}] run function k
 
 execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Line}}]}] run function killerescape:game/killer/line/main
 
+execute if entity @a[nbt={Inventory:[{tag:{CustomTag:Decoy}}]}] run function killerescape:game/killer/decoy/main
+
 #統計
 execute at @a[tag=killer] run scoreboard players add @a[tag=survivor,tag=!escaped,tag=!eliminated,distance=..16] data_chase 1

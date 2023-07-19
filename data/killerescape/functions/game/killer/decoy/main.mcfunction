@@ -7,6 +7,7 @@ scoreboard players set @a[scores={useItem=0}] decoy_time 0
 
 #クールダウン
 execute as @a[scores={cool_decoy=1..}] at @s run function killerescape:game/killer/decoy/cool
+execute as @a[tag=survivor,scores={curse_time=1..}] at @s run function killerescape:game/killer/decoy/tick/___
 
 #デコイ処理
 execute as @e[tag=decoy] at @s run function killerescape:game/killer/decoy/tick/

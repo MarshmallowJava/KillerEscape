@@ -104,6 +104,10 @@ scoreboard objectives add vampire_count dummy
 #デコイを作成するまでの時間を管理します
 scoreboard objectives add decoy_time dummy
 
+#呪い時間
+#呪いの持続時間を管理します
+scoreboard objectives add curse_time dummy
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time

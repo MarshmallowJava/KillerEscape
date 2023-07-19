@@ -6,7 +6,7 @@ execute as @a[tag=killer,scores={cool_ice=-1}] at @s run function killerescape:g
 execute as @a[nbt={SelectedItem:{tag:{CustomTag:Ice}}},scores={cool_ice=0,ice_time=1..,useItem=1},tag=display_ui] at @s run function killerescape:game/killer/ice/launch
 
 #クールダウン
-execute as @a[scores={cool_ice=1..}] at @s run function killerescape:game/killer/ice/cool
+execute as @a[tag=killer,scores={cool_ice=1..}] at @s run function killerescape:game/killer/ice/cool
 
 #冷気回復
 scoreboard players add ice time 1

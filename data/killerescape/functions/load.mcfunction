@@ -189,6 +189,7 @@ scoreboard players set coop_repair_bonus const 10
 scoreboard players set ice_regentime const 3
 scoreboard players set ice_cooltime const 200
 scoreboard players set ice_maxtoken const 200
+scoreboard players set ice_remain const 60
 scoreboard players set decoy_time const 30
 
 #予約

@@ -2,8 +2,10 @@
 ##生存者毎の処理を行います
 
 #進捗
-scoreboard players remove @s[tag=!watched_by_ice] ice_time 2
+scoreboard players operation @s[tag=watched_by_ice] cool_ice = ice_remain const
 scoreboard players add @s[tag=watched_by_ice] ice_time 1
+scoreboard players remove @s[tag=!watched_by_ice,scores={cool_ice=1..}] cool_ice 1
+scoreboard players remove @s[tag=!watched_by_ice,scores={cool_ice=0}] ice_time 1
 scoreboard players operation @s ice_time > #0 const
 scoreboard players operation @s ice_time < #100 const
 

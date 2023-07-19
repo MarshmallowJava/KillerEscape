@@ -13,7 +13,7 @@ scoreboard players add @s time 1
 
 #痕跡
 scoreboard players operation @s var = @s time
-scoreboard players operation @s var %= #20 const
+scoreboard players operation @s var %= #10 const
 execute if score @s var matches 0 run function killerescape:game/killer/decoy/launch/__
 
 #消滅

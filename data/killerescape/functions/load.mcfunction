@@ -96,6 +96,10 @@ scoreboard objectives add box_time dummy
 #各役職が操作するロッカーのIDを保持します
 scoreboard objectives add box_id dummy
 
+#吸血鬼チャージ時間
+#吸血鬼のストックが増えるまでの時間を管理します
+scoreboard objectives add vampire_time dummy
+
 #ポイントストック
 #吸血鬼のストック数を管理します
 scoreboard objectives add vampire_count dummy
@@ -107,6 +111,10 @@ scoreboard objectives add decoy_time dummy
 #呪い時間
 #呪いの持続時間を管理します
 scoreboard objectives add curse_time dummy
+
+#回復阻害
+#回復阻害の持続時間を管理します
+scoreboard objectives add prevent_cure dummy
 
 #スニーク検知
 #継続スニーク時間を保持する
@@ -195,6 +203,9 @@ scoreboard players set ice_cooltime const 200
 scoreboard players set ice_maxtoken const 200
 scoreboard players set ice_remain const 60
 scoreboard players set decoy_time const 30
+scoreboard players set vampire_regentime const 800
+scoreboard players set vampire_maxcount const 10
+scoreboard players set vampire_prevent const 600
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

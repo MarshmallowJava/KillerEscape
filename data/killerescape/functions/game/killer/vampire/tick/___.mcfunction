@@ -27,9 +27,14 @@ execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/
 execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
 execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
 execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-
-#タグ削除
-tag @e remove vampire_target
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
 
 #終了
 execute at @s[tag=finished] run function killerescape:game/killer/vampire/release
+
+#タグ削除
+tag @e remove vampire_target

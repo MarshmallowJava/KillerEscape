@@ -12,6 +12,7 @@ tag @a remove watched_by_ice
 
 scoreboard players set @a cool_fishing 0
 
+scoreboard players set @a vampire_time 0
 scoreboard players set @a vampire_count 0
 scoreboard players set @a cool_vampire 0
 tag @a remove mode_choose

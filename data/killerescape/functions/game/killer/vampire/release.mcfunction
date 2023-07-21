@@ -13,3 +13,4 @@ scoreboard players set @a[tag=current] cool_vampire 300
 #削除
 tp @s ~ ~-1000 ~
 kill @s[type=minecraft:bat]
+kill @e[type=minecraft:bat,tag=vampire_target]

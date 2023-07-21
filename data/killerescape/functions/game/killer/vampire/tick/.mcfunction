@@ -1,6 +1,16 @@
 
 ##各処理を行います
 
+#カウント
+execute store result score count var if entity @e[tag=vampire_point]
+
+#現在の数
+scoreboard players operation remain var = vampire_maxcount const
+scoreboard players operation remain var -= count var
+
+#チャージ
+execute if score remain var > @s vampire_count run function killerescape:game/killer/vampire/regen
+
 #条件分岐
 execute if entity @s[tag=!mode_choose] run function killerescape:game/killer/vampire/tick/_
 execute if entity @s[tag=mode_choose] run function killerescape:game/killer/vampire/tick/__

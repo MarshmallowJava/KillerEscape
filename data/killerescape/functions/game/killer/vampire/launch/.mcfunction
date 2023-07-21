@@ -2,7 +2,7 @@
 ##ポイントを設置します
 
 #生成
-summon minecraft:bat ~ ~1 ~ {NoAI:1b,Silent:1b,Tags:["vampire_point","init"]}
+summon minecraft:bat ~ ~1 ~ {NoAI:1b,Silent:1b,Tags:["vampire_point","init"],Health:1f}
 execute as @e[tag=vampire_point,tag=init] positioned as @s run tp @s ~ ~ ~ ~ ~
 
 #初期化完了

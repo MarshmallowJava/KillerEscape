@@ -8,3 +8,4 @@ scoreboard players operation remain var -= count var
 
 #チャージ
 execute if score remain var > @s vampire_count run scoreboard players add @s vampire_count 1
+execute if score remain var > @s vampire_count run tellraw @s {"text":"[システム] トークンを獲得しました","color":"yellow"}

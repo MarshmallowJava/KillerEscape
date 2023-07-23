@@ -10,7 +10,7 @@ effect give @s[scores={box_time=2..}] minecraft:slowness 1 255 true
 effect clear @s[scores={box_time=1}] minecraft:slowness
 
 #場所固定
-execute at @e[tag=box,tag=current] run tp @s ^ ^ ^1.5 ~180 0
+# execute at @e[tag=box,tag=current] positioned ^ ^ ^1.5 rotated as @s run tp @s ^ ^ ^ ~ ~
 
 #生存者を担ぐ
 execute if score @s box_time matches 10 if entity @e[tag=box,tag=current,scores={target_id=-2147483648..2147483647}] run function killerescape:game/box/catch

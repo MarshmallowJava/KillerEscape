@@ -104,6 +104,10 @@ scoreboard objectives add vampire_time dummy
 #吸血鬼のストック数を管理します
 scoreboard objectives add vampire_count dummy
 
+#リジェネ加速
+#吸血鬼のストック回復速度の時間を管理します
+scoreboard objectives add vampire_accel dummy
+
 #デコイ作成時間
 #デコイを作成するまでの時間を管理します
 scoreboard objectives add decoy_time dummy
@@ -206,6 +210,7 @@ scoreboard players set decoy_time const 30
 scoreboard players set vampire_regentime const 800
 scoreboard players set vampire_maxcount const 10
 scoreboard players set vampire_prevent const 600
+scoreboard players set vampire_accel const 120
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

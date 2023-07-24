@@ -9,7 +9,7 @@ scoreboard players operation remain var = vampire_maxcount const
 scoreboard players operation remain var -= count var
 
 #血痕を獲得
-execute if entity @e[tag=blood,distance=..2] run function killerescape:game/killer/vampire/suck
+execute unless score @s vampire_accel matches 1.. if entity @e[tag=blood,distance=..2] run function killerescape:game/killer/vampire/suck
 
 #チャージ
 execute if score remain var > @s vampire_count run function killerescape:game/killer/vampire/regen

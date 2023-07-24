@@ -1,5 +1,6 @@
 {
     "values":[
-        "killerescape:game/killer/ice/release"
+        "killerescape:game/killer/ice/release",
+        "killerescape:game/item/rescue_kit/on_damage"
     ]
 }

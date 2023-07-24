@@ -1,13 +1,13 @@
 
-##非スニーク時の処理を行います
+##各処理を行います
 
-#設置
-execute if score @s vampire_count matches 1.. if score @s useItem matches 1 run function killerescape:game/killer/vampire/launch/
+#条件分岐
+execute if entity @s[tag=!mode_choose] run function killerescape:game/killer/vampire/tick/__
+execute if entity @s[tag=mode_choose] run function killerescape:game/killer/vampire/tick/___
 
-#選択画面
-effect clear @s minecraft:blindness
-
-#表示
-# execute if score @s vampire_count matches 0 run title @s actionbar {"text":"生存者を攻撃してストックを獲得してください","italic": false,"color": "red"}
-# execute if score @s vampire_count matches 1.. run title @s actionbar {"translate":"右クリックでストックを設置 (所持数: %s個)","italic": false,"color": "white","with":[{"score":{"name":"@s","objective": "vampire_count"}}]}
-function killerescape:game/killer/vampire/display
+#モードシフト
+execute store result score @s var if entity @s[tag=mode_choose]
+scoreboard players add @s[tag=offhand_action] var 1
+scoreboard players operation @s var %= #2 const
+execute if score @s var matches 0 run tag @s remove mode_choose
+execute if score @s var matches 1 run tag @s add mode_choose

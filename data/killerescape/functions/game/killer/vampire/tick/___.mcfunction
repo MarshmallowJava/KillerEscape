@@ -1,36 +1,22 @@
 
-##移動中の処理を行います
+##スニーク時処理を行います
 
 #検索
-function killerescape:util/get_current
+execute store result score count var if entity @e[tag=vampire_point]
+function killerescape:game/killer/vampire/choose/
 
-#観戦
-gamemode spectator @a[tag=current]
-spectate @s @a[limit=1,tag=current]
+#移動開始
+execute if score count var matches 1.. if score @s useItem matches 1 run function killerescape:game/killer/vampire/launch/_
+
+#選択画面
+effect give @s minecraft:blindness 2 0 true
+execute anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=vampire_point,tag=selected] eyes run particle minecraft:dust 1 0 0 0.5 ^ ^ ^1 0 0 0 0 0 force @a
+execute anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=vampire_point,tag=!selected] eyes run particle minecraft:dust 1 1 1 0.5 ^ ^ ^1 0 0 0 0 0 force @a
+tag @e[tag=vampire_point,tag=selected] remove selected
 
 #表示
-title @a[tag=current] actionbar "移動しています..."
+execute if score count var matches 0 run title @s actionbar {"text":"ポイントは設置されていません","italic": false,"color": "red"}
+execute if score count var matches 1.. run title @s actionbar {"translate":"右クリックで移動開始","italic": false,"color": "white"}
 
 #通常UIは表示しない
-tag @a[tag=current] remove display_ui
-
-#検索
-scoreboard players operation current entity_id = @s target_id
-function killerescape:util/get_current
-
-#タグ付与
-tag @e[tag=current] add vampire_target
-
-#移動処理
-execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/____
-
-#終了
-execute at @s[tag=finished] run function killerescape:game/killer/vampire/release
-
-#タグ削除
-tag @e remove vampire_target
+tag @s remove display_ui

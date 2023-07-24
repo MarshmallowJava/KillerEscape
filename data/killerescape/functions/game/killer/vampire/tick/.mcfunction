@@ -18,12 +18,7 @@ execute if score remain var > @s vampire_count if score @s vampire_accel matches
 scoreboard players remove @s[scores={vampire_accel=1..}] vampire_accel 1
 
 #条件分岐
-execute if entity @s[tag=!mode_choose] run function killerescape:game/killer/vampire/tick/_
-execute if entity @s[tag=mode_choose] run function killerescape:game/killer/vampire/tick/__
+execute if entity @s[nbt={SelectedItem:{tag:{CustomTag:Vampire}}}] run function killerescape:game/killer/vampire/tick/_
 
-#モードシフト
-execute store result score @s var if entity @s[tag=mode_choose]
-scoreboard players add @s[tag=offhand_action] var 1
-scoreboard players operation @s var %= #2 const
-execute if score @s var matches 0 run tag @s remove mode_choose
-execute if score @s var matches 1 run tag @s add mode_choose
+#表示
+execute if entity @s[tag=!mode_choose] run function killerescape:game/killer/vampire/display

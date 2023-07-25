@@ -6,10 +6,11 @@ function killerescape:util/get_current
 
 #継続時間減少
 scoreboard players add @s time 1
+scoreboard players operation @s shadow_time = @s time
 
 #発動
 execute unless entity @a[tag=current,scores={useItem=1..}] run tag @s remove pre
-execute if score @s time matches 0.. run tag @s remove pre
+execute if score @s time > shadow_length const run tag @s remove pre
 
 #移動
 execute if entity @s[tag=pre] run tp @s ^ ^ ^2 ~ 0

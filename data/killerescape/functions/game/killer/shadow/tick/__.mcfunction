@@ -3,5 +3,5 @@
 
 #待機時間
 scoreboard players add @s time 1
-execute if score @s time matches 20.. run function killerescape:game/killer/shadow/launch/__
-execute if score @s time matches 20.. run kill @s[type=minecraft:marker]
+execute if score @s time > shadow_delay const run function killerescape:game/killer/shadow/launch/__
+execute if score @s time > shadow_delay const run kill @s[type=minecraft:marker]

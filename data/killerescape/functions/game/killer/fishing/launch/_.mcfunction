@@ -19,4 +19,4 @@ tag @e[tag=fishing_anchor,tag=init] remove init
 tag @s add fishing_anchor_bobber
 
 #クールダウン設定
-scoreboard players set @a[limit=1,sort=nearest] cool_fishing 200
+scoreboard players operation @a[limit=1,sort=nearest] cool_fishing = fishing_cool const

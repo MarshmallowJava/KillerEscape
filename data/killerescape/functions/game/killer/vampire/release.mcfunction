@@ -7,8 +7,8 @@ function killerescape:util/get_current
 #ゲームモードを変更
 gamemode adventure @a[tag=current]
 
-#クールダウン設定
-scoreboard players set @a[tag=current] cool_vampire 300
+#クールダウン設定a
+scoreboard players operation @a[tag=current] cool_vampire = vampire_cool const
 
 #削除
 tp @s ~ ~-1000 ~

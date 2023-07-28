@@ -21,4 +21,4 @@ scoreboard players remove @s[scores={vampire_accel=1..}] vampire_accel 1
 execute if entity @s[nbt={SelectedItem:{tag:{CustomTag:Vampire}}}] run function killerescape:game/killer/vampire/tick/_
 
 #表示
-execute if entity @s[tag=!mode_choose] run function killerescape:game/killer/vampire/display
+execute if entity @s[tag=!mode_choose,scores={cool_vampire=0}] run function killerescape:game/killer/vampire/display

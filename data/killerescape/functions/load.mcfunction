@@ -165,6 +165,7 @@ scoreboard objectives add close_call_time dummy
 scoreboard objectives add cool_limit dummy
 scoreboard objectives add cool_vampire dummy
 scoreboard objectives add cool_decoy dummy
+scoreboard objectives add cool_flashtrap dummy
 
 #定数を定義
 scoreboard players set #-1 const -1

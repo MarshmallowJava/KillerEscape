@@ -34,3 +34,7 @@ execute at @s[tag=finished] run function killerescape:game/killer/vampire/releas
 
 #タグ削除
 tag @e remove vampire_target
+
+#演出
+particle minecraft:dust 0 0 0 1 ~ ~ ~ 0.5 0.5 0.5 1 10 force @a[tag=!killer]
+particle minecraft:ash ~ ~ ~ 0.2 0.2 0.2 1 10 force @a[tag=!killer]

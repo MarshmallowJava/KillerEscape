@@ -22,3 +22,7 @@ execute if entity @s[nbt={SelectedItem:{tag:{CustomTag:Vampire}}}] run function 
 
 #表示
 execute if entity @s[tag=!mode_choose,scores={cool_vampire=0}] run function killerescape:game/killer/vampire/display
+
+#演出
+execute if score @s vampire_accel matches 1.. run particle minecraft:crimson_spore ~ ~1 ~ 0.7 0.7 0.7 1 10 force @a
+execute if entity @s[tag=mode_choose] run particle minecraft:dust_color_transition 0.5 0 0 1 0.5 0 0.5 ~ ~1 ~ 0.5 0.6 0.5 1 10 force @a[tag=!killer]

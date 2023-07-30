@@ -12,8 +12,9 @@ scoreboard players operation @e[tag=vampire,tag=init] target_id = @e[tag=vampire
 #初期化完了
 tag @e[tag=vampire,tag=init] remove init
 
-#サウンド
+#演出
 playsound minecraft:entity.ender_dragon.flap master @a ~ ~ ~ 1 0.5 0
+particle minecraft:dust 0 0 0 3 ~ ~1 ~ 0.4 0.5 0.4 1 50 force @a
 
 #モード変更
 tag @s remove mode_choose

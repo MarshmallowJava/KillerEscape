@@ -10,8 +10,8 @@ execute if score count var matches 1.. if score @s useItem matches 1 run functio
 
 #選択画面
 effect give @s minecraft:blindness 2 0 true
-execute anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=vampire_point,tag=selected] eyes run particle minecraft:dust 1 0 0 0.5 ^ ^ ^1 0 0 0 0 0 force @a
-execute anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=vampire_point,tag=!selected] eyes run particle minecraft:dust 1 1 1 0.5 ^ ^ ^1 0 0 0 0 0 force @a
+execute anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=vampire_point,tag=selected] eyes run particle minecraft:dust 1 0 0 0.5 ^ ^ ^1 0 0 0 0 0 force @s
+execute anchored eyes positioned ^ ^ ^ anchored feet facing entity @e[tag=vampire_point,tag=!selected] eyes run particle minecraft:dust 1 1 1 0.5 ^ ^ ^1 0 0 0 0 0 force @s
 tag @e[tag=vampire_point,tag=selected] remove selected
 
 #表示

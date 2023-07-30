@@ -28,6 +28,8 @@ execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/
 execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/_____
 execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/_____
 execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/_____
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/_____
+execute at @s[tag=!finished] run function killerescape:game/killer/vampire/tick/_____
 
 #終了
 execute at @s[tag=finished] run function killerescape:game/killer/vampire/release

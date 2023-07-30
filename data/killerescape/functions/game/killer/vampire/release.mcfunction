@@ -12,6 +12,7 @@ scoreboard players operation @a[tag=current] cool_vampire = vampire_cool const
 
 #演出
 particle minecraft:dust 0 0 0 3 ~ ~1 ~ 0.4 0.5 0.4 1 50 force @a
+playsound minecraft:entity.ender_dragon.growl master @a ~ ~ ~ 3 1.5 0
 
 #削除
 tp @s ~ ~-1000 ~

@@ -3,7 +3,6 @@
         "#minecraft:buttons",
         "#minecraft:fences",
         "#minecraft:signs",
-        "minecraft:air",
-        "minecraft:barrier"
+        "minecraft:air"
     ]
 }

@@ -112,6 +112,10 @@ scoreboard objectives add vampire_accel dummy
 #デコイを作成するまでの時間を管理します
 scoreboard objectives add decoy_time dummy
 
+#眷属作成時間
+#眷属を作成するまでの時間を管理します
+scoreboard objectives add multiply_time dummy
+
 #呪い時間
 #呪いの持続時間を管理します
 scoreboard objectives add curse_time dummy
@@ -166,6 +170,7 @@ scoreboard objectives add cool_limit dummy
 scoreboard objectives add cool_vampire dummy
 scoreboard objectives add cool_decoy dummy
 scoreboard objectives add cool_flashtrap dummy
+scoreboard objectives add cool_multiply dummy
 
 #定数を定義
 scoreboard players set #-1 const -1
@@ -219,6 +224,9 @@ scoreboard players set vampire_regentime const 800
 scoreboard players set vampire_maxcount const 10
 scoreboard players set vampire_prevent const 600
 scoreboard players set vampire_accel const 120
+scoreboard players set multiply_cool const 400
+scoreboard players set multiply_time const 20
+scoreboard players set multiply_count const 3
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

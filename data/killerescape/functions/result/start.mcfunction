@@ -15,6 +15,11 @@ title @a reset
 title @a subtitle {"translate":"%s / %s 人脱出","color":"blue","with":[{"score":{"name":"count","objective":"var"},"color":"blue"},{"score":{"name":"all","objective":"var"},"color":"blue"}]}
 title @a title {"text":"ゲーム終了","italic": false,"color": "yellow"}
 
+#試合結果を記録
+execute as @a[tag=survivor] run function killerescape:statistics/report2
+execute as @a[tag=killer] run function killerescape:statistics/report3
+function killerescape:statistics/report4
+function killerescape:statistics/flush
 
 #統計データから引き出し
 function killerescape:result/check

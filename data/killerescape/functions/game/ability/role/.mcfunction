@@ -27,3 +27,6 @@ function killerescape:util/give_item/
 
 #表示
 tellraw @s [{"translate":"[システム] 能力「%s」が付与されました","italic": false,"color": "yellow","with":[{"storage":"minecraft:temp","nbt":"result.tag.display.Name","interpret": true}]}]
+
+#統計データ作成
+function killerescape:statistics/report0

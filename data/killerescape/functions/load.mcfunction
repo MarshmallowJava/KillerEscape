@@ -148,6 +148,10 @@ scoreboard objectives add data_rescue dummy
 #プレイヤーがチェイスした時間を保持します
 scoreboard objectives add data_chase dummy
 
+#統計データ: 攻撃回数
+#鬼が生存者に攻撃した回数を保持します
+scoreboard objectives add data_attack dummy
+
 #被ダメージ検知
 #生存者がキラーに攻撃されたことを検知します
 #UNUSED
@@ -189,6 +193,10 @@ scoreboard players set #60 const 60
 scoreboard players set #70 const 70
 scoreboard players set #100 const 100
 scoreboard players set #360 const 360
+
+#ゲームバージョン
+#仕様変更時に数値が加算されます
+scoreboard players set game_version const 0
 
 #ゲーム定数を設定
 scoreboard players set repairtime const 900

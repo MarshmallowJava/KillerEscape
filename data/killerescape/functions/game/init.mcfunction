@@ -55,6 +55,7 @@ scoreboard players reset @a box_id
 scoreboard players reset * data_repair
 scoreboard players reset * data_rescue
 scoreboard players reset * data_chase
+scoreboard players reset * data_attack
 
 #ボスバー削除
 bossbar set minecraft:remain players
@@ -87,6 +88,9 @@ function killerescape:game/ability/init
 
 #マップオブジェクトを設置
 function killerescape:game/place/
+
+#統計データリセット
+function killerescape:statistics/reset
 
 #イベントトリガー
 function killerescape:event/on_init

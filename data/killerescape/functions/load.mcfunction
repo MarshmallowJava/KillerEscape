@@ -157,6 +157,10 @@ scoreboard objectives add data_attack dummy
 #UNUSED
 #scoreboard objectives add attacked minecraft.custom:minecraft.damage_resisted
 
+#参照ページ
+#現在開いている統計のページ数を保存します
+scoreboard objectives add statistics_page dummy
+
 #能力用スコア
 scoreboard objectives add cool_dash dummy
 scoreboard objectives add cool_area_heal dummy
@@ -321,3 +325,6 @@ scoreboard objectives add oldice_trg dummy
 #再描画
 function killerescape:config/ban/init/
 execute as @e[tag=ban_operator] at @s run function killerescape:config/ban/paint/
+
+#統計データページ初期化
+scoreboard players set @a statistics_page 0

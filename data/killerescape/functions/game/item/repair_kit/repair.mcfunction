@@ -13,7 +13,7 @@ execute if score @s var matches 1 anchored eyes positioned ^ ^ ^ anchored feet p
 execute if score @s var matches 1 run scoreboard players add @s data_repair 1
 execute if score @s var matches 1 run scoreboard players set bound value 100
 execute if score @s var matches 1 run function random:next
-execute if score @s var matches 1 if score result value matches 0 unless score @s skillcheck_time matches 0.. run scoreboard players set @s skillcheck_time 0
+execute if score @s var matches 1 if score result value matches 0 unless score @s skillcheck_time matches -2147483648..2147483647 run scoreboard players set @s skillcheck_time 0
 
 #通常UIは表示しない
 tag @s remove display_ui

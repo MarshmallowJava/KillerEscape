@@ -214,6 +214,8 @@ scoreboard players set rescuekittime const 600
 scoreboard players set endgametime const 2400
 scoreboard players set attacktime const 40
 scoreboard players set bloodtime const 30
+scoreboard players set skillcheck_success const -300
+scoreboard players set skillcheck_fail const -100
 
 #アビリティ定数
 scoreboard players set engineer_cooltime const 1200

@@ -8,4 +8,4 @@ tellraw @s {"text":"[システム] スキルチェック成功しました","ita
 playsound minecraft:entity.experience_orb.pickup master @s ~ ~ ~ 1 2 0
 
 #終了
-scoreboard players reset @s skillcheck_time
+scoreboard players operation @s skillcheck_time = skillcheck_success const

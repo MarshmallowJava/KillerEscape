@@ -5,7 +5,7 @@
 scoreboard players set @s carryon 0
 
 #表示
-execute if score @s sneak matches 0 run title @s actionbar "スニーク長押しで生存者を下ろす"
+execute if score @s sneak matches 0 run function killerescape:game/carryon/progress_
 
 #解放
 execute if score @s sneak matches 30 as @e[tag=carryon,tag=current] at @s run function killerescape:game/carryon/release

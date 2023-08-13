@@ -14,3 +14,8 @@ spectate @s @a[tag=current,limit=1]
 
 #タグ付け
 tag @a[tag=current] add carryed
+
+#時間経過
+scoreboard players add @e[tag=carryon,tag=current] time 1
+execute as @e[tag=carryon,tag=current,limit=1] at @s if score @s time > carryon_release const run function killerescape:game/carryon/release
+function killerescape:util/get_current

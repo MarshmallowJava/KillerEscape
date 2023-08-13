@@ -216,6 +216,7 @@ scoreboard players set attacktime const 40
 scoreboard players set bloodtime const 30
 scoreboard players set skillcheck_success const -300
 scoreboard players set skillcheck_fail const -100
+scoreboard players set carryon_release const 600
 
 #アビリティ定数
 scoreboard players set engineer_cooltime const 1200

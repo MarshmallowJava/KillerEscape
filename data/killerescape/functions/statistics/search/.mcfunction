@@ -1,5 +1,5 @@
 
-execute unless score current entity_id matches -2147483648..2147483647 run scoreboard players operation current entity_id = @s entity_id
+scoreboard players operation current entity_id = @s entity_id
 
 data remove storage minecraft:temp temp
 data remove storage minecraft:temp temp2

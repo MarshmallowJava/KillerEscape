@@ -13,3 +13,4 @@ function killerescape:game/ability/coop_repair/init
 function killerescape:game/ability/limit/init
 function killerescape:game/ability/area_heal/init
 function killerescape:game/ability/flashtrap/init
+function killerescape:game/ability/smoke/init

@@ -179,6 +179,7 @@ scoreboard objectives add cool_vampire dummy
 scoreboard objectives add cool_decoy dummy
 scoreboard objectives add cool_flashtrap dummy
 scoreboard objectives add cool_multiply dummy
+scoreboard objectives add smoke_time dummy
 
 #定数を定義
 scoreboard players set #-1 const -1

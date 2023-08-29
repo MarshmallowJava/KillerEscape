@@ -1,5 +1,6 @@
 {
     "values":[
-        "killerescape:game/ability/work_hard/on_start"
+        "killerescape:game/ability/work_hard/on_start",
+        "killerescape:game/ability/smoke/on_start"
     ]
 }

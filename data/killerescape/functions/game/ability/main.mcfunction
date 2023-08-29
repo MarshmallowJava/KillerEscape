@@ -15,6 +15,7 @@ function killerescape:game/ability/limit/main
 function killerescape:game/ability/smoke/main
 function killerescape:game/ability/work_hard/main
 function killerescape:game/ability/flashtrap/main
+function killerescape:game/ability/silent/main
 
 #UNUSED
 # function killerescape:game/ability/area_heal/main

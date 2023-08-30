@@ -9,4 +9,4 @@ execute store result storage temp: _.Id int 1 run scoreboard players get @s enti
 data modify storage temp: _.ability set from storage minecraft:temp temp[-1].Name
 
 #データを登録
-data modify storage minecraft:killerescape statistics.cache.killer append from storage temp: _
+data modify storage minecraft:killerescape statistics.cache.killer set from storage temp: _

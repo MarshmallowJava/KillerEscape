@@ -54,6 +54,7 @@ scoreboard players set ice_cooltime const 200
 scoreboard players set ice_maxtoken const 200
 scoreboard players set ice_remain const 60
 scoreboard players set ice_lessthan const -60
+scoreboard players set ice_inittoken const 100
 scoreboard players set fishing_cool const 200
 scoreboard players set decoy_time const 30
 scoreboard players set vampire_cool const 300
@@ -61,6 +62,7 @@ scoreboard players set vampire_regentime const 800
 scoreboard players set vampire_maxcount const 10
 scoreboard players set vampire_prevent const 600
 scoreboard players set vampire_accel const 120
+scoreboard players set vampire_initcount const 3
 scoreboard players set multiply_cool const 400
 scoreboard players set multiply_time const 20
 scoreboard players set multiply_count const 3

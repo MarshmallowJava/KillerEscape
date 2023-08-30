@@ -28,6 +28,9 @@ function killerescape:result/check
 tellraw @a ""
 tellraw @a {"text":"■■■   ゲームリザルト   ■■■","color":"gold"}
 tellraw @a ""
+tellraw @a {"text":"生存者能力一覧","color":"yellow"}
+function killerescape:statistics/result/
+tellraw @a ""
 tellraw @a {"text":"☆ 脱出成功者 ☆","color":"yellow"}
 execute as @a[tag=survivor,tag=escaped] run tellraw @a {"translate":"・%s","color":"yellow","with":[{"selector":"@s","color":"yellow"}]}
 tellraw @a ""

@@ -13,7 +13,7 @@ execute unless entity @a[tag=current,scores={useItem=1..}] run tag @s remove pre
 execute if score @s time > shadow_length const run tag @s remove pre
 
 #移動
-execute if entity @s[tag=pre] run tp @s ^ ^ ^2 ~ 0
+execute rotated as @a[tag=current] rotated ~ 0 if entity @s[tag=pre] run tp @s ^ ^ ^2 ~ ~
 
 #痕跡を召喚
 execute at @s unless entity @e[tag=shadow,tag=sub,distance=..1.5] run function killerescape:game/killer/shadow/place/__

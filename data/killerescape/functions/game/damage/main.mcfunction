@@ -28,4 +28,4 @@ execute at @a[tag=survivor,gamemode=!spectator,tag=!hiding,scores={damage_stage=
 execute as @e[tag=blood] at @s run function killerescape:game/damage/____
 
 #シェーダーエフェクト
-execute as @a[tag=survivor,scores={shaderEffects=1,damage_stage=1..}] at @s run particle minecraft:dust 0 0 100000000 0 ~ ~ ~ 0 0 0 0 0 force @s
+execute as @a[tag=survivor,tag=!eliminated,scores={shaderEffects=1,damage_stage=1..}] at @s run particle minecraft:dust 0 0 100000000 0 ~ ~ ~ 0 0 0 0 0 force @s

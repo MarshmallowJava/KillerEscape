@@ -2,7 +2,7 @@
 ##医療キットの処理を行います
 
 #各プレイヤー毎に処理
-execute as @a[tag=survivor,nbt={SelectedItem:{tag:{CustomTag:RescueKit}}},tag=display_ui] at @s run function killerescape:game/item/rescue_kit/tick
+execute as @a[tag=survivor,tag=!eliminated,nbt={SelectedItem:{tag:{CustomTag:RescueKit}}},tag=display_ui] at @s run function killerescape:game/item/rescue_kit/tick
 
 #被治療者のUI表示
 tag @a[tag=cared,tag=selfcare] remove cared

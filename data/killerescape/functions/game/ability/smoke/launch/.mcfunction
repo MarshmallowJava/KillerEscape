@@ -14,4 +14,4 @@ tag @e[tag=smoke_position,tag=init] remove init
 tag @s add initialized
 
 #最付近のプレイヤーをリセット
-scoreboard players set @a[tag=survivor,limit=1,sort=nearest] smoke_time 0
+scoreboard players set @a[tag=survivor,tag=!eliminated,limit=1,sort=nearest] smoke_time 0

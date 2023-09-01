@@ -34,6 +34,7 @@ title @a title "ゲームスタート"
 
 #ボスバー処理
 bossbar set minecraft:remain players @a
+function killerescape:game/bossbar/on_repaired
 
 #テレポート
 execute as @a[tag=survivor] at @s positioned as @e[tag=spawn_survivor,limit=1,sort=random] run tp @s ~ ~ ~ ~ ~

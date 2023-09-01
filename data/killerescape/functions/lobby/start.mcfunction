@@ -16,3 +16,6 @@ clear @a
 
 #ロビーまでテレポート
 execute as @a at @s positioned as @e[tag=lobby] run tp @a ~ ~ ~ ~ ~
+
+#再描画
+execute as @e[tag=ban_operator] at @s run function killerescape:config/ban/paint/

@@ -55,7 +55,7 @@ execute as @a[tag=survivor,tag=!eliminated,tag=!escaped] at @s if block ~ ~ ~ mi
 
 #強制終了までの時間をカウントダウン
 execute if score endgame time matches 1.. run scoreboard players remove endgame time 1
-execute if score endgame time matches 1 as @a[tag=survivor] run function killerescape:game/hook/execute
+execute if score endgame time matches 1 as @a[tag=survivor,tag=!eliminated] run function killerescape:game/hook/execute
 
 #ゲーム終了判定
 execute if entity @a[tag=survivor] unless entity @a[tag=survivor,tag=!eliminated,tag=!escaped] run function killerescape:game/finish

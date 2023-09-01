@@ -5,8 +5,11 @@ data modify storage minecraft:killerescape tips set value []
 
 #キラーに関する情報
 data modify storage minecraft:killerescape tips append value '{"text":"影鬼の展開中の影に近づくと移動速度が低下します","italic":false,"color":"white"}'
+data modify storage minecraft:killerescape tips append value '{"text":"影鬼の影は遠距離で当てるほど長く拘束できます","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"釣鬼の釣り竿は倒れた生存者も釣り上げることができます","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"氷鬼から逃れるには視線をうまく切る必要があります","italic":false,"color":"white"}'
+data modify storage minecraft:killerescape tips append value '{"text":"氷鬼の能力行使は計画的に","italic":false,"color":"white"}'
+data modify storage minecraft:killerescape tips append value '{"text":"吸血鬼は生存者から出た血を回収しコスト回復速度を上昇します","italic":false,"color":"white"}'
 
 #生存者に関する情報
 data modify storage minecraft:killerescape tips append value '{"text":"医療キットは他人に使用する方が早く治療が完了します","italic":false,"color":"white"}'

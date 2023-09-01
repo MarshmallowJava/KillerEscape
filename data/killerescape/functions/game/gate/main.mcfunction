@@ -12,7 +12,7 @@ execute store result score count var if entity @e[tag=communicator,tag=current_m
 execute if score count var matches 5.. as @a[tag=survivor,scores={var=0}] at @s unless entity @e[type=minecraft:item,distance=..2] run give @s minecraft:wooden_pickaxe{display:{Name:'{"text":"ゲート開通ツール","italic": false,"color": "yellow"}',Lore:['{"text":"ビーコンを破壊することができる","italic": false,"color": "yellow"}']},CanDestroy:["minecraft:beacon"],OwnItem:1b,HideFlags:255,Unbreakable:1b,Enchantments:[{}]}
 
 #残り一人になってしまった場合もピッケル付与
-# execute store result score count var if entity @a[tag=survivor,tag=!eliminated]
-# execute if score count var matches 1 run tag @e[tag=communicator,tag=current_map] add repaired
-# execute if score count var matches 1 as @a[tag=survivor,scores={var=0}] at @s unless entity @e[type=minecraft:item,distance=..2] run tellraw @s {"text":"[システム] 最後の一人になったため、最後のカギが付与されます","italic": false,"color": "yellow"}
-# execute if score count var matches 1 as @a[tag=survivor,scores={var=0}] at @s unless entity @e[type=minecraft:item,distance=..2] run give @s minecraft:wooden_pickaxe{display:{Name:'{"text":"ゲート開通ツール","italic": false,"color": "yellow"}',Lore:['{"text":"ビーコンを破壊することができる","italic": false,"color": "yellow"}']},CanDestroy:["minecraft:beacon"],OwnItem:1b,HideFlags:255,Unbreakable:1b,Enchantments:[{}]}
+execute store result score count var if entity @a[tag=survivor,tag=!eliminated]
+execute if score count var matches 1 run tag @e[tag=communicator,tag=current_map] add repaired
+execute if score count var matches 1 as @a[tag=survivor,scores={var=0}] at @s unless entity @e[type=minecraft:item,distance=..2] run tellraw @s {"text":"[システム] 最後の一人になったため、最後のカギが付与されます","italic": false,"color": "yellow"}
+execute if score count var matches 1 as @a[tag=survivor,scores={var=0}] at @s unless entity @e[type=minecraft:item,distance=..2] run give @s minecraft:wooden_pickaxe{display:{Name:'{"text":"ゲート開通ツール","italic": false,"color": "yellow"}',Lore:['{"text":"ビーコンを破壊することができる","italic": false,"color": "yellow"}']},CanDestroy:["minecraft:beacon"],OwnItem:1b,HideFlags:255,Unbreakable:1b,Enchantments:[{}]}

@@ -33,7 +33,11 @@ execute if score slot var matches 0.. run function killerescape:config/ban/launc
 #自動BANモード切り替え
 scoreboard players set slot var -1
 execute unless data block ~ ~ ~ Items[{Slot:8b}] run scoreboard players set slot var 0
-execute if score slot var matches 0.. run function killerescape:config/ban/launch/____
+execute unless data block ~ ~ ~ Items[{Slot:17b}] run scoreboard players set slot var 1
+execute unless data block ~ ~ ~ Items[{Slot:26b}] run scoreboard players set slot var 2
+execute if score slot var matches 0 run function killerescape:config/ban/launch/____
+execute if score slot var matches 1 run function killerescape:config/ban/launch/_____
+execute if score slot var matches 2 run function killerescape:config/ban/launch/______
 
 # DEBUGMESSAGE
 # execute if score slot var matches 0.. run tellraw @a {"translate":"clicked at %s","with":[{"score":{"name":"slot","objective":"var"}}]}

@@ -26,6 +26,6 @@ scoreboard players set count var 7
 function killerescape:config/ban/paint/__
 
 #左枠
-item replace block ~ ~ ~ container.17 with minecraft:gray_stained_glass_pane{CustomTag:Icon,display:{Name:'""'}}
-item replace block ~ ~ ~ container.26 with minecraft:gray_stained_glass_pane{CustomTag:Icon,display:{Name:'""'}}
+item replace block ~ ~ ~ container.17 with minecraft:redstone_torch{CustomTag:Icon,display:{Name:'{"text":"全て有効にする","italic": false,"color": "yellow"}'}}
+item replace block ~ ~ ~ container.26 with minecraft:structure_void{CustomTag:Icon,display:{Name:'{"text":"全て無効にする","italic": false,"color": "red"}'}}
 function killerescape:config/ban/paint/___

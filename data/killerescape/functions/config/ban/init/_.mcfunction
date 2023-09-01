@@ -2,7 +2,7 @@
 ##count[var]分の空データを用意します
 
 #データ追加
-data modify storage minecraft:temp temp append value 0
+data modify storage minecraft:temp temp append from storage minecraft:temp temp2
 
 #再帰呼び出し
 scoreboard players remove count var 1

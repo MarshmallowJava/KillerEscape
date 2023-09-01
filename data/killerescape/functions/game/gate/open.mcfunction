@@ -8,10 +8,6 @@ tellraw @a[tag=!killer] {"text":"[システム] 鬼の攻撃力が増加した�
 tellraw @a[tag=killer] {"text":"[システム] ゲートが開放されてしまいました","italic": false,"color": "red"}
 tellraw @a[tag=killer] {"text":"[システム] 攻撃力が増加した！","italic": false,"color": "yellow"}
 
-#ボスバー設定
-execute store result bossbar minecraft:remain max run scoreboard players get endgametime const
-execute store result bossbar minecraft:remain2 max run scoreboard players get endgametime const
-
 #ゲート解放
 fill ^-2 ^ ^ ^3 ^4 ^ minecraft:air destroy
 

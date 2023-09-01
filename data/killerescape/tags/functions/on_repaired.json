@@ -1,5 +1,6 @@
 {
     "values":[
-        "killerescape:game/ability/hope/on_repaired"
+        "killerescape:game/ability/hope/on_repaired",
+        "killerescape:game/bossbar/on_repaired"
     ]
 }

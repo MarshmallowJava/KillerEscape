@@ -2,7 +2,7 @@
 ##ゲーム中の処理を行います
 
 #ボスバー処理
-function killerescape:game/bossbar
+function killerescape:game/bossbar/main
 
 #殴れる人をフラグ立て
 tag @a remove can_hurted

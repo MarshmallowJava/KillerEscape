@@ -82,6 +82,9 @@ execute unless score prerelease const matches -2147483648..2147483647 run scoreb
 #氷鬼旧仕様
 execute unless score oldice const matches -2147483648..2147483647 run scoreboard players set oldice const 0
 
+#自動BAN
+execute unless score autoban const matches -2147483648..2147483647 run scoreboard players set autoban const 1
+
 #アビリティ用ストレージを設定
 function killerescape:game/ability/storage
 

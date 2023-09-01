@@ -19,6 +19,8 @@ title @a subtitle [{"translate":"今回の鬼は %s です","italic": false,"col
 #統計データ作成
 function killerescape:statistics/report1
 
+execute if score autoban const matches 1 run function killerescape:game/killer/role/__
+
 #アイテムを付与
 data modify storage minecraft:killerescape arguments set from storage minecraft:temp temp[-1].Items
 function killerescape:util/give_item/

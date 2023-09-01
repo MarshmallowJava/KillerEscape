@@ -1,6 +1,9 @@
 
 ##ランダムプールに要素を補給します
 
+#自動BANモードが有効ならBANリストを初期化
+execute if score autoban const matches 1 run function killerescape:config/ban/init/killer
+
 #今までのデータは削除
 data remove storage minecraft:temp temp
 

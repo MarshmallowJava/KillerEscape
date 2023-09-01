@@ -1,6 +1,7 @@
 
 ##クリックされた時に呼び出されます
 
+#鬼の能力プールの設定
 scoreboard players set slot var -1
 execute unless data block ~ ~ ~ Items[{Slot:1b}] run scoreboard players set slot var 0
 execute unless data block ~ ~ ~ Items[{Slot:2b}] run scoreboard players set slot var 1
@@ -11,6 +12,7 @@ execute unless data block ~ ~ ~ Items[{Slot:6b}] run scoreboard players set slot
 execute unless data block ~ ~ ~ Items[{Slot:7b}] run scoreboard players set slot var 6
 execute if score slot var matches 0.. run function killerescape:config/ban/launch/_
 
+#生存者の能力プールの設定
 scoreboard players set slot var -1
 execute unless data block ~ ~ ~ Items[{Slot:10b}] run scoreboard players set slot var 0
 execute unless data block ~ ~ ~ Items[{Slot:11b}] run scoreboard players set slot var 1
@@ -27,6 +29,11 @@ execute unless data block ~ ~ ~ Items[{Slot:23b}] run scoreboard players set slo
 execute unless data block ~ ~ ~ Items[{Slot:24b}] run scoreboard players set slot var 12
 execute unless data block ~ ~ ~ Items[{Slot:25b}] run scoreboard players set slot var 13
 execute if score slot var matches 0.. run function killerescape:config/ban/launch/__
+
+#自動BANモード切り替え
+scoreboard players set slot var -1
+execute unless data block ~ ~ ~ Items[{Slot:8b}] run scoreboard players set slot var 0
+execute if score slot var matches 0.. run function killerescape:config/ban/launch/____
 
 # DEBUGMESSAGE
 # execute if score slot var matches 0.. run tellraw @a {"translate":"clicked at %s","with":[{"score":{"name":"slot","objective":"var"}}]}

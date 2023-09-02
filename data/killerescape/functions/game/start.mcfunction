@@ -19,6 +19,8 @@ team join killer @a[tag=killer]
 
 #プールリセット
 function killerescape:game/ability/role/supply/
+execute if score autoban const matches 1 unless data storage minecraft:killerescape pool[0] run function killerescape:config/ban/init/survivor
+execute if score autoban const matches 1 unless data storage minecraft:killerescape pool[0] run function killerescape:game/ability/role/supply/
 
 #アイテム付与
 clear @a

@@ -17,6 +17,9 @@ function killerescape:game/ability/role/_
 #抽出後のプールを反映
 data modify storage minecraft:killerescape pool set from storage minecraft:temp temp
 
+#自動BANモードで空ならリセット
+execute if score autoban const matches 1 unless data storage minecraft:killerescape pool[0] run function killerescape:config/ban/init/survivor
+
 #データが存在すれば続行
 execute unless data storage minecraft:temp result run function killerescape:game/ability/role/___
 execute if data storage minecraft:temp result run function killerescape:game/ability/role/____

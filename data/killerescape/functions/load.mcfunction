@@ -44,28 +44,9 @@ scoreboard players set engineer_cooltime const 1200
 scoreboard players set engineer_bonus const 10
 scoreboard players set coop_repair_cooltime const 20
 scoreboard players set coop_repair_bonus const 10
-scoreboard players set shadow_cool const 300
-scoreboard players set shadow_length const 25
-scoreboard players set shadow_delay const 15
-scoreboard players set shadow_base const 60
-scoreboard players set shadow_addition const 2
-scoreboard players set ice_regentime const 3
-scoreboard players set ice_cooltime const 200
-scoreboard players set ice_maxtoken const 200
-scoreboard players set ice_remain const 60
-scoreboard players set ice_lessthan const -60
-scoreboard players set ice_inittoken const 100
-scoreboard players set fishing_cool const 200
-scoreboard players set decoy_time const 30
-scoreboard players set vampire_cool const 300
-scoreboard players set vampire_regentime const 800
-scoreboard players set vampire_maxcount const 10
-scoreboard players set vampire_prevent const 600
-scoreboard players set vampire_accel const 120
-scoreboard players set vampire_initcount const 3
-scoreboard players set multiply_cool const 400
-scoreboard players set multiply_time const 20
-scoreboard players set multiply_count const 3
+
+#キラー定数
+function killerescape:game/killer/const
 
 #予約
 #game_status[time]: ゲームの状態を管理;0=ロビー, 1=ゲーム, 2=リザルト

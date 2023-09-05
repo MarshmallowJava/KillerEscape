@@ -17,7 +17,7 @@ scoreboard players remove @a[tag=current] execute_time 1
 #通知
 scoreboard players operation time var = executetime const
 scoreboard players operation time var /= #4 const
-execute if score @a[tag=current,limit=1] execute_time = time var run tellraw @a[tag=survivor,tag=!current] {"translate":"[システム] %s の処刑時間まで後少しです","italic": false,"color":"red"}
+execute if score @a[tag=current,limit=1] execute_time = time var run tellraw @a[tag=survivor,tag=!current] {"translate":"[システム] %s の処刑時間まで後少しです","italic": false,"color":"red","with":[{"selector":"@a[tag=current]"}]}
 
 #時間表示
 execute as @a[tag=current] at @s run function killerescape:game/hook/progress__

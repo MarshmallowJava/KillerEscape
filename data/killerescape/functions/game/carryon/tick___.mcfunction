@@ -10,7 +10,7 @@ function killerescape:util/get_current
 
 #観戦
 gamemode spectator @a[tag=current]
-spectate @s @a[tag=current,limit=1]
+spectate @a[tag=killer,limit=1,sort=nearest] @a[tag=current,limit=1]
 
 #タグ付け
 tag @a[tag=current] add carryed

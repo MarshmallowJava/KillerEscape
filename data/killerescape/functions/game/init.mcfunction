@@ -84,7 +84,7 @@ team leave @a
 effect clear @a
 
 #鬼の移動速度を初期化
-execute as @a[tag=killer] run attribute @s minecraft:generic.movement_speed modifier remove 0-0-0-0-0
+execute as @a run attribute @s minecraft:generic.movement_speed modifier remove 0-0-0-0-0
 
 #アビリティをリセット
 function killerescape:game/ability/init

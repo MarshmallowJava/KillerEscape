@@ -31,6 +31,9 @@ execute as @a[tag=killer] run function killerescape:game/give_items_killer
 execute as @a[tag=survivor] at @s run function killerescape:game/ability/role/
 execute as @a[tag=killer] at @s run function killerescape:game/killer/role/
 
+#鬼の移動速度を設定
+execute as @a[tag=killer] run attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "killer_basespeed" 0.05 add
+
 #タイトル処理
 title @a title "ゲームスタート"
 

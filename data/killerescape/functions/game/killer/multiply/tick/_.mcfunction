@@ -15,6 +15,8 @@ execute if entity @a[tag=current,distance=..1] run scoreboard players set @s var
 execute if score @s var matches 1 as @a[tag=current] at @s run function killerescape:game/killer/multiply/launch/__
 execute if score @s var matches 1 run function killerescape:game/killer/multiply/vanish
 
+#速度バフを付与
+effect give @a[tag=killer] minecraft:speed 1 0 true
+
 #板を当てられた
 execute if entity @e[tag=board,nbt={ArmorItems:[{tag:{animating:1b}}]},distance=..1.5] run function killerescape:game/killer/multiply/vanish
-

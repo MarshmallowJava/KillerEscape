@@ -10,6 +10,7 @@ data modify storage minecraft:killerescape tips append value '{"text":"釣鬼の
 data modify storage minecraft:killerescape tips append value '{"text":"氷鬼から逃れるには視線をうまく切る必要があります","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"氷鬼の能力行使は計画的に","italic":false,"color":"white"}'
 data modify storage minecraft:killerescape tips append value '{"text":"吸血鬼は生存者から出た血を回収しコスト回復速度を上昇します","italic":false,"color":"white"}'
+data modify storage minecraft:killerescape tips append value '{"text":"吸血鬼の蝙蝠は生存者に攻撃されると回復阻害を付与して消滅します","italic":false,"color":"white"}'
 
 #生存者に関する情報
 data modify storage minecraft:killerescape tips append value '{"text":"医療キットは他人に使用する方が早く治療が完了します","italic":false,"color":"white"}'

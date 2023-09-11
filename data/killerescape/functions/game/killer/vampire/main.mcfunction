@@ -9,3 +9,7 @@ execute as @e[tag=vampire] at @s run function killerescape:game/killer/vampire/t
 
 #クールダウン
 execute as @a[scores={cool_vampire=1..}] at @s run function killerescape:game/killer/vampire/cool
+
+#追い払い
+execute as @e[tag=vampire_point_collision] at @s run function killerescape:game/killer/vampire/tick/______
+execute as @e[tag=runaway] at @s run function killerescape:game/killer/vampire/tick/_______

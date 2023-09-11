@@ -2,7 +2,7 @@
 ##能力発動時の処理を行います
 
 #生成
-summon minecraft:zombie ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:spawner",tag:{CustomModelData:1},Count:1b}]}
+summon minecraft:zombie ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,ArmorItems:[{},{},{},{id:"minecraft:spawner",tag:{CustomModelData:1},Count:1b}],ActiveEffects:[{Id:24b,ShowParticles:0b,Duration:100}]}
 
 #向きを調整
 execute as @e[tag=multiply,tag=init] positioned as @s run tp @s ~ ~ ~ ~ 0

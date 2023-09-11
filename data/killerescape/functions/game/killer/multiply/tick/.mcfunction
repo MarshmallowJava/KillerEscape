@@ -20,6 +20,3 @@ execute if entity @a[tag=current] run function killerescape:game/killer/multiply
 
 #フラグを全て削除
 tag @a remove insight
-
-#ダメージ受ければ消滅
-execute if entity @s[nbt={HurtTime:9s}] run function killerescape:game/killer/multiply/vanish

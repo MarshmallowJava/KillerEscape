@@ -1,7 +1,7 @@
 
 ##生存者に対してデバフを与えます
 
-#回復阻害
+#回復不可
 scoreboard players operation @s prevent_cure > vampire_counter const
 
 #演出

@@ -1,5 +1,5 @@
 
-##回復阻害の処理を行います
+##回復不可の処理を行います
 
 #時間減少
 scoreboard players remove @a[scores={prevent_cure=1..}] prevent_cure 1

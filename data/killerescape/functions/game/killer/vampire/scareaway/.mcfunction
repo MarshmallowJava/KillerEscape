@@ -13,3 +13,6 @@ execute as @a[tag=target,tag=survivor] at @s run function killerescape:game/kill
 
 #削除
 kill @s[type=minecraft:interaction]
+
+#通知
+execute if entity @a[tag=target,tag=survivor] run tellraw @a[nbt={Inventory:[{tag:{CustomTag:Vampire}}]}] {"text":"[システム] 蝙蝠が追い払われてしまいました","color": "red"}

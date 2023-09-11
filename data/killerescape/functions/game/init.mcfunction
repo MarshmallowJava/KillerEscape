@@ -41,7 +41,7 @@ scoreboard players set @a repair_bonus 0
 #スキルチェックリセット
 scoreboard players reset @e skillcheck_time
 
-#回復阻害をリセット
+#回復不可をリセット
 scoreboard players set @a prevent_cure 0
 
 #キラーリセット

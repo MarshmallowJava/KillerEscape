@@ -120,8 +120,8 @@ scoreboard objectives add multiply_time dummy
 #呪いの持続時間を管理します
 scoreboard objectives add curse_time dummy
 
-#回復阻害
-#回復阻害の持続時間を管理します
+#回復不可
+#回復不可の持続時間を管理します
 scoreboard objectives add prevent_cure dummy
 
 #スニーク検知

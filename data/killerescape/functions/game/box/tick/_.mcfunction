@@ -10,6 +10,9 @@ execute as @a[tag=current] rotated as @s run tp @s ^ ^ ^ ~ ~
 effect give @a[tag=current] minecraft:slowness infinite 255 true
 effect give @a[tag=current] minecraft:jump_boost infinite 129 true
 
+#スタミナ回復速度バフ付与
+scoreboard players add @a[tag=current] stamina_regen 5
+
 #表示
 title @a[tag=current] actionbar "右クリックでロッカーから出る"
 tag @a[tag=current] remove display_ui

@@ -45,6 +45,10 @@ scoreboard players reset @e skillcheck_time
 #回復不可をリセット
 scoreboard players set @a prevent_cure 0
 
+#スタミナリセット
+scoreboard players set @a stamina 0
+scoreboard players set @a stamina_regen 0
+
 #キラーリセット
 function killerescape:game/killer/init
 
@@ -61,6 +65,10 @@ scoreboard players reset * data_attack
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players
+
+#経験値状態をリセット
+experience set @a 0 levels
+experience set @a 0 points
 
 #ゲームモードをアドベンチャーに
 gamemode adventure @a[tag=escaped]

@@ -130,6 +130,15 @@ scoreboard objectives add prevent_cure dummy
 #鬼のサボタージュ性能を保持します
 scoreboard objectives add sabotage_level dummy
 
+#スタミナ
+#生存者のスタミナを管理します
+scoreboard objectives add stamina dummy
+scoreboard objectives add stamina_regen dummy
+
+#ジャンプ検知
+#プレイヤーがジャンプしたタイミングを検知します
+scoreboard objectives add jump minecraft.custom:minecraft.jump
+
 #スニーク検知
 #継続スニーク時間を保持する
 scoreboard objectives add sneak_trigger minecraft.custom:minecraft.sneak_time

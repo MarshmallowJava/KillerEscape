@@ -4,6 +4,11 @@
 #エンティティIDを割り振り
 execute as @e[tag=!allocated_unique_id] unless score @s entity_id matches -2147483648..2147483647 run function killerescape:util/allocate_id
 
+#ジャンプ処理
+tag @a remove jump
+tag @a[scores={jump=1..}] add jump
+scoreboard players set @a jump 0
+
 #右クリック処理
 scoreboard players set @a[tag=!rightclick] useItem 0
 scoreboard players add @a[tag=rightclick] useItem 1

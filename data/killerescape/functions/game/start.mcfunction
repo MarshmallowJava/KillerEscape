@@ -2,6 +2,7 @@
 ##ゲーム開始時の処理を行います
 
 #ゲームを初期化
+function killerescape:init
 function killerescape:game/init
 
 #ゲーム状態を「ゲーム中」に設定

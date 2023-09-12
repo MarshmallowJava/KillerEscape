@@ -10,7 +10,11 @@ title @a subtitle [{"translate":"今回の鬼は %s です","italic": false,"col
 #統計データ作成
 function killerescape:statistics/report1
 
+#自動BAN実行
 execute if score autoban const matches 1 run function killerescape:game/killer/role/__
+
+#サボタージュ性能を設定
+execute store result score @s sabotage_level run data get storage minecraft:temp temp[-1].SabotageLevel
 
 #アイテムを付与
 data modify storage minecraft:killerescape arguments set from storage minecraft:temp temp[-1].Items

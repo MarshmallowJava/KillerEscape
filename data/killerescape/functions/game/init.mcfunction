@@ -21,6 +21,7 @@ tag @a remove hooked
 #サボタージュ進捗をリセット
 scoreboard players set @e sabotage_time 0
 scoreboard players set @a boardbreak_time 0
+scoreboard players set @a sabotage_level 0
 
 #治療進捗をリセット
 scoreboard players set @a rescuekit_time 0

@@ -4,8 +4,10 @@
 #汎用スコア
 scoreboard objectives add var dummy
 scoreboard objectives add time dummy
+
 #定数
 scoreboard objectives add const dummy
+
 #一時キャッシュ
 #tickをまたぐスコアの保持は非推奨
 scoreboard objectives add temporary dummy
@@ -123,6 +125,10 @@ scoreboard objectives add curse_time dummy
 #回復不可
 #回復不可の持続時間を管理します
 scoreboard objectives add prevent_cure dummy
+
+#サボタージュレベル
+#鬼のサボタージュ性能を保持します
+scoreboard objectives add sabotage_level dummy
 
 #スニーク検知
 #継続スニーク時間を保持する

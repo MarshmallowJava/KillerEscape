@@ -5,7 +5,7 @@
 execute as @a unless score @s enableBlood matches -2147483648..2147483647 run scoreboard players set @s enableBlood 1
 execute as @a unless score @s nightVision matches -2147483648..2147483647 run scoreboard players set @s nightVision 0
 execute as @a unless score @s gaugeType matches -2147483648..2147483647 run scoreboard players set @s gaugeType 0
-execute as @a unless score @s shaderEffects matches -2147483648..2147483647 run scoreboard players set @s shaderEffects 1
+execute as @a unless score @s shaderEffects matches -2147483648..2147483647 run scoreboard players set @s shaderEffects 0
 
 #変更検知
 scoreboard players set @a var 0

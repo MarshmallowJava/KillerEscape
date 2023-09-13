@@ -75,8 +75,7 @@ advancement revoke @a only killerescape:offhand_action
 advancement revoke @a only killerescape:using_item
 
 #経験値状態をリセット
-experience set @a 0 levels
-experience set @a 0 points
+scoreboard players set @a value_exp 0
 
 #ゲームモードをアドベンチャーに
 gamemode adventure @a[tag=escaped]

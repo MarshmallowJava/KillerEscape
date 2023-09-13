@@ -18,8 +18,8 @@ tellraw @s[scores={gaugeType=1}] {"translate":"・ゲージタイプ - %s","with
 tellraw @s[scores={gaugeType=2}] {"translate":"・ゲージタイプ - %s","with":[{"text":"[内部値]","italic": false,"color": "yellow","clickEvent": {"action":"run_command","value":"/trigger gaugeType_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"ゲージの表現形式を設定します\n現在の設定では次のように表示されます\n例) 50%の場合 [100/200]"}}}
 
 #シェーダーエフェクト
-tellraw @s[scores={shaderEffects=0}] {"translate":"・シェーダーエフェクト - %s","with":[{"text":"[無効]","italic": false,"color": "red"  ,"clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します\n「設定>ビデオ設定>グラフィックス」の項目を\n「最高設定！」以外に設定している方は\nこの項目を無効にしてください"}}}
-tellraw @s[scores={shaderEffects=1}] {"translate":"・シェーダーエフェクト - %s","with":[{"text":"[有効]","italic": false,"color": "green","clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します\n「設定>ビデオ設定>グラフィックス」の項目を\n「最高設定！」以外に設定している方は\nこの項目を無効にしてください"}}}
+tellraw @s[scores={shaderEffects=0}] {"translate":"・シェーダーエフェクト(Beta) - %s","with":[{"text":"[無効]","italic": false,"color": "red"  ,"clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します\n「設定>ビデオ設定>グラフィックス」の項目を\n「最高設定！」以外に設定している方は\nこの項目を無効にしてください"}}}
+tellraw @s[scores={shaderEffects=1}] {"translate":"・シェーダーエフェクト(Beta) - %s","with":[{"text":"[有効]","italic": false,"color": "green","clickEvent": {"action":"run_command","value":"/trigger shaderEffects_trg"}}],"hoverEvent": {"action": "show_text","value": {"text":"画面にかかる特殊演出の有無を設定します\n「設定>ビデオ設定>グラフィックス」の項目を\n「最高設定！」以外に設定している方は\nこの項目を無効にしてください"}}}
 
 #空白
 tellraw @s[tag=!developer] {"text":"\n\n"}

@@ -41,6 +41,7 @@ scoreboard players set carryon_release const 600
 scoreboard players set stamina_jump const 200
 scoreboard players set stamina_max const 1000
 scoreboard players set stamina_regen const 5
+scoreboard players set energydrink const 600
 
 #アビリティ定数
 scoreboard players set engineer_cooltime const 1200

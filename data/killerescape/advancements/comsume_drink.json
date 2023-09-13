@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "trigger":{
+            "trigger": "minecraft:consume_item",
+            "conditions": {
+                "item": {
+                    "nbt": "{CustomTag:EnergyDrink}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "killerescape:game/item/energydrink/trigger"
+    }
+}

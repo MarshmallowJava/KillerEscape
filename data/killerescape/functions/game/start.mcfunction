@@ -35,6 +35,9 @@ execute as @a[tag=killer] at @s run function killerescape:game/killer/role/
 #鬼の移動速度を設定
 execute as @a[tag=killer] run attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "killer_basespeed" 0.05 add
 
+#ノックバック耐性を設定(被ダメージ時に打ち上がるのを防ぐ)
+execute as @a run attribute @s minecraft:generic.knockback_resistance base set 1.0
+
 #タイトル処理
 title @a title "ゲームスタート"
 

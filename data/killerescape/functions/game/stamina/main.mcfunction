@@ -12,6 +12,9 @@ tag @a[tag=survivor,scores={stamina=1..}] add nottired
 #消費
 scoreboard players operation @a[tag=survivor,tag=jump] stamina -= stamina_jump const
 
+#活力
+scoreboard players set @a[scores={stamina=..-1,bottomless_stamina=1..}] stamina 0
+
 #使い切り
 execute as @a[tag=nottired,scores={stamina=..-1}] run function killerescape:game/stamina/tired
 

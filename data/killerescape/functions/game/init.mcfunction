@@ -42,8 +42,9 @@ scoreboard players set @a repair_bonus 0
 #スキルチェックリセット
 scoreboard players reset @e skillcheck_time
 
-#回復不可をリセット
+#独自エフェクトをリセット
 scoreboard players set @a prevent_cure 0
+scoreboard players set @a bottomless_stamina 0
 
 #スタミナリセット
 scoreboard players set @a stamina 0
@@ -65,6 +66,13 @@ scoreboard players reset * data_attack
 #ボスバー削除
 bossbar set minecraft:remain players
 bossbar set minecraft:remain2 players
+
+#進捗を削除
+advancement revoke @a only killerescape:comsume_drink
+advancement revoke @a only killerescape:hurt_survivor
+advancement revoke @a only killerescape:hurt_survivor2
+advancement revoke @a only killerescape:offhand_action
+advancement revoke @a only killerescape:using_item
 
 #経験値状態をリセット
 experience set @a 0 levels

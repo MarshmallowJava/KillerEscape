@@ -1,0 +1,30 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:ender_eye",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:4,CustomTag:RescueKit,display:{Name:'{\"text\":\"医療キット\",\"italic\":false,\"color\":\"yellow\"}',Lore:['{\"text\":\"視線に最も近いプレイヤーを治療し\",\"italic\":false,\"color\":\"green\"}','{\"text\":\"誰もいない場合は自己治療となる\",\"italic\":false,\"color\":\"green\"}','{\"text\":\"他人を治療する方が早く治療が完了する\",\"italic\":false,\"color\":\"green\"}']}}"
+                        }
+                    ]
+                },
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:potion",
+                    "functions":[
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{HideFlags:255,CustomTag:EnergyDrink,display:{Name:'{\"text\":\"エナジードリンク\",\"italic\":false,\"color\":\"green\"}',Lore:['{\"text\":\"しばらくの間疲労状態にならない\",\"italic\":false,\"color\":\"white\"}']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

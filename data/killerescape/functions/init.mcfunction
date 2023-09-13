@@ -126,6 +126,10 @@ scoreboard objectives add curse_time dummy
 #回復不可の持続時間を管理します
 scoreboard objectives add prevent_cure dummy
 
+#活力
+#活力の持続時間を管理します
+scoreboard objectives add bottomless_stamina dummy
+
 #サボタージュレベル
 #鬼のサボタージュ性能を保持します
 scoreboard objectives add sabotage_level dummy

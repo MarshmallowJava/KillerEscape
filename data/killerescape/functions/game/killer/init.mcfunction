@@ -27,6 +27,7 @@ kill @e[type=minecraft:marker,tag=decoy_trail]
 scoreboard players set @a decoy_time 0
 scoreboard players set @a cool_decoy 0
 
+kill @e[type=minecraft:wandering_trader,tag=multiply]
 kill @e[type=minecraft:zombie,tag=multiply]
 scoreboard players set @a multiply_time 0
 scoreboard players set @a cool_multiply 0

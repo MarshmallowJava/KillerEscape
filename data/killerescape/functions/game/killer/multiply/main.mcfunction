@@ -21,4 +21,4 @@ scoreboard players set @a[scores={useItem=0}] multiply_time 0
 execute as @a[scores={cool_multiply=1..}] at @s run function killerescape:game/killer/multiply/cool
 
 #眷属の処理
-execute as @e[tag=multiply] at @s run function killerescape:game/killer/multiply/tick/
+execute as @e[type=minecraft:wandering_trader,tag=multiply] at @s run function killerescape:game/killer/multiply/tick/

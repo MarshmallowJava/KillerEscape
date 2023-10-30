@@ -51,7 +51,7 @@ function killerescape:game/killer/main
 function killerescape:game/effect/main
 
 #スタミナ処理
-function killerescape:game/stamina/main
+#function killerescape:game/stamina/main
 
 #ストラクチャーボイドが設置されたエリアは脱出判定とする
 execute as @a[tag=survivor,tag=!eliminated,tag=!escaped] at @s if block ~ ~ ~ minecraft:structure_void run function killerescape:game/escape

@@ -154,6 +154,10 @@ scoreboard objectives add sneak dummy
 scoreboard objectives add useItem dummy
 scoreboard objectives add useItem_trigger minecraft.used:minecraft.warped_fungus_on_a_stick
 
+#復活トリガー
+#雪ブロックの発動トリガーです
+scoreboard objectives add revive_trigger minecraft.dropped:minecraft.snow_block
+
 #統計データ: 修理時間
 #プレイヤーが修理した時間を保持します
 scoreboard objectives add data_repair dummy

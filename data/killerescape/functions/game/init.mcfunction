@@ -88,6 +88,7 @@ tag @a remove carryed
 tag @a remove can_hurted
 tag @a remove hiding
 tag @a remove threat
+tag @a remove revived
 
 #役職タグを外す
 tag @a remove killer

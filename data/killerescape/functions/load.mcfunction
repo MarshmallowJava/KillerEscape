@@ -3,7 +3,7 @@
 
 #ゲームバージョン
 #仕様変更時に数値が加算されます
-scoreboard players set game_version const 0
+scoreboard players set game_version const 1
 
 #定数を定義
 scoreboard players set #-1 const -1

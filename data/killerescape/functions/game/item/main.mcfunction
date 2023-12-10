@@ -12,3 +12,9 @@ function killerescape:game/item/killer_weapon/main
 
 #エナジードリンク
 function killerescape:game/item/energydrink/main
+
+#式神
+function killerescape:game/item/guardian/main
+
+#蘇生
+function killerescape:game/item/revive/main

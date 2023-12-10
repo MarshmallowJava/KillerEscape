@@ -11,7 +11,7 @@ execute as @a[scores={cool_shadow=1..}] at @s run function killerescape:game/kil
 execute as @e[tag=shadow] at @s run function killerescape:game/killer/shadow/tick/
 
 #速度補正
-execute as @a[tag=killer] at @s if entity @e[tag=shadow,distance=..1.5] run function killerescape:game/killer/shadow/effect
+execute as @a[tag=killer] at @s run function killerescape:game/killer/shadow/effect
 
 #サウンド
 execute as @a at @s at @e[tag=shadow,tag=!pre,scores={time=1},limit=1,sort=nearest] run playsound minecraft:entity.blaze.ambient master @s ~ ~ ~ 1 1.25 0

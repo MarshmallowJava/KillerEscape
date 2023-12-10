@@ -3,8 +3,9 @@
 
 #影鬼
 scoreboard players set shadow_cool const 300
-scoreboard players set shadow_length const 25
+scoreboard players set shadow_length const 20
 scoreboard players set shadow_delay const 15
+scoreboard players set shadow_remain const 100
 scoreboard players set shadow_base const 60
 scoreboard players set shadow_addition const 2
 

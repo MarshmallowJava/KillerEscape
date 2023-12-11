@@ -22,7 +22,7 @@
                     "functions": [
                         {
                             "function": "minecraft:set_nbt",
-                            "tag": "{CustomTag:Guardian,display:{Name:'{\"text\":\"式神\",\"italic\":false,\"color\":\"yellow\"}',Lore:['{\"text\":\"右クリックで3秒間透明になる\",\"italic\":false,\"color\":\"green\"}']}}"
+                            "tag": "{CustomModelData:6,CustomTag:Guardian,display:{Name:'{\"text\":\"式神\",\"italic\":false,\"color\":\"yellow\"}',Lore:['{\"text\":\"右クリックで3秒間透明になる\",\"italic\":false,\"color\":\"green\"}']}}"
                         }
                     ]
                 },

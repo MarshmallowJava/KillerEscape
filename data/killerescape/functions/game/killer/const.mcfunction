@@ -33,6 +33,7 @@ scoreboard players set vampire_counter const 200
 scoreboard players set multiply_cool const 400
 scoreboard players set multiply_time const 20
 scoreboard players set multiply_count const 3
+scoreboard players set multiply_remain const 200
 
 #謎鬼
 scoreboard players set mimicry_cool const 120

@@ -7,7 +7,7 @@ execute store result score max var if entity @a[tag=survivor,tag=eliminated]
 execute if score count var > max var as @e[type=minecraft:wandering_trader,tag=multiply,limit=1,sort=arbitrary] at @s run function killerescape:game/killer/multiply/vanish
 
 #生成
-summon minecraft:zombie ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,PersistenceRequired:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:spawner",tag:{CustomModelData:1},Count:1b}],ActiveEffects:[{Id:24b,ShowParticles:0b,Duration:100}]}
+summon minecraft:zombie ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,PersistenceRequired:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:spawner",tag:{CustomModelData:2},Count:1b}],ActiveEffects:[{Id:24b,ShowParticles:0b,Duration:100}]}
 summon minecraft:wandering_trader ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,PersistenceRequired:1b,Invulnerable:1b}
 
 #同期

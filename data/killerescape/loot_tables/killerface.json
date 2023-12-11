@@ -1,0 +1,85 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:spawner",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag":"{display:{Name:'{\"text\":\"鬼の仮面\",\"italic\": false,\"color\": \"dark_red\"}'},Enchantments:[{id:\"minecraft:binding_curse\",lvl:1}],HideFlags:255}"
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1}",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Inventory:[{tag:{CustomTag:Shadow}}]}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1}",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Inventory:[{tag:{CustomTag:Ice}}]}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1}",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Inventory:[{tag:{CustomTag:Fishing}}]}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:1}",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Inventory:[{tag:{CustomTag:Vampire}}]}"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{CustomModelData:2}",
+                            "conditions": [
+                                {
+                                    "condition": "minecraft:entity_properties",
+                                    "entity": "this",
+                                    "predicate": {
+                                        "nbt": "{Inventory:[{tag:{CustomTag:Multiply}}]}"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

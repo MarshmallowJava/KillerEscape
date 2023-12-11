@@ -23,14 +23,16 @@ function killerescape:game/ability/role/supply/
 execute if score autoban const matches 1 unless data storage minecraft:killerescape pool[0] run function killerescape:config/ban/init/survivor
 execute if score autoban const matches 1 unless data storage minecraft:killerescape pool[0] run function killerescape:game/ability/role/supply/
 
-#アイテム付与
+#アイテム削除
 clear @a
-execute as @a[tag=survivor] run function killerescape:game/give_items_survivor
-execute as @a[tag=killer] run function killerescape:game/give_items_killer
 
 #能力付与
 execute as @a[tag=survivor] at @s run function killerescape:game/ability/role/
 execute as @a[tag=killer] at @s run function killerescape:game/killer/role/
+
+#アイテム付与
+execute as @a[tag=survivor] run function killerescape:game/give_items_survivor
+execute as @a[tag=killer] run function killerescape:game/give_items_killer
 
 #鬼の移動速度を設定
 execute as @a[tag=killer] run attribute @s minecraft:generic.movement_speed modifier add 0-0-0-0-0 "killer_basespeed" 0.05 add

@@ -29,7 +29,7 @@ scoreboard players set vampire_maxcount const 10
 scoreboard players set vampire_prevent const 600
 scoreboard players set vampire_accel const 120
 scoreboard players set vampire_initcount const 3
-scoreboard players set vampire_counter const 200
+scoreboard players set vampire_counter const 300
 
 #増鬼
 scoreboard players set multiply_cool const 400

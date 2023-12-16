@@ -15,9 +15,9 @@ scoreboard players operation current entity_id = @s target_id
 function killerescape:util/get_current
 
 data modify storage temp: _ set value {X:0,Y:0,Z:0}
-execute store result storage temp: _.X int 1 run data get entity @a[tag=target,limit=1] Pos[0]
-execute store result storage temp: _.Y int 1 run data get entity @a[tag=target,limit=1] Pos[1]
-execute store result storage temp: _.Z int 1 run data get entity @a[tag=target,limit=1] Pos[2]
+execute store result storage temp: _.X int 1 run data get entity @a[tag=current,limit=1] Pos[0]
+execute store result storage temp: _.Y int 1 run data get entity @a[tag=current,limit=1] Pos[1]
+execute store result storage temp: _.Z int 1 run data get entity @a[tag=current,limit=1] Pos[2]
 data modify entity @s WanderTarget set from storage temp: _
 data modify entity @s[nbt={NoAI:1b}] NoAI set value 0b
 

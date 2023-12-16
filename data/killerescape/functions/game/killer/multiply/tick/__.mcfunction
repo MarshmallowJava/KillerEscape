@@ -23,10 +23,10 @@ data modify entity @s[nbt={NoAI:1b}] NoAI set value 0b
 
 
 #追跡対象が透明なら追跡中止
-execute unless entity @a[tag=current,nbt=!{ActiveEffects:[{Id:14}]}] run scoreboard players reset @s target_id
+execute if entity @a[tag=current,nbt={ActiveEffects:[{Id:14}]}] run scoreboard players reset @s target_id
 
 #ロッカーに入れば中止
-execute unless entity @a[tag=current,tag=hiding] run scoreboard players reset @s target_id
+execute if entity @a[tag=current,tag=hiding] run scoreboard players reset @s target_id
 
 #煙の中に入れば追跡中止
 execute if entity @e[tag=smoke,distance=..3] run scoreboard players reset @s target_id

@@ -7,10 +7,10 @@ execute as @a[scores={cool_multiply=0},nbt={SelectedItem:{tag:{CustomTag:Multipl
 kill @e[type=minecraft:marker,tag=multiply_cursor,tag=!current]
 
 #表示
-execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^1 ^ ^ 0 0 0 0 0 force @a
-execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^-1 ^ ^ 0 0 0 0 0 force @a
-execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^ ^ ^1 0 0 0 0 0 force @a
-execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^ ^ ^-1 0 0 0 0 0 force @a
+execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^1 ^ ^ 0 0 0 0 0 force @a[tag=killer]
+execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^-1 ^ ^ 0 0 0 0 0 force @a[tag=killer]
+execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^ ^ ^1 0 0 0 0 0 force @a[tag=killer]
+execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^ ^ ^-1 0 0 0 0 0 force @a[tag=killer]
 execute as @e[tag=multiply_cursor] at @s run tp @s ~ ~ ~ ~35 0
 
 #能力発動

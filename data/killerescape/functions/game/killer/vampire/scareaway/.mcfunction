@@ -9,6 +9,9 @@ function killerescape:util/search/
 execute on vehicle at @s run function killerescape:game/killer/vampire/scareaway/_
 execute if entity @a[tag=target,tag=killer] on vehicle run function killerescape:game/killer/vampire/vanish
 
+#ストック加算
+execute as @a[tag=target,tag=killer] run function killerescape:game/killer/vampire/get_token
+
 #デバフ
 execute as @a[tag=target,tag=survivor] at @s run function killerescape:game/killer/vampire/scareaway/__
 

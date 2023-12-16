@@ -11,6 +11,7 @@ scoreboard players set @a ice_time 0
 tag @a remove watched_by_ice
 
 scoreboard players set @a cool_fishing 0
+scoreboard players set @a cool_fishing2 0
 
 scoreboard players set @a vampire_time 0
 scoreboard players set @a vampire_count 0

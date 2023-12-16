@@ -12,3 +12,6 @@ execute as @e[tag=fishing_anchor] at @s run function killerescape:game/killer/fi
 
 #クールダウン
 execute as @a[scores={cool_fishing=1..}] at @s run function killerescape:game/killer/fishing/cool
+
+#パッシブクールダウン
+execute as @a[scores={cool_fishing2=1..}] at @s run function killerescape:game/killer/fishing/cool2

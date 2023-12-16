@@ -18,7 +18,9 @@ scoreboard players set ice_lessthan const -60
 scoreboard players set ice_inittoken const 100
 
 #釣鬼
-scoreboard players set fishing_cool const 200
+scoreboard players set fishing_cool const 300
+scoreboard players set fishing_cool2 const 300
+scoreboard players set fishing_reduce const 150
 
 #吸血鬼
 scoreboard players set vampire_cool const 300

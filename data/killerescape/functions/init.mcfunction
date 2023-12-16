@@ -189,6 +189,7 @@ scoreboard objectives add cool_dash dummy
 scoreboard objectives add cool_area_heal dummy
 scoreboard objectives add cool_area_heal2 dummy
 scoreboard objectives add cool_fishing dummy
+scoreboard objectives add cool_fishing2 dummy
 scoreboard objectives add cool_shadow dummy
 scoreboard objectives add cool_ice dummy
 scoreboard objectives add var_hope dummy

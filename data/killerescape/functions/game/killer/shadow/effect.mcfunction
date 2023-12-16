@@ -22,4 +22,4 @@ execute if score @s var matches 0 run tag @s remove in_shadow
 execute if score @s var matches 1.. run tag @s add in_shadow
 
 #演出
-execute rotated ~ 0 run particle minecraft:squid_ink ^ ^1 ^-0.15 0 0.5 0 0.05 10 force @a[distance=0.1..]
+execute if entity @s[tag=in_shadow] rotated ~ 0 run particle minecraft:squid_ink ^ ^1 ^-0.15 0 0.5 0 0.05 10 force @a[distance=0.1..]

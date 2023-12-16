@@ -33,7 +33,7 @@ execute if entity @e[tag=smoke,distance=..3] run scoreboard players reset @s tar
 
 #フラグ
 scoreboard players set @s var 0
-execute if entity @a[tag=current,distance=..1] run scoreboard players set @s var 1
+execute if entity @a[tag=current,distance=..2] run scoreboard players set @s var 1
 
 #効果付与
 execute if score @s var matches 1 as @a[tag=current] at @s run function killerescape:game/killer/multiply/launch/__

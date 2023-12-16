@@ -29,7 +29,7 @@ execute if entity @a[tag=current,nbt={ActiveEffects:[{Id:14}]}] run scoreboard p
 execute if entity @a[tag=current,tag=hiding] run scoreboard players reset @s target_id
 
 #煙の中に入れば追跡中止
-execute if entity @e[tag=smoke,distance=..3] run scoreboard players reset @s target_id
+execute if entity @e[tag=smoke_position,tag=smoked,distance=..3] run scoreboard players reset @s target_id
 
 #フラグ
 scoreboard players set @s var 0

@@ -6,8 +6,8 @@ function killerescape:util/owner
 
 #可能なアクションを獲得
 scoreboard players set @s var 0
-execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 as @e[tag=communicator,tag=can_sabotage,distance=..1] if score @s time < repairtime const run scoreboard players set @a[tag=owner] var 1
-execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 if entity @e[tag=board,tag=downed,tag=!broken,distance=..2] run scoreboard players set @s var 2
+execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 as @e[tag=communicator,tag=can_sabotage,distance=..1] if score @s time < repairtime const run scoreboard players set @a[tag=owner,scores={cool_attack=0}] var 1
+execute anchored eyes positioned ^ ^ ^ anchored feet positioned ^ ^ ^1 if entity @e[tag=board,tag=downed,tag=!broken,distance=..2] run scoreboard players set @s[scores={cool_attack=0}] var 2
 
 #表示
 execute if score @s var matches 1 if score @s sabotage_time matches 0 run title @s actionbar "右クリック長押しでサボタージュ"

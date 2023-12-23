@@ -8,11 +8,18 @@ data remove storage changelog: killerescape
 data modify storage changelog: killerescape.v0_0_1.title set value '{"text":"v0.0.1変更分","italic":false,"color":"white"}'
 data modify storage changelog: killerescape.v0_0_1.desc set value ['{"text":"クリックで詳細を表示","italic":false,"color":"gray"}']
 
+#板破壊について
+data modify storage _ _ set value {}
+data modify storage _ _.title set value '{"text":"板破壊について","italic":false,"color":"white"}'
+data modify storage _ _.icon set value {id:"minecraft:oak_planks",Count:1b}
+data modify storage _ _.desc set value ['{"text":"攻撃クールダウン中に板破壊ができなくなりました","italic":false,"color":"gray"}']
+data modify storage changelog: killerescape.v0_0_1.contents append from storage _ _
+
 #サボタージュについて
 data modify storage _ _ set value {}
 data modify storage _ _.title set value '{"text":"サボタージュについて","italic":false,"color":"white"}'
 data modify storage _ _.icon set value {id:"minecraft:iron_sword",tag:{HideFlags:255},Count:1b}
-data modify storage _ _.desc set value ['{"text":"一部の鬼についてその巡回性能により","italic":false,"color":"gray"}','{"text":"試合時間が極端に長くなる場合が多いため","italic":false,"color":"gray"}','{"text":"鬼毎にサボタージュの効果量を変更しました","italic":false,"color":"gray"}','{"text":"影鬼 - 高","italic":false,"color":"gray"}','{"text":"氷鬼 - 中","italic":false,"color":"gray"}','{"text":"釣鬼 - 高","italic":false,"color":"gray"}','{"text":"吸血鬼 - 低","italic":false,"color":"gray"}','{"text":"増鬼 - 低","italic":false,"color":"gray"}']
+data modify storage _ _.desc set value ['{"text":"攻撃クールダウン中にサボタージュができなくなりました","italic":false,"color":"gray"}','{"text":"一部の鬼についてその巡回性能により","italic":false,"color":"gray"}','{"text":"試合時間が極端に長くなる場合が多いため","italic":false,"color":"gray"}','{"text":"鬼毎にサボタージュの効果量を変更しました","italic":false,"color":"gray"}','{"text":"影鬼 - 高","italic":false,"color":"gray"}','{"text":"氷鬼 - 中","italic":false,"color":"gray"}','{"text":"釣鬼 - 高","italic":false,"color":"gray"}','{"text":"吸血鬼 - 低","italic":false,"color":"gray"}','{"text":"増鬼 - 低","italic":false,"color":"gray"}']
 data modify storage changelog: killerescape.v0_0_1.contents append from storage _ _
 
 #影鬼について
@@ -45,7 +52,7 @@ data modify storage changelog: killerescape.v0_0_1.contents append from storage 
 
 #増鬼実装
 data modify storage _ _ set value {}
-data modify storage _ _.title set value '{"text":"増鬼","italic":false,"color":"white"}'
+data modify storage _ _.title set value '{"text":"増鬼実装","italic":false,"color":"white"}'
 data modify storage _ _.icon set value {id:"minecraft:ender_eye",tag:{CustomModelData:6},Count:1b}
 data modify storage _ _.desc set value ['{"text":"増鬼は眷属を視点先の場所に配置し","italic":false,"color":"gray"}','{"text":"複数の場所を同時に監視することができます","italic":false,"color":"gray"}','{"text":"同時に(脱落した生存者数)+1体配置することができます","italic":false,"color":"gray"}','{"text":"眷属は正面のみを監視し生存者を発見した場合","italic":false,"color":"gray"}','{"text":"一定時間追跡した後到達すると発光付与し消滅します","italic":false,"color":"gray"}','{"text":"ただし何らかの原因で生存者を見失うと","italic":false,"color":"gray"}','{"text":"追跡を中止してしまいます","italic":false,"color":"gray"}','{"text":"また追跡中、本体は移動速度が上昇します","italic":false,"color":"gray"}']
 data modify storage changelog: killerescape.v0_0_1.contents append from storage _ _

@@ -4,7 +4,7 @@
 #生成
 summon minecraft:zombie ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,PersistenceRequired:1b,Invulnerable:1b,ArmorItems:[{},{},{},{id:"minecraft:spawner",tag:{CustomModelData:2},Count:1b}]}
 summon minecraft:wandering_trader ~ ~ ~ {Tags:["multiply", "init"],NoAI:1b,Silent:1b,PersistenceRequired:1b,Invulnerable:1b}
-summon minecraft:interaction ~ ~ ~ {Tags:["multiply","container","init"],height:-0.5f,response:1b}
+summon minecraft:interaction ~ ~ ~ {Tags:["multiply","container","init"],height:-1.4f,response:1b}
 
 #同期
 execute as @e[tag=multiply,tag=init,type=minecraft:wandering_trader] run function killerescape:util/allocate_id

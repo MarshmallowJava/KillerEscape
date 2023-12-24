@@ -1,0 +1,20 @@
+{
+    "type": "minecraft:command",
+    "pools": [
+        {
+            "rolls": 1.0,
+            "entries": [
+                {
+                    "type": "minecraft:item",
+                    "name": "minecraft:clock",
+                    "functions": [
+                        {
+                            "function": "minecraft:set_nbt",
+                            "tag": "{OwnItem:1b,CustomTag:Soul,CustomModelData:105,display:{Name:'{\"text\":\"タマシイ\",\"italic\":false,\"color\":\"light_purple\"}',Lore:['{\"text\":\"眷属に宿すと意志を持つようになる\",\"italic\":false,\"color\":\"white\"}']}}"
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

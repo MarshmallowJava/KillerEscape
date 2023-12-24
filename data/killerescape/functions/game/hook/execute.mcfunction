@@ -9,3 +9,6 @@ tag @s add eliminated
 
 #通知
 tellraw @a {"translate":"[システム] %s が脱落しました","color":"red","with":[{"selector":"@s"}]}
+
+#イベント発火
+function killerescape:event/on_death

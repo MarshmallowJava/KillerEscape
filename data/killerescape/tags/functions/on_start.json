@@ -4,6 +4,7 @@
         "killerescape:game/ability/smoke/on_start",
         "killerescape:game/killer/ice/on_start",
         "killerescape:game/killer/vampire/on_start",
+        "killerescape:game/killer/multiply/on_start",
         "killerescape:game/stamina/on_start"
     ]
 }

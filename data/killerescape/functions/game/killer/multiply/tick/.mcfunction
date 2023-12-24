@@ -1,11 +1,8 @@
 
 ##眷属の処理を行います
 
-#target_idにデータがなければ検索状態
-execute unless score @s target_id matches -2147483648..2147483647 run function killerescape:game/killer/multiply/tick/_
-
-#target_idが存在すれば追跡
-execute if score @s target_id matches -2147483648..2147483647 run function killerescape:game/killer/multiply/tick/__
+#魂持ちなら検索と追跡
+execute if entity @s[tag=hassoul] run function killerescape:game/killer/multiply/tick/_
 
 #検索
 function killerescape:util/get_current
@@ -24,3 +21,7 @@ execute if entity @e[tag=board,nbt={ArmorItems:[{tag:{animating:1b}}]},distance=
 #時間経過
 execute if score @s time matches 0.. run scoreboard players add @s time 1
 execute if score @s time > multiply_remain const run function killerescape:game/killer/multiply/vanish
+
+#状態を表示
+execute if entity @s[tag=!hassoul] rotated ~ 0 run particle minecraft:dust 0 0 0 1 ^ ^1.2 ^0.25 0 0 0 1 1 force @a[tag=killer]
+execute if entity @s[tag=hassoul] rotated ~ 0 run particle minecraft:dust 1 0 1 1 ^ ^1.2 ^0.25 0 0 0 1 1 force @a[tag=killer]

@@ -9,7 +9,7 @@ data modify storage minecraft:killerescape arguments.format set from storage min
 function killerescape:util/get_gauge/
 
 #反映
-title @s actionbar [{"text":"眷属を生成中...","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]
+title @s actionbar [{"text":"眷属の骸を生成中...","italic": false,"color": "white"},{"storage":"minecraft:killerescape","nbt":"result","interpret": true}]
 
 #通常UIは表示しない
 tag @s remove display_ui

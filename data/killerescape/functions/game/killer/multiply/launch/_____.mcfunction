@@ -5,7 +5,7 @@
 summon minecraft:marker ~ ~ ~ {Tags:["soul", "init"]}
 
 #対象を決定
-tag @e[type=minecraft:wandering_trader,tag=multiply,distance=0.1..,limit=1,sort=random] add focus
+execute at @a[tag=killer] run tag @e[type=minecraft:wandering_trader,tag=multiply,tag=!hassoul,tag=!havingsoul,distance=0.1..,limit=1,sort=furthest] add focus
 tag @e[tag=focus] add havingsoul
 
 #対象を設定

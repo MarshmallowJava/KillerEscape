@@ -54,7 +54,7 @@ data modify storage changelog: killerescape.v0_0_1.contents append from storage 
 data modify storage _ _ set value {}
 data modify storage _ _.title set value '{"text":"増鬼実装","italic":false,"color":"white"}'
 data modify storage _ _.icon set value {id:"minecraft:ender_eye",tag:{CustomModelData:6},Count:1b}
-data modify storage _ _.desc set value ['{"text":"増鬼は最大5体眷属を配置し複数の位置を監視できます","italic":false,"color":"gray"}','{"text":"右クリック長押しで眷属の骸を設置することができ","italic":false,"color":"gray"}','{"text":"初期アイテムの「タマシイ」を1つ使用することで起動します","italic":false,"color":"gray"}','{"text":"「タマシイ」は着脱でき生存者が脱落すると1つ獲得します","italic":false,"color":"gray"}','{"text":"眷属は前方扇形の範囲に生存者を検知すると","italic":false,"color":"gray"}','{"text":"一定時間発光しながら追跡を行います","italic":false,"color":"gray"}','{"text":"生存者に到達すると発光を付与して消滅し","italic":false,"color":"gray"}','{"text":"ランダムな眷属に自身のタマシイを付与します","italic":false,"color":"gray"}']
+data modify storage _ _.desc set value ['{"text":"増鬼は最大5体眷属を配置し複数の位置を監視できます","italic":false,"color":"gray"}','{"text":"右クリック長押しで眷属の骸を設置することができ","italic":false,"color":"gray"}','{"text":"初期アイテムの「タマシイ」を1つ使用することで起動します","italic":false,"color":"gray"}','{"text":"「タマシイ」は着脱でき生存者が脱落すると1つ獲得します","italic":false,"color":"gray"}','{"text":"眷属は前方扇形の範囲に生存者を検知すると","italic":false,"color":"gray"}','{"text":"一定時間発光しながら追跡を行います","italic":false,"color":"gray"}','{"text":"生存者に到達すると発光を付与して消滅し","italic":false,"color":"gray"}','{"text":"本体から最も遠い眷属に自身のタマシイを付与します","italic":false,"color":"gray"}']
 data modify storage changelog: killerescape.v0_0_1.contents append from storage _ _
 
 # チェスト

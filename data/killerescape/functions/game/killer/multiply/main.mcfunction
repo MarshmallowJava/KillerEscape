@@ -31,3 +31,6 @@ execute as @e[tag=multiply,tag=container] at @s run function killerescape:game/k
 
 #タマシイ処理
 execute as @e[tag=soul] at @s run function killerescape:game/killer/multiply/tick/______
+
+#眷属稼働数表示
+execute as @a[tag=killer,tag=display_ui,nbt={Inventory:[{tag:{CustomTag:Multiply}}]}] run function killerescape:game/killer/multiply/show/__

@@ -11,3 +11,6 @@ scoreboard players operation @e[tag=multiply_cursor,tag=current] entity_id = @s 
 
 #続行
 execute if score @s useItem matches 0 run function killerescape:game/killer/multiply/launch/cursor/___
+
+#タマシイの位置を表示
+execute at @s anchored eyes facing entity @e[tag=hassoul] eyes run particle minecraft:soul_fire_flame ^ ^ ^3 0 0 0 0 0 force @a

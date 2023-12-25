@@ -25,3 +25,4 @@ execute if score @s time > multiply_remain const run function killerescape:game/
 #状態を表示
 execute if entity @s[tag=!hassoul] rotated ~ 0 run particle minecraft:dust 0 0 0 1 ^ ^1.2 ^0.25 0 0 0 1 1 force @a[tag=killer]
 execute if entity @s[tag=hassoul] rotated ~ 0 run particle minecraft:dust 1 0 1 1 ^ ^1.2 ^0.25 0 0 0 1 1 force @a[tag=killer]
+execute if entity @s[tag=havingsoul] run particle minecraft:soul_fire_flame ~ ~1 ~ 0.5 0.6 0.5 0 1 force @a

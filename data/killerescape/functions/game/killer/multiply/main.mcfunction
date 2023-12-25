@@ -28,3 +28,6 @@ execute as @e[type=minecraft:wandering_trader,tag=multiply] at @s run function k
 
 #コンテナ処理
 execute as @e[tag=multiply,tag=container] at @s run function killerescape:game/killer/multiply/tick/____
+
+#タマシイ処理
+execute as @e[tag=soul] at @s run function killerescape:game/killer/multiply/tick/______

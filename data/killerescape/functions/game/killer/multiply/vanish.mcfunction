@@ -4,15 +4,15 @@
 #検索
 function killerescape:util/get_current
 
-#残存眷属数を数える
-execute store result score count var if entity @e[tag=multiply,type=minecraft:wandering_trader]
+#残存骸数を数える
+execute store result score count var if entity @e[tag=multiply,type=minecraft:wandering_trader,tag=!havingsoul,tag=!hassoul]
 
 #他に眷属が存在するなら他に移動する
-execute if score count var matches 2.. if entity @s[tag=hassoul] as @e[tag=multiply,type=minecraft:wandering_trader,limit=1,sort=random,distance=0.1..] at @s run function killerescape:game/killer/multiply/launch/___
+execute if score count var matches 1.. if entity @s[tag=hassoul] run function killerescape:game/killer/multiply/launch/_____
 
 #最後の一つなら回収
-execute if score count var matches 1 if entity @s[tag=hassoul] run loot give @a[tag=killer] loot killerescape:soul
-execute if score count var matches 1 if entity @s[tag=hassoul] run tellraw @a[tag=killer] {"text":"[システム] タマシイを回収しました","color": "yellow"}
+execute if score count var matches 0 if entity @s[tag=hassoul] run loot give @a[tag=killer] loot killerescape:soul
+execute if score count var matches 0 if entity @s[tag=hassoul] run tellraw @a[tag=killer] {"text":"[システム] タマシイを回収しました","color": "yellow"}
 
 #演出
 particle minecraft:witch ~ ~1 ~ 0.6 0.7 0.6 0 50 force @a

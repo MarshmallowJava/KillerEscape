@@ -9,8 +9,8 @@ data modify storage minecraft:killerescape arguments.UUID set from entity @s int
 function killerescape:util/search/
 
 #消費
-execute if score @s var matches 0 if entity @a[tag=target,nbt={SelectedItem:{tag:{CustomTag:Soul}}}] on vehicle at @s run function killerescape:game/killer/multiply/launch/___
-execute if score @s var matches 0 run clear @a[tag=target,nbt={SelectedItem:{tag:{CustomTag:Soul}}}] minecraft:clock{CustomTag:Soul} 1
+execute if score @s var matches 0 if entity @a[tag=target,nbt={Inventory:[{tag:{CustomTag:Soul}}]}] on vehicle at @s run function killerescape:game/killer/multiply/launch/___
+execute if score @s var matches 0 run clear @a[tag=target,nbt={Inventory:[{tag:{CustomTag:Soul}}]}] minecraft:clock{CustomTag:Soul} 1
 
 #回収
 execute if score @s var matches 1 if entity @a[tag=target,tag=killer] on vehicle at @s run function killerescape:game/killer/multiply/launch/____

@@ -13,8 +13,8 @@ execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^ ^ ^1
 execute at @e[tag=multiply_cursor] run particle minecraft:soul_fire_flame ^ ^ ^-1 0 0 0 0 0 force @a[tag=killer]
 execute as @e[tag=multiply_cursor] at @s run tp @s ~ ~ ~ ~35 0
 
-execute as @a[tag=display_ui,nbt={SelectedItem:{tag:{CustomTag:Soul}}}] at @s if entity @e[type=minecraft:wandering_trader,tag=multiply,tag=!hassoul,distance=..4] run function killerescape:game/killer/multiply/show/
-execute at @e[type=minecraft:wandering_trader,tag=multiply,tag=hassoul] as @a[tag=killer,distance=..4] at @s run function killerescape:game/killer/multiply/show/_
+execute at @e[type=minecraft:wandering_trader,tag=multiply,tag=!hassoul] as @a[tag=killer,nbt={Inventory:[{tag:{CustomTag:Soul}}]},distance=..3] at @s run function killerescape:game/killer/multiply/show/
+execute at @e[type=minecraft:wandering_trader,tag=multiply,tag=hassoul] as @a[tag=killer,distance=..3] at @s run function killerescape:game/killer/multiply/show/_
 
 #能力発動
 execute as @a[scores={cool_multiply=0,useItem=1..},nbt={SelectedItem:{tag:{CustomTag:Multiply}}},tag=display_ui] at @s run function killerescape:game/killer/multiply/launch/
@@ -33,4 +33,4 @@ execute as @e[tag=multiply,tag=container] at @s run function killerescape:game/k
 execute as @e[tag=soul] at @s run function killerescape:game/killer/multiply/tick/______
 
 #眷属稼働数表示
-execute as @a[tag=killer,tag=display_ui,nbt={Inventory:[{tag:{CustomTag:Multiply}}]}] run function killerescape:game/killer/multiply/show/__
+execute as @a[tag=killer,tag=display_ui,nbt={Inventory:[{tag:{CustomTag:Multiply}}]}] unless data entity @s SelectedItem run function killerescape:game/killer/multiply/show/__

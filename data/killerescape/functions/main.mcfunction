@@ -21,8 +21,11 @@ execute if score game_status time matches 0 run function killerescape:lobby/main
 #ゲーム処理
 execute if score game_status time matches 1 run function killerescape:game/main
 
-#ゲーム処理
+#リザルト処理
 execute if score game_status time matches 2 run function killerescape:result/main
+
+#雑談フェーズ処理
+execute if score game_status time matches 666 run function killerescape:donothing/main
 
 #マップ制作処理
 function killerescape:map/main
